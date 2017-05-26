@@ -1,0 +1,705 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="css," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="CSS的全称是什么?CSS全称是 Cascading Style Sheets，即层叠样式表 CSS有几种引入方式? link 和@import 有什么区别?CSS的引入一般有三种  外部资源引入 style标签 内联style属性  使用link和@import的区别：  link属于标签，除了加载CSS外，还能用于定义RSS，定义rel连接属性等作用；而@import是CSS提供的，只能用于加">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css基础">
+<meta property="og:url" content="http://yoursite.com/2017/04/06/css基础/index.html">
+<meta property="og:site_name" content="Yoowin&#39;s Blog">
+<meta property="og:description" content="CSS的全称是什么?CSS全称是 Cascading Style Sheets，即层叠样式表 CSS有几种引入方式? link 和@import 有什么区别?CSS的引入一般有三种  外部资源引入 style标签 内联style属性  使用link和@import的区别：  link属于标签，除了加载CSS外，还能用于定义RSS，定义rel连接属性等作用；而@import是CSS提供的，只能用于加">
+<meta property="og:updated_time" content="2017-05-26T09:30:43.713Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="css基础">
+<meta name="twitter:description" content="CSS的全称是什么?CSS全称是 Cascading Style Sheets，即层叠样式表 CSS有几种引入方式? link 和@import 有什么区别?CSS的引入一般有三种  外部资源引入 style标签 内联style属性  使用link和@import的区别：  link属于标签，除了加载CSS外，还能用于定义RSS，定义rel连接属性等作用；而@import是CSS提供的，只能用于加">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/04/06/css基础/"/>
+
+
+
+
+
+  <title>css基础 | Yoowin's Blog</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Yoowin's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/06/css基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yoowinsu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yoowin's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">css基础</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-06T21:29:05+08:00">
+                2017-04-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="CSS的全称是什么"><a href="#CSS的全称是什么" class="headerlink" title="CSS的全称是什么?"></a>CSS的全称是什么?</h1><p>CSS全称是 Cascading Style Sheets，即层叠样式表</p>
+<h1 id="CSS有几种引入方式-link-和-import-有什么区别"><a href="#CSS有几种引入方式-link-和-import-有什么区别" class="headerlink" title="CSS有几种引入方式? link 和@import 有什么区别?"></a>CSS有几种引入方式? link 和@import 有什么区别?</h1><p>CSS的引入一般有三种</p>
+<ul>
+<li>外部资源引入</li>
+<li>style标签</li>
+<li>内联style属性</li>
+</ul>
+<p>使用link和@import的区别：</p>
+<ul>
+<li><p>link属于标签，除了加载CSS外，还能用于定义RSS，定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS；</p>
+</li>
+<li><p>页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载；</p>
+</li>
+<li><p>import是CSS2.1 提出的，只在IE5以上才能被识别，而link是 标签，无兼容问题。</p>
+<h1 id="以下这几种文件路径分别用在什么地方，代表什么意思"><a href="#以下这几种文件路径分别用在什么地方，代表什么意思" class="headerlink" title="以下这几种文件路径分别用在什么地方，代表什么意思?"></a>以下这几种文件路径分别用在什么地方，代表什么意思?</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">css/a.css  /*指定当前目录下的css文件中的a.css文件，属于相对路径*/</div><div class="line"></div><div class="line">./css/a.css /*指定当前目录下的css文件中的a.css文件（和上面的等价），属于相对路径*/</div><div class="line"></div><div class="line">b.css /*指定当前目录中的b.css文件，属于相对路径*/</div><div class="line"></div><div class="line">../imgs/a.png /*指定上一级目录中的imgs文件夹下的a.png文件，属于相对路径*/</div><div class="line"></div><div class="line">/Users/hunger/project/css/a.css /*指定a.css的从根目录开始的完整路径，属于绝对路径*/</div><div class="line"></div><div class="line">/static/css/a.css /*网站中也可以使用相对路径*/</div><div class="line"></div><div class="line">http://cdn.jirengu.com/kejian1/8-1.png /*指定网络图片的地址，属于网站路径*/</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="如果我想在js-jirengu-com上展示一个图片，需要怎么操作"><a href="#如果我想在js-jirengu-com上展示一个图片，需要怎么操作" class="headerlink" title="如果我想在js.jirengu.com上展示一个图片，需要怎么操作?"></a>如果我想在js.jirengu.com上展示一个图片，需要怎么操作?</h1><ul>
+<li>上传到服务器，使用相对路径引用图片</li>
+<li>可以使用图片的网站链接地址。如果没有网站链接地址，可以上传至第三方工具生成链接地址再引用</li>
+</ul>
+<h1 id="列出5条以上html和-css-的书写规范"><a href="#列出5条以上html和-css-的书写规范" class="headerlink" title="列出5条以上html和 css 的书写规范"></a>列出5条以上html和 css 的书写规范</h1><ul>
+<li>css语法不区分大小写，但建议统一使用小写</li>
+<li>css不使用内联的style属性定义样式</li>
+<li>id和class使用有意义的单词，体现其功能，分隔符建议使用-（中划线）</li>
+<li>属性值是0的省略单位</li>
+<li>尽可能的复用样式</li>
+<li>复合样式可以提高编码效率</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag"># css</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/03/浮动、定位、BFC和边距合并/" rel="next" title="浮动、定位、BFC和边距合并">
+                <i class="fa fa-chevron-left"></i> 浮动、定位、BFC和边距合并
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/10/CSS实现空心三角箭头/" rel="prev" title="css实现空心三角箭头">
+                css实现空心三角箭头 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="yoowinsu" />
+          <p class="site-author-name" itemprop="name">yoowinsu</p>
+           
+              <p class="site-description motion-element" itemprop="description">Practice makes perfect</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS的全称是什么"><span class="nav-number">1.</span> <span class="nav-text">CSS的全称是什么?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS有几种引入方式-link-和-import-有什么区别"><span class="nav-number">2.</span> <span class="nav-text">CSS有几种引入方式? link 和@import 有什么区别?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#以下这几种文件路径分别用在什么地方，代表什么意思"><span class="nav-number">3.</span> <span class="nav-text">以下这几种文件路径分别用在什么地方，代表什么意思?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如果我想在js-jirengu-com上展示一个图片，需要怎么操作"><span class="nav-number">4.</span> <span class="nav-text">如果我想在js.jirengu.com上展示一个图片，需要怎么操作?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列出5条以上html和-css-的书写规范"><span class="nav-number">5.</span> <span class="nav-text">列出5条以上html和 css 的书写规范</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yoowinsu</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
