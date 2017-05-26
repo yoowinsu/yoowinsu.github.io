@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3b7883;
+  background: #996faf;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2546,7 +2546,7 @@ embed {
   display: inline-block;
 }
 .header {
-  background: url("https://baoyuzhang.github.io/header_background.jpg");
+  background: url("../../images/bg.JPG");
 }
 .brand {
   background-color: transparent;
