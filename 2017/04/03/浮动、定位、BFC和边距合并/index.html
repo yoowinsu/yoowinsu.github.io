@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,9 +46,6 @@
   
 
   
-    
-    
-  
 
   
 
@@ -58,10 +55,6 @@
 
   
 
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -90,17 +83,17 @@
 
 
 
-<meta name="description" content="浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响? 浮动元素特征：1.浮动元素脱离文档流2.浮动元素使用块布局3.浮动元素外边缘碰到包含框或者另一个浮动元素的框的边缘会停下4.普通流中的文字将会围绕浮动元素 影响1.会有父元素高度塌陷的情况（子元素都浮动）2.其他浮动元素碰到浮动元素会停下（紧贴浮动元素排列，父元素宽度不够的话会折行）3.普通元素察觉不到浮动元素，会替代浮动">
+<meta name="description" content="浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响? 浮动元素特征：1.浮动元素脱离文档流2.浮动元素使用块布局3.浮动元素外边缘碰到包含框或者另一个浮动元素的框的边缘会停下4.普通流中的文字将会围绕浮动元素">
 <meta name="keywords" content="浮动 定位 BFC 边距合并">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浮动、定位、BFC和边距合并">
 <meta property="og:url" content="http://yoursite.com/2017/04/03/浮动、定位、BFC和边距合并/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:description" content="浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响? 浮动元素特征：1.浮动元素脱离文档流2.浮动元素使用块布局3.浮动元素外边缘碰到包含框或者另一个浮动元素的框的边缘会停下4.普通流中的文字将会围绕浮动元素 影响1.会有父元素高度塌陷的情况（子元素都浮动）2.其他浮动元素碰到浮动元素会停下（紧贴浮动元素排列，父元素宽度不够的话会折行）3.普通元素察觉不到浮动元素，会替代浮动">
-<meta property="og:updated_time" content="2017-05-26T09:36:07.815Z">
+<meta property="og:description" content="浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响? 浮动元素特征：1.浮动元素脱离文档流2.浮动元素使用块布局3.浮动元素外边缘碰到包含框或者另一个浮动元素的框的边缘会停下4.普通流中的文字将会围绕浮动元素">
+<meta property="og:updated_time" content="2017-05-26T10:35:35.548Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浮动、定位、BFC和边距合并">
-<meta name="twitter:description" content="浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响? 浮动元素特征：1.浮动元素脱离文档流2.浮动元素使用块布局3.浮动元素外边缘碰到包含框或者另一个浮动元素的框的边缘会停下4.普通流中的文字将会围绕浮动元素 影响1.会有父元素高度塌陷的情况（子元素都浮动）2.其他浮动元素碰到浮动元素会停下（紧贴浮动元素排列，父元素宽度不够的话会折行）3.普通元素察觉不到浮动元素，会替代浮动">
+<meta name="twitter:description" content="浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响? 浮动元素特征：1.浮动元素脱离文档流2.浮动元素使用块布局3.浮动元素外边缘碰到包含框或者另一个浮动元素的框的边缘会停下4.普通流中的文字将会围绕浮动元素">
 
 
 
@@ -108,8 +101,8 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -160,7 +153,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -259,7 +252,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yoowinsu">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/20217398?v=3&s=460">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -319,7 +312,7 @@
 
       
         <h2 id="浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响"><a href="#浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响" class="headerlink" title="浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响?"></a>浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响?</h2><ul>
-<li>浮动元素特征：<br>1.浮动元素脱离文档流<br>2.浮动元素使用块布局<br>3.浮动元素外边缘碰到包含框或者另一个浮动元素的框的边缘会停下<br>4.普通流中的文字将会围绕浮动元素</li>
+<li>浮动元素特征：<br>1.浮动元素脱离文档流<br>2.浮动元素使用块布局<br>3.浮动元素外边缘碰到包含框或者另一个浮动元素的框的边缘会停下<br>4.普通流中的文字将会围绕浮动元素<a id="more"></a></li>
 <li>影响<br>1.会有父元素高度塌陷的情况（子元素都浮动）<br>2.其他浮动元素碰到浮动元素会停下（紧贴浮动元素排列，父元素宽度不够的话会折行）<br>3.普通元素察觉不到浮动元素，会替代浮动元素的原本位置<br>4.文字可以感知浮动元素的存在，会围绕浮动元素排列</li>
 </ul>
 <h2 id="清除浮动指什么-如何清除浮动-两种以上方法"><a href="#清除浮动指什么-如何清除浮动-两种以上方法" class="headerlink" title="清除浮动指什么? 如何清除浮动? 两种以上方法"></a>清除浮动指什么? 如何清除浮动? 两种以上方法</h2><p>清除浮动是指清除浮动造成的影响。<br>清除浮动的方法：<br>1.目前最主流的方法：clearfix<br>    clearfix：after{<br>        content:””;<br>        display:block;<br>        clear:both;}<br>2.overflow:hidden;或overflow:auto;（不适用于有定位的子元素且元素一部分超出容器的情况）<br>3.添加空标签并clear:both;（标签无语义，不提倡）<br>4.给浮动元素的容器添加浮动（拆东墙补西墙的做法，不提倡）<br>5.浮动元素后面的元素添加clear属性（高度塌陷的问题还没有解决，没有解决问题的根本——闭合浮动，所以不提倡此方法）</p>
@@ -462,7 +455,7 @@
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="https://avatars0.githubusercontent.com/u/20217398?v=3&s=460"
                alt="yoowinsu" />
           <p class="site-author-name" itemprop="name">yoowinsu</p>
            
@@ -474,7 +467,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -498,6 +491,35 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/yoowinsu" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/yoowinsu" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/1959884495" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
           
         </div>
 
@@ -544,7 +566,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2016 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -552,17 +574,6 @@
   <span class="author" itemprop="copyrightHolder">yoowinsu</span>
 </div>
 
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
 
 
         
@@ -640,6 +651,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
@@ -695,6 +713,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
 
