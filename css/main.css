@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #996faf;
+  background: #e4fbff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2546,13 +2546,14 @@ embed {
   display: inline-block;
 }
 .header {
-  background: url("../../images/bg.JPG");
+  background: rgba(255,255,255,0.65) url("https://images.pexels.com/photos/6675/flight-mountains-sky-flying.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+  color: rgba(0,0,0,0.9);
 }
 .brand {
   background-color: transparent;
 }
 .menu {
-  background: rgba(255,255,255,0.65);
+  background: rgba(255,255,255,0.85);
   margin-left: auto;
   margin-right: auto;
   width: 450px;
@@ -2560,12 +2561,10 @@ embed {
 .site-title {
   line-height: 56px;
   font-size: 40px;
-  color: #f5f5f5;
   font-family: 'Lobster Two', 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .menu .menu-item a {
   font-size: 16px;
-  color: rgba(0,0,0,0.9);
 }
 .site-author-image {
   margin-top: 50px;
