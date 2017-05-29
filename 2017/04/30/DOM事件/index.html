@@ -67,7 +67,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="居中," />
+  <meta name="keywords" content="事件,DOM," />
 
 
 
@@ -83,24 +83,17 @@
 
 
 
-<meta name="description" content="line-height的值和height一致只对文本有效（块级元素无效），文本会默认在自己行高内垂直居中。  范例如下图：  代码">
-<meta name="keywords" content="居中">
+<meta name="description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序">
+<meta name="keywords" content="事件,DOM">
 <meta property="og:type" content="article">
-<meta property="og:title" content="垂直居中的几种方法">
-<meta property="og:url" content="http://yoursite.com/2017/04/02/垂直居中的几种方法/index.html">
+<meta property="og:title" content="DOM事件">
+<meta property="og:url" content="http://yoursite.com/2017/04/30/DOM事件/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:description" content="line-height的值和height一致只对文本有效（块级元素无效），文本会默认在自己行高内垂直居中。  范例如下图：  代码">
-<meta property="og:image" content="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/Lp41sm1*Z8GB6jcZ1PLYuWWqxXt9yn1DzebTXcCxLhw!/r/dGoBAAAAAAAA">
-<meta property="og:image" content="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/g7vNnlkDNhpL7uGCC7Olb3dHrDP3OwAn8z8lpKsaTwY!/r/dGoBAAAAAAAA">
-<meta property="og:image" content="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/e94Qlv55dWzXaq3If6c*QLk9vw9lF.9pwib56F8TvXI!/r/dFUBAAAAAAAA">
-<meta property="og:image" content="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/VSaFqNNxc8yjfPzlZvko*jm8y9kJZI4h4H*qta11ebI!/r/dGoBAAAAAAAA">
-<meta property="og:image" content="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/BXm7px7Z*fZ2ncWF5oXqgdLUD4Oi6QmTMB9mIjz4LUU!/r/dGoBAAAAAAAA">
-<meta property="og:image" content="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/kDXWAy1RjRDmFJO0.ZecTHi37E3vrad301shZ1x1Qso!/r/dGoBAAAAAAAA">
-<meta property="og:updated_time" content="2017-05-27T09:04:20.343Z">
+<meta property="og:description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序">
+<meta property="og:updated_time" content="2017-05-29T15:52:31.684Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="垂直居中的几种方法">
-<meta name="twitter:description" content="line-height的值和height一致只对文本有效（块级元素无效），文本会默认在自己行高内垂直居中。  范例如下图：  代码">
-<meta name="twitter:image" content="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/Lp41sm1*Z8GB6jcZ1PLYuWWqxXt9yn1DzebTXcCxLhw!/r/dGoBAAAAAAAA">
+<meta name="twitter:title" content="DOM事件">
+<meta name="twitter:description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序">
 
 
 
@@ -128,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/02/垂直居中的几种方法/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/30/DOM事件/"/>
 
 
 
 
 
-  <title>垂直居中的几种方法 | Yoowin's Blog</title>
+  <title>DOM事件 | Yoowin's Blog</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -274,7 +267,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/02/垂直居中的几种方法/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/30/DOM事件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yoowinsu">
@@ -291,7 +284,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">垂直居中的几种方法</h2>
+          <h2 class="post-title" itemprop="name headline">DOM事件</h2>
         
 
         <div class="post-meta">
@@ -303,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-02T22:29:49+08:00">
-                2017-04-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-30T22:46:24+08:00">
+                2017-04-30
               </time>
             
 
@@ -326,8 +319,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/html和css/" itemprop="url" rel="index">
-                    <span itemprop="name">html和css</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -344,9 +337,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/04/02/垂直居中的几种方法/#comments" itemprop="discussionUrl">
+                <a href="/2017/04/30/DOM事件/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/04/02/垂直居中的几种方法/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/04/30/DOM事件/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -354,7 +347,7 @@
 
           
           
-             <span id="/2017/04/02/垂直居中的几种方法/" class="leancloud_visitors" data-flag-title="垂直居中的几种方法">
+             <span id="/2017/04/30/DOM事件/" class="leancloud_visitors" data-flag-title="DOM事件">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -382,42 +375,51 @@
       
 
       
-        <h1 id="line-height的值和height一致"><a href="#line-height的值和height一致" class="headerlink" title="line-height的值和height一致"></a>line-height的值和height一致</h1><p>只对文本有效（块级元素无效），文本会默认在自己行高内垂直居中。</p>
-<ul>
-<li>范例如下图： <img src="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/Lp41sm1*Z8GB6jcZ1PLYuWWqxXt9yn1DzebTXcCxLhw!/r/dGoBAAAAAAAA" alt="文本垂直居中"></li>
-<li><p>代码 <a id="more"></a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt;</div><div class="line"> .first&#123;</div><div class="line">  background-color: pink;</div><div class="line">  height：60px;</div><div class="line">  line-height:60px;</div><div class="line">  &#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;div class=&quot;first&quot;&gt;</div><div class="line">  &lt;p&gt;文本垂直居中&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+        <h1 id="DOM0-事件和DOM2级事件监听使用方式上有什么区别？"><a href="#DOM0-事件和DOM2级事件监听使用方式上有什么区别？" class="headerlink" title="DOM0 事件和DOM2级事件监听使用方式上有什么区别？"></a>DOM0 事件和DOM2级事件监听使用方式上有什么区别？</h1><ul>
+<li><p>DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序 <a id="more"></a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">target.onclick = function()&#123;&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>DOM2级事件:可以添加多个相同事件程序，移除应用程序是不能移除匿名函数（因为匿名函数在内存中是地址，无法获取该地址），不兼容ie低版本;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// 使用格式</div><div class="line">target.addEventListener(type, listener[, useCapture]);</div><div class="line">//type：事件名称，大小写敏感。</div><div class="line">//listener：监听函数。事件发生时，会调用该监听函数。</div><div class="line">//useCapture：布尔值，表示监听函数是否在捕获阶段（capture）触发，默认为false（监听函数只在冒泡阶段被触发）</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h1 id="绝对定位垂直居中"><a href="#绝对定位垂直居中" class="headerlink" title="绝对定位垂直居中"></a>绝对定位垂直居中</h1><ul>
-<li>有固定宽度和高度,position:absolute，父元素设为相对定位，left和top偏移50%，负margin自身宽度和高度的一半，为具体数值</li>
+<h1 id="attachEvent与addEventListener的区别？"><a href="#attachEvent与addEventListener的区别？" class="headerlink" title="attachEvent与addEventListener的区别？"></a>attachEvent与addEventListener的区别？</h1><ul>
+<li><p>参数个数不相同，这个最直观，addEventListener有三个参数，attachEvent只有两个，attachEvent添加的事件处理程序只能发生在冒泡阶段，addEventListener第三个参数可以决定添加的事件处理程序是在捕获阶段还是冒泡阶段处理（我们一般为了浏览器兼容性都设置为冒泡阶段）</p>
+</li>
+<li><p>第一个参数意义不同，addEventListener第一个参数是事件类型（比如click，load），而attachEvent第一个参数指明的是事件处理函数名称（onclick，onload）</p>
+</li>
+<li><p>事件处理程序的作用域不相同，addEventListener的作用域是元素本身，this是指的触发元素，而attachEvent事件处理程序会在全局变量内运行，this是window，所以刚才例子才会返回undefined，而不是元素id</p>
+</li>
+<li><p>为一个事件添加多个事件处理程序时，执行顺序不同，addEventListener添加会按照添加顺序执行，而attachEvent添加多个事件处理程序时顺序无规律(添加的方法少的时候大多是按添加顺序的反顺序执行的，但是添加的多了就无规律了)，所以添加多个的时候，不依赖执行顺序的还好，若是依赖于函数执行顺序，最好自己处理，不要指望浏览器</p>
+</li>
 </ul>
-<p><img src="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/g7vNnlkDNhpL7uGCC7Olb3dHrDP3OwAn8z8lpKsaTwY!/r/dGoBAAAAAAAA" alt="固定宽度和高度"></p>
+<h1 id="解释IE事件冒泡和DOM2事件传播机制？"><a href="#解释IE事件冒泡和DOM2事件传播机制？" class="headerlink" title="解释IE事件冒泡和DOM2事件传播机制？"></a>解释IE事件冒泡和DOM2事件传播机制？</h1><ul>
+<li>IE的事件冒泡：事件开始时由最具体的元素接收，然后逐级向上传播到较为不具体的元素</li>
+<li>DOM2级事件规定事件流包括三个阶段，事件捕获阶段，处于目标阶段，事件冒泡阶段，首先发生的是事件捕获，为截取事件提供机会，然后是实际目标接收事件，最后是冒泡阶段</li>
+</ul>
+<h1 id="如何阻止事件冒泡？-如何阻止默认事件？"><a href="#如何阻止事件冒泡？-如何阻止默认事件？" class="headerlink" title="如何阻止事件冒泡？ 如何阻止默认事件？"></a>如何阻止事件冒泡？ 如何阻止默认事件？</h1><ul>
+<li><p>阻止事件冒泡： 可以使用事件对象的stopPropagation方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">p.addEventListener(&apos;click&apos;, function(event) &#123;</div><div class="line">event.stopPropagation();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>使用上面的代码以后，click事件在冒泡阶段到达p节点以后，就不再向上（父节点的方向）传播了。</p>
+</li>
+<li><p>阻止默认事件: preventDefault方法取消浏览器对当前事件的默认行为，比如点击链接后，浏览器跳转到指定页面，或者按一下空格键，页面向下滚动一段距离</p>
+</li>
+</ul>
+<h1 id="有如下代码，要求当点击每一个元素li时控制台展示该元素的文本内容。不考虑兼容"><a href="#有如下代码，要求当点击每一个元素li时控制台展示该元素的文本内容。不考虑兼容" class="headerlink" title="有如下代码，要求当点击每一个元素li时控制台展示该元素的文本内容。不考虑兼容"></a>有如下代码，要求当点击每一个元素li时控制台展示该元素的文本内容。不考虑兼容</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;ul class=&quot;ct&quot;&gt;</div><div class="line">    &lt;li&gt;11111&lt;/li&gt;</div><div class="line">    &lt;li&gt;222222222&lt;/li&gt;</div><div class="line">    &lt;li&gt;333333333333333&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div><div class="line">&lt;script&gt;</div><div class="line">    var lis = document.getElementsByClassName(&apos;ct&apos;)[0];</div><div class="line">    lis.addEventListener(&apos;click&apos;,function(e)&#123;</div><div class="line">        console.log(e.target.innerText);</div><div class="line">    &#125;)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h1 id="补全代码，要求："><a href="#补全代码，要求：" class="headerlink" title="补全代码，要求："></a>补全代码，要求：</h1><p>当点击按钮开头添加时在</p>
 <ul>
-<li>代码</li>
+<li>这里是 元素前添加一个新元素，内容为用户输入的非空字符串；当点击结尾添加时在最后一个 li 元素后添加用户输入的非空字符串. 当点击每一个元素li时控制台展示该元素的文本内容。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;ct&quot;&gt;</div><div class="line">   &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line"> .ct&#123;</div><div class="line">   width: 300px;</div><div class="line">   height: 300px;</div><div class="line">   background-color: pink;</div><div class="line">   position:relative;</div><div class="line">   &#125;</div><div class="line"> .ct .box&#123;</div><div class="line">   width: 100px;</div><div class="line">   height: 100px;</div><div class="line">   display: inline-block;</div><div class="line">   position:absolute;</div><div class="line">   left:50%;</div><div class="line">   top:50%;</div><div class="line">   margin-left:-50px;</div><div class="line">   margin-top:-50px;</div><div class="line">   background-color: #ccc;</div><div class="line">   &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<p>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">&lt;ul class=&quot;ct&quot;&gt;</div><div class="line">    &lt;li&gt;1111&lt;/li&gt;</div><div class="line">    &lt;li&gt;222&lt;/li&gt;</div><div class="line">    &lt;li&gt;333&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div><div class="line">&lt;input class=&quot;ipt-add-content&quot; placeholder=&quot;添加内容&quot;/&gt;</div><div class="line">&lt;button id=&quot;btn-add-start&quot;&gt;开头添加&lt;/button&gt;</div><div class="line">&lt;button id=&quot;btn-add-end&quot;&gt;结尾添加&lt;/button&gt;</div><div class="line">&lt;script&gt;</div><div class="line">    var addStart = document.getElementById(&apos;btn-add-start&apos;)    ;</div><div class="line">    var addEnd = document.getElementById(&apos;btn-add-end&apos;);</div><div class="line">    var ipt = document.getElementsByClassName(&apos;ipt-add-content&apos;)[0];</div><div class="line">    var ct = document.getElementsByClassName(&apos;ct&apos;)[0];</div><div class="line"></div><div class="line">    addStart.addEventListener(&apos;click&apos;,function()&#123;</div><div class="line">        var li = document.createElement(&apos;li&apos;);</div><div class="line">        li.innerText = ipt.value;</div><div class="line">        ct.insertBefore(li,ct.firstChild);</div><div class="line">    &#125;)</div><div class="line"></div><div class="line">    addEnd.addEventListener(&apos;click&apos;,function()&#123;</div><div class="line">        var li = document.createElement(&apos;li&apos;);</div><div class="line">        li.innerText = ipt.value;</div><div class="line">        ct.appendChild(li);</div><div class="line">    &#125;)</div><div class="line"></div><div class="line">    ct.addEventListener(&apos;click&apos;,function(e)&#123;</div><div class="line">        if (e.target.tagName.toLowerCase() === &apos;li&apos;) &#123;</div><div class="line">            console.log(e.target.innerText);</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
 <ul>
-<li>有固定宽度和高度的块元素，设置top:0; bottom:0; left:0; right:0; margin:auto; <img src="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/e94Qlv55dWzXaq3If6c*QLk9vw9lF.9pwib56F8TvXI!/r/dFUBAAAAAAAA" alt="top:0; bottom:0; left:0; right:0; margin:auto;"></li>
-<li>代码</li>
+<li><a href="https://yoowinsu.github.io/demos/just-demos/%E6%B7%BB%E5%8A%A0%E5%85%83%E7%B4%A0.html" target="_blank" rel="external">预览链接</a></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;ct&quot;&gt;</div><div class="line">   &lt;div class=&quot;box&quot;&gt; &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">  .ct&#123;</div><div class="line">    width: 300px;</div><div class="line">    height: 300px;</div><div class="line">    background-color: pink;</div><div class="line">    position:relative;</div><div class="line">  &#125;</div><div class="line">  .ct .box&#123;</div><div class="line">    position:absolute;</div><div class="line">    top: 0;</div><div class="line">    bottom: 0;</div><div class="line">    left: 0;</div><div class="line">    right: 0;</div><div class="line">    width: 100px;</div><div class="line">    height: 100px;</div><div class="line">    margin:auto;</div><div class="line">    background-color: #ccc;</div><div class="line">    &#125;</div><div class="line">  &lt;/style&gt;</div></pre></td></tr></table></figure>
+<h1 id="补全代码，要求：当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。"><a href="#补全代码，要求：当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。" class="headerlink" title="补全代码，要求：当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。"></a>补全代码，要求：当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。</h1><p>代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;ul class=&quot;ct&quot;&gt;</div><div class="line">    &lt;li data-img=&quot;http://vans.com.cn/wp-content/uploads/2017/04/2016-10-VansWorkshop-021-300x225.jpg&quot;&gt;鼠标放置查看图片1&lt;/li&gt;</div><div class="line">    &lt;li data-img=&quot;http://vans.com.cn/wp-content/uploads/2017/04/L1210019-19-1-300x225.jpg&quot;&gt;鼠标放置查看图片2&lt;/li&gt;</div><div class="line">    &lt;li data-img=&quot;http://vans.com.cn/wp-content/uploads/2017/03/SP17_Classics_DallasClayton_VN0A38EMMOU_Authentic_Rainbow-TrueWhite_Elevated-1-300x225.jpg&quot;&gt;鼠标放置查看图片3&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div><div class="line">&lt;div class=&quot;img-preview&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;script&gt;</div><div class="line">var ct = document.querySelector(&apos;.ct&apos;);</div><div class="line">var imgPreview = document.querySelector(&apos;.img-preview&apos;);</div><div class="line"></div><div class="line">ct.addEventListener(&apos;mouseover&apos;,function(e)&#123;</div><div class="line">    if (e.target.tagName.toLowerCase() === &apos;li&apos;) &#123;</div><div class="line">        var imgSrc = e.target.getAttribute(&apos;data-img&apos;);</div><div class="line">        imgPreview.innerHTML = &apos;&lt;img src = &quot;&apos;+imgSrc+&apos;&quot;&gt;&apos;;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
 <ul>
-<li>没有固定宽度和高度,position:absolute，父元素设为相对定位，left和top偏移50%，负margin自身宽度和高度的50% <img src="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/VSaFqNNxc8yjfPzlZvko*jm8y9kJZI4h4H*qta11ebI!/r/dGoBAAAAAAAA" alt="没有固定宽度和高度"></li>
-<li>代码</li>
+<li><a href="https://yoowinsu.github.io/demos/just-demos/%E9%BC%A0%E6%A0%87%E7%BB%8F%E8%BF%87%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87.html" target="_blank" rel="external">预览链接</a></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;ct&quot;&gt;</div><div class="line">   &lt;div class=&quot;box&quot;&gt;</div><div class="line">    未必会来，未必会走。早应该懂得，这世界没什么不朽。时间是条狗，拼命啃噬它的肉骨头。再多挑逗，也不会回头。未必会来，未必会走。命运是量身定做，也难免出错。应该想通，谁最后不是两手空空。</div><div class="line">   &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line"> .ct&#123;</div><div class="line">   width: 300px;</div><div class="line">   height: 300px;</div><div class="line">   background-color: pink;</div><div class="line">   position:relative;</div><div class="line"> &#125;</div><div class="line"> .ct .box&#123;</div><div class="line">   width: 50%;</div><div class="line">   display: inline-block;</div><div class="line">   position:absolute;</div><div class="line">   left:50%;</div><div class="line">   top:50%;</div><div class="line">   transform:translate(-50%,-50%);</div><div class="line">   background-color: #ccc;</div><div class="line">   &#125;</div><div class="line"> &lt;/style&gt;</div></pre></td></tr></table></figure>
-<h1 id="display：table-cell垂直居中"><a href="#display：table-cell垂直居中" class="headerlink" title="display：table-cell垂直居中"></a>display：table-cell垂直居中</h1><p>把元素的显示方式设置为表格table-cell，我们可以使用表格的 vertical-align属性middle来设置垂直居中</p>
-<p><img src="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/BXm7px7Z*fZ2ncWF5oXqgdLUD4Oi6QmTMB9mIjz4LUU!/r/dGoBAAAAAAAA" alt="table-cell"></p>
-<ul>
-<li>代码</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;ct&quot;&gt;</div><div class="line">  &lt;img src=&quot;http://p4.music.126.net/Tfiad_1N1ko6iI-q1D_ZiA==/737772302281979.jpg?param=130y130&quot; alt=&quot;&quot;&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.ct&#123;</div><div class="line">  width: 300px;</div><div class="line">  height: 300px;</div><div class="line">  background-color: pink;</div><div class="line">  vertical-align: middle;</div><div class="line">  display: table-cell;</div><div class="line">  text-align: center;</div><div class="line">  &#125;</div><div class="line">img&#123;</div><div class="line">  width: 100px;</div><div class="line">  &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h1 id="vertical-align-midlle垂直居中"><a href="#vertical-align-midlle垂直居中" class="headerlink" title="vertical-align:midlle垂直居中"></a>vertical-align:midlle垂直居中</h1><p>vertical-align实现居中的元素必须是行内元素或者行内块元素，此方法是给元素添加一个行内块元素的伪类，高度设为父元素的宽度，和元素一起设为vertical-align为middle <img src="http://r.photo.store.qq.com/psb?/V10XVXwu3e9w9Z/kDXWAy1RjRDmFJO0.ZecTHi37E3vrad301shZ1x1Qso!/r/dGoBAAAAAAAA" alt="vertical-align"></p>
-<ul>
-<li>代码</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;ct&quot;&gt;</div><div class="line">   &lt;img src=&quot;http://p4.music.126.net/Tfiad_1N1ko6iI-q1D_ZiA==/737772302281979.jpg?param=130y130&quot; alt=&quot;&quot;&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">  .ct&#123;</div><div class="line">    width: 300px;</div><div class="line">    height: 300px;</div><div class="line">    background-color: pink;</div><div class="line">    text-align: center;</div><div class="line">    &#125;</div><div class="line">  .ct:before&#123;</div><div class="line">    content: &apos;&apos;;</div><div class="line">    display: inline-block;</div><div class="line">    height: 100%;</div><div class="line">    vertical-align: middle;</div><div class="line">    &#125;</div><div class="line">  img&#123;</div><div class="line">    width: 100px;</div><div class="line">    vertical-align: middle;</div><div class="line">    &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -447,7 +449,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/居中/" rel="tag"># 居中</a>
+            <a href="/tags/事件/" rel="tag"># 事件</a>
+          
+            <a href="/tags/DOM/" rel="tag"># DOM</a>
           
         </div>
       
@@ -460,8 +464,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/27/编码规范/" rel="next" title="编码规范">
-                <i class="fa fa-chevron-left"></i> 编码规范
+              <a href="/2017/04/29/jquery中html-与text-的区别/" rel="next" title="jquery中html()与text()的区别">
+                <i class="fa fa-chevron-left"></i> jquery中html()与text()的区别
               </a>
             
           </div>
@@ -469,10 +473,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/03/浮动、定位、BFC和边距合并/" rel="prev" title="浮动、定位、BFC和边距合并">
-                浮动、定位、BFC和边距合并 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -637,7 +637,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#line-height的值和height一致"><span class="nav-number">1.</span> <span class="nav-text">line-height的值和height一致</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绝对定位垂直居中"><span class="nav-number">2.</span> <span class="nav-text">绝对定位垂直居中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#display：table-cell垂直居中"><span class="nav-number">3.</span> <span class="nav-text">display：table-cell垂直居中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vertical-align-midlle垂直居中"><span class="nav-number">4.</span> <span class="nav-text">vertical-align:midlle垂直居中</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#DOM0-事件和DOM2级事件监听使用方式上有什么区别？"><span class="nav-number">1.</span> <span class="nav-text">DOM0 事件和DOM2级事件监听使用方式上有什么区别？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#attachEvent与addEventListener的区别？"><span class="nav-number">2.</span> <span class="nav-text">attachEvent与addEventListener的区别？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解释IE事件冒泡和DOM2事件传播机制？"><span class="nav-number">3.</span> <span class="nav-text">解释IE事件冒泡和DOM2事件传播机制？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何阻止事件冒泡？-如何阻止默认事件？"><span class="nav-number">4.</span> <span class="nav-text">如何阻止事件冒泡？ 如何阻止默认事件？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有如下代码，要求当点击每一个元素li时控制台展示该元素的文本内容。不考虑兼容"><span class="nav-number">5.</span> <span class="nav-text">有如下代码，要求当点击每一个元素li时控制台展示该元素的文本内容。不考虑兼容</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补全代码，要求："><span class="nav-number">6.</span> <span class="nav-text">补全代码，要求：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补全代码，要求：当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。"><span class="nav-number">7.</span> <span class="nav-text">补全代码，要求：当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。</span></a></li></ol></div>
             
 
           </div>
@@ -771,9 +771,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/04/02/垂直居中的几种方法/';
-          this.page.identifier = '2017/04/02/垂直居中的几种方法/';
-          this.page.title = '垂直居中的几种方法';
+          this.page.url = 'http://yoursite.com/2017/04/30/DOM事件/';
+          this.page.identifier = '2017/04/30/DOM事件/';
+          this.page.title = 'DOM事件';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
