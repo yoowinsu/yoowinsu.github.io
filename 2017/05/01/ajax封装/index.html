@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172function ajax(opts)&amp;#123;    var settings = &amp;#123;        url: &amp;">
+<meta name="description" content="详细步骤见注释。">
 <meta name="keywords" content="ajax,JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ajax封装">
 <meta property="og:url" content="http://yoursite.com/2017/05/01/ajax封装/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172function ajax(opts)&amp;#123;    var settings = &amp;#123;        url: &amp;">
-<meta property="og:updated_time" content="2017-06-01T11:39:29.178Z">
+<meta property="og:description" content="详细步骤见注释。">
+<meta property="og:updated_time" content="2017-06-06T09:23:08.975Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ajax封装">
-<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172function ajax(opts)&amp;#123;    var settings = &amp;#123;        url: &amp;">
+<meta name="twitter:description" content="详细步骤见注释。">
 
 
 
@@ -364,7 +364,7 @@
       
 
       
-        <a id="more"></a>
+        <p>详细步骤见注释。 <a id="more"></a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div></pre></td><td class="code"><pre><div class="line">function ajax(opts)&#123;</div><div class="line">    var settings = &#123;</div><div class="line">        url: &quot;&quot;,</div><div class="line">        method: &quot;get&quot;,</div><div class="line">        data: &#123;&#125;,</div><div class="line">        dataType: &quot;json&quot;,</div><div class="line">        success: function()&#123;&#125;,</div><div class="line">        error: function()&#123;&#125;</div><div class="line">    &#125;;</div><div class="line"></div><div class="line"></div><div class="line">    //用户传动数据覆盖默认数据</div><div class="line">    for(var attr in opts)&#123;</div><div class="line">        settings[attr] = opts[attr];</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    //上面已经把用户传的数据覆盖过了，所以这里拼接的数据是settings的数据</div><div class="line">    var arr = [];</div><div class="line">    for(var attr in settings.data)&#123;</div><div class="line">        arr.push(attr + &quot;=&quot; + settings.data[attr]);</div><div class="line">    &#125;    </div><div class="line">    var dataStr = arr.join(&quot;&amp;&quot;);</div><div class="line"></div><div class="line"></div><div class="line">    //声明xhr对象</div><div class="line">    var xhr = window.XMLHttpRequest? new XMLHttpRequest: ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);</div><div class="line"></div><div class="line"></div><div class="line">    //设置完成事件的兼容性</div><div class="line">    if(typeof xhr.onload === &quot;undefined&quot;)&#123;    //判断是否是ie6</div><div class="line">        xhr.onreadystatechange = ready;</div><div class="line">    &#125;else&#123;</div><div class="line">        xhr.onload = ready;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    //回调函数</div><div class="line">    function ready() &#123;</div><div class="line">        if(xhr.readyState === 4) &#123;</div><div class="line">            //只有2xx和304的状态码，表示服务器返回是正常状态</div><div class="line">            //因为get请求中都添加了时间戳，所以这里不考虑缓存出现（即304）的情况</div><div class="line">            if(xhr.status &gt;= 200 &amp;&amp; xhr.status &lt; 300) &#123;</div><div class="line">                switch (settings.dataType.toLocaleLowerCase()) &#123;</div><div class="line">                    case &quot;text&quot;:</div><div class="line">                        settings.success(xhr.responseText);</div><div class="line">                        break;</div><div class="line">                    case &quot;json&quot;:</div><div class="line">                        settings.success(JSON.parse(xhr.responseText));</div><div class="line">                        break;</div><div class="line">                    case &quot;xml&quot;:</div><div class="line">                        settings.success(xhr.responseXML);</div><div class="line">                &#125;</div><div class="line">            &#125;else&#123;</div><div class="line">                settings.error();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    //判断请求方式</div><div class="line">    if(settings.method.toLocaleLowerCase() === &quot;get&quot;) &#123;</div><div class="line">        //有缓存所以要每次请求地址不一样才能更新，所以用时间戳</div><div class="line">        //第三个参数完全可以略去，因为如果用同步（false）会对浏览器有“堵塞效应”</div><div class="line">        xhr.open(settings.method, settings.url + &quot;?&quot; + encodeURI(dataStr) +&apos;&amp;&apos;+ new Date().getTime(), true);</div><div class="line">        xhr.send();</div><div class="line">    &#125;else&#123;</div><div class="line">        xhr.open(settings.method, settings.url, true);</div><div class="line">        xhr.setRequestHeadr(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;);</div><div class="line">        xhr.send(encodeURI(dataStr));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
@@ -419,6 +419,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/03/【转载】七个对我最重要的职业建议/" rel="prev" title="【转载】七个对我最重要的职业建议">
+                【转载】七个对我最重要的职业建议 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -481,7 +485,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -492,7 +496,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -503,7 +507,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
