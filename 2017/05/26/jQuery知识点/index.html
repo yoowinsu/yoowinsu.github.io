@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="## jQuery 中， $(document).ready()是什么意思？ $(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。  $.extend 的作用和用法?$.extend方法用于将多个对">
+<meta name="description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
 <meta name="keywords" content="jquery">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuery知识点">
 <meta property="og:url" content="http://yoursite.com/2017/05/26/jQuery知识点/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:description" content="## jQuery 中， $(document).ready()是什么意思？ $(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。  $.extend 的作用和用法?$.extend方法用于将多个对">
-<meta property="og:updated_time" content="2017-06-06T11:13:33.796Z">
+<meta property="og:description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
+<meta property="og:updated_time" content="2017-06-06T12:06:05.618Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery知识点">
-<meta name="twitter:description" content="## jQuery 中， $(document).ready()是什么意思？ $(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。  $.extend 的作用和用法?$.extend方法用于将多个对">
+<meta name="twitter:description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
 
 
 
@@ -364,7 +364,97 @@
       
 
       
-        <a id="more"></a> ## jQuery 中， $(document).ready()是什么意思？ $(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。 <!-- more -->
+        <h1 id="jQuery-中，-document-ready-是什么意思？"><a href="#jQuery-中，-document-ready-是什么意思？" class="headerlink" title="jQuery 中， $(document).ready()是什么意思？"></a>jQuery 中， $(document).ready()是什么意思？</h1><p>$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。 <a id="more"></a></p>
+<h1 id="库和框架的区别"><a href="#库和框架的区别" class="headerlink" title="库和框架的区别"></a>库和框架的区别</h1><ul>
+<li><p>类库 解决的是代码或者是模块级别的复用或者对复杂度的封装问题，例如将一个解决复杂问题的功能模块封装成一个函数，提供一个简单的接口。库它是一种工具，它提供了很多封装好的方法，用与不用取决于我们自身，即使用了也不会影响我们呢的代码结构。</p>
+</li>
+<li><p>框架 更多的是对模式级别的复用和对程序组织的规范。这里的模式是指比如MVC，为了实现M和V的解耦，把复杂的耦合关系由经常变化的业务代码转移到不经常变化的框架内部消化。是面向一个领域来提供一套解决方案，提高开发效率，如果我们选择了使用某框架，就应该遵循该框架所规定的规则。</p>
+</li>
+</ul>
+<h1 id="jquery-能做什么？"><a href="#jquery-能做什么？" class="headerlink" title="jquery 能做什么？"></a>jquery 能做什么？</h1><p>jQuery的最大优势有两个。首先，它基本是一个DOM操作工具，可以使操作DOM对象变得异常容易。其次，它统一了不同浏览器的API接口，使得代码在所有现代浏览器均能运行，开发者不用担心浏览器之间的差异。</p>
+<h1 id="jquery-对象和-DOM-原生对象有什么区别？如何转化？"><a href="#jquery-对象和-DOM-原生对象有什么区别？如何转化？" class="headerlink" title="jquery 对象和 DOM 原生对象有什么区别？如何转化？"></a>jquery 对象和 DOM 原生对象有什么区别？如何转化？</h1><p>jQuery对象可以调用jQuery的方法，api，jQuery对象是一个类数组；DOM原生对象是文档对象模型，只能用原生JS的方法，DOM对象可以说一个，也可以是多个（类数组）</p>
+<p>jQuery对象转DOM原生对象：加下标 <code>$(&#39;selector&#39;)[0]</code> DOM原生对象转jQuery对象：$包裹原生对象</p>
+<h1 id="jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"><a href="#jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？" class="headerlink" title="jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"></a>jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？</h1><ul>
+<li>jquery绑定事件：</li>
+</ul>
+<p>jQuery提供一系列方法，允许直接为常见事件绑定回调函数。比如，click方法可以为一个元素绑定click事件的回调函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(&apos;li&apos;).click(function (e)&#123;</div><div class="line">  console.log($(this).text());</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>on方法</li>
+</ul>
+<p>on方法是jQuery事件绑定的统一接口。事件绑定的那些简便方法，其实都是on方法的简写形式。 on方法接受两个参数，第一个是事件名称，第二个是回调函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(&apos;li&apos;).on(&apos;click&apos;, function (e)&#123;</div><div class="line">  console.log($(this).text());</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>bind()</li>
+</ul>
+<p>为一个元素绑定一个事件处理程序。</p>
+<ul>
+<li>delegate()</li>
+</ul>
+<p>为所有匹配选择器（selector参数）的元素绑定一个或多个事件处理函数，基于一个指定的根元素的子集，匹配的元素包括那些目前已经匹配到的元素，也包括那些今后可能匹配到的元素。</p>
+<ul>
+<li>unbind()</li>
+</ul>
+<p>从元素上删除一个以前附加事件处理程序。</p>
+<ul>
+<li>live()</li>
+</ul>
+<p>附加一个事件处理器到匹配目前选择器的所有元素，现在和未来。</p>
+<ul>
+<li>off()</li>
+</ul>
+<p>移除一个事件处理函数。</p>
+<p>绑定事件推荐： 推荐使用on，它的功能最齐全，也是官方推荐的事件绑定语法。</p>
+<ul>
+<li><p>使用on进行事件代理：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(&apos;ul&apos;).on(&apos;click&apos;,&apos;li&apos;,function()&#123;</div><div class="line">  console(this);</div><div class="line">&#125;);</div><div class="line">//事件源为li时出发绑定事件</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="jquery-如何展示-隐藏元素？"><a href="#jquery-如何展示-隐藏元素？" class="headerlink" title="jquery 如何展示/隐藏元素？"></a>jquery 如何展示/隐藏元素？</h1><ul>
+<li>show()</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.show( [duration ] [, easing ] [, complete ] )</div><div class="line">//1.duration (默认: 400) .一个字符串或者数字决定动画将运行多久。字符串 &apos;fast&apos; 和 &apos;slow&apos; 分别代表200和600毫秒的延时。</div><div class="line"></div><div class="line">//2.easing (默认: swing). 一个字符串，表示过渡使用哪种缓动函数。easing默认的是调用  swing, 如果想要在一个恒定的速度进行动画，那么调用 linear</div><div class="line"></div><div class="line">//3.complete. 在动画完成时执行的函数。</div></pre></td></tr></table></figure>
+<ul>
+<li>hide()</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.hide( [duration ] [, easing ] [, complete ] )</div><div class="line">//1.duration (默认: 400) .一个字符串或者数字决定动画将运行多久。字符串 &apos;fast&apos; 和 &apos;slow&apos; 分别代表200和600毫秒的延时。</div><div class="line"></div><div class="line">//2.easing (默认: swing). 一个字符串，表示过渡使用哪种缓动函数。easing默认的是调用  swing, 如果想要在一个恒定的速度进行动画，那么调用 linear</div><div class="line"></div><div class="line">//3.complete. 在动画完成时执行的函数。</div></pre></td></tr></table></figure>
+<ul>
+<li>toggle() 切换显示或隐藏当前元素。</li>
+</ul>
+<h1 id="jquery-动画如何使用？"><a href="#jquery-动画如何使用？" class="headerlink" title="jquery 动画如何使用？"></a>jquery 动画如何使用？</h1><ul>
+<li>（1）jQuery提供以下一些动画效果方法。</li>
+</ul>
+<blockquote>
+<p>show：显示当前元素。</p>
+<p>hide：隐藏当前元素。</p>
+<p>toggle：显示或隐藏当前元素。</p>
+<p>fadeIn：将当前元素的不透明度（opacity）逐步提升到100%。</p>
+<p>fadeOut：将当前元素的不透明度逐步降为0%。</p>
+<p>fadeToggle：以逐渐透明或逐渐不透明的方式，折叠显示当前元素。</p>
+<p>slideDown：以从上向下滑入的方式显示当前元素。</p>
+<p>slideUp：以从下向上滑出的方式隐藏当前元素。</p>
+<p>slideToggle：以垂直滑入或滑出的方式，折叠显示当前元素。</p>
+</blockquote>
+<ul>
+<li>（2）animate方法</li>
+</ul>
+<p>上面这些动画效果方法，实际上都是animate方法的简便写法。在幕后，jQuery都是统一使用animate方法生成各种动画效果。 animate方法接受两个参数，第一个参数是一个对象，表示动画结束时相关CSS属性的值，第二个参数是动画持续的毫秒数。需要注意的是，第一个参数对象的成员名称，必须与CSS属性名称一致，如果CSS属性名称带有连字号，则需要用”骆驼拼写法”改写。animate方法还可以接受第三个参数，表示动画结束时的回调函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(&apos;div&apos;).animate(&#123;</div><div class="line">    left: &apos;+=50&apos;, // 增加50</div><div class="line">    opacity: 0.25,</div><div class="line">    fontSize: &apos;12px&apos;</div><div class="line">  &#125;,</div><div class="line">  300, // 持续时间</div><div class="line">  function() &#123; // 回调函数</div><div class="line">     console.log(&apos;done!&apos;);</div><div class="line">  &#125;</div><div class="line">);</div></pre></td></tr></table></figure>
+<ul>
+<li>（3）stop方法，delay方法</li>
+</ul>
+<p>stop方法表示立即停止执行当前的动画。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(&quot;#stop&quot;).click(function() &#123;</div><div class="line">  $(&quot;.block&quot;).stop();</div><div class="line">&#125;);</div><div class="line">//点击按钮后，block元素的动画效果停止</div></pre></td></tr></table></figure>
+<p>delay方法接受一个时间参数，表示暂停多少毫秒后继续执行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(&quot;#foo&quot;).slideUp(300).delay(800).fadeIn(400)</div><div class="line">//slideUp动画之后，暂停800毫秒，然后继续执行fadeIn动画</div></pre></td></tr></table></figure>
+<h1 id="如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"><a href="#如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？" class="headerlink" title="如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"></a>如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？</h1><ul>
+<li>.val([value])</li>
+</ul>
+<p>这是一个读写双用的方法，用来处理input的value，当方法没有参数的时候返回input的value值，当传递了一个参数的时候，方法修改input的value值为参数值</p>
+<ul>
+<li>.attr([value])</li>
+</ul>
+<p>这是一个读写双用的方法，用来处理元素属性，当方法没有参数的时候返回元素属性值，当传递了一个参数的时候，方法修改元素属性值</p>
 <h1 id="extend-的作用和用法"><a href="#extend-的作用和用法" class="headerlink" title="$.extend 的作用和用法?"></a>$.extend 的作用和用法?</h1><p>$.extend方法用于将多个对象合并进第一个对象。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var o1 = &#123;p1:&apos;a&apos;,p2:&apos;b&apos;&#125;;</div><div class="line">var o2 = &#123;p1:&apos;c&apos;&#125;;</div><div class="line"></div><div class="line">$.extend(o1,o2);</div><div class="line">o1.p1 // &quot;c&quot;</div></pre></td></tr></table></figure>
 <p>$.extend的另一种用法是生成一个新对象，用来继承原有对象。这时，它的第一个参数应该是一个空对象。</p>
@@ -404,11 +494,9 @@
 <li><p>在$ct 里设置 html</p>
 <div class="btn"><br></div>
 
-
-
 </li>
 </ul>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.html(&apos;&lt;div class=&quot;btn&quot;&gt;&lt;/div&gt;&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.html(&apos;&lt;div class=&quot;btn&quot;&gt;&lt;/div&gt;&apos;);</div></pre></td></tr></table></figure>
 <ul>
 <li>获取、设置$node 的宽度、高度(分别不包括内边距、包括内边距、包括边框、包括外边距)</li>
 </ul>
@@ -671,7 +759,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#extend-的作用和用法"><span class="nav-number">1.</span> <span class="nav-text">$.extend 的作用和用法?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-的链式调用是什么？"><span class="nav-number">2.</span> <span class="nav-text">jQuery 的链式调用是什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-中-data-函数的作用"><span class="nav-number">3.</span> <span class="nav-text">jQuery 中 data 函数的作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写出以下功能对应的-jQuery-方法："><span class="nav-number">4.</span> <span class="nav-text">写出以下功能对应的 jQuery 方法：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用jQuery实现以下操作"><span class="nav-number">5.</span> <span class="nav-text">用jQuery实现以下操作</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-中，-document-ready-是什么意思？"><span class="nav-number">1.</span> <span class="nav-text">jQuery 中， $(document).ready()是什么意思？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#库和框架的区别"><span class="nav-number">2.</span> <span class="nav-text">库和框架的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-能做什么？"><span class="nav-number">3.</span> <span class="nav-text">jquery 能做什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-对象和-DOM-原生对象有什么区别？如何转化？"><span class="nav-number">4.</span> <span class="nav-text">jquery 对象和 DOM 原生对象有什么区别？如何转化？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"><span class="nav-number">5.</span> <span class="nav-text">jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-如何展示-隐藏元素？"><span class="nav-number">6.</span> <span class="nav-text">jquery 如何展示/隐藏元素？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-动画如何使用？"><span class="nav-number">7.</span> <span class="nav-text">jquery 动画如何使用？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"><span class="nav-number">8.</span> <span class="nav-text">如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#extend-的作用和用法"><span class="nav-number">9.</span> <span class="nav-text">$.extend 的作用和用法?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-的链式调用是什么？"><span class="nav-number">10.</span> <span class="nav-text">jQuery 的链式调用是什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-中-data-函数的作用"><span class="nav-number">11.</span> <span class="nav-text">jQuery 中 data 函数的作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写出以下功能对应的-jQuery-方法："><span class="nav-number">12.</span> <span class="nav-text">写出以下功能对应的 jQuery 方法：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用jQuery实现以下操作"><span class="nav-number">13.</span> <span class="nav-text">用jQuery实现以下操作</span></a></li></ol></div>
             
 
           </div>
