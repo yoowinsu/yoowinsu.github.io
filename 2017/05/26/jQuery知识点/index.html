@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/26/jQuery知识点/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
-<meta property="og:updated_time" content="2017-06-06T12:06:05.618Z">
+<meta property="og:updated_time" content="2017-06-06T12:41:32.105Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery知识点">
 <meta name="twitter:description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
@@ -373,7 +373,8 @@
 </ul>
 <h1 id="jquery-能做什么？"><a href="#jquery-能做什么？" class="headerlink" title="jquery 能做什么？"></a>jquery 能做什么？</h1><p>jQuery的最大优势有两个。首先，它基本是一个DOM操作工具，可以使操作DOM对象变得异常容易。其次，它统一了不同浏览器的API接口，使得代码在所有现代浏览器均能运行，开发者不用担心浏览器之间的差异。</p>
 <h1 id="jquery-对象和-DOM-原生对象有什么区别？如何转化？"><a href="#jquery-对象和-DOM-原生对象有什么区别？如何转化？" class="headerlink" title="jquery 对象和 DOM 原生对象有什么区别？如何转化？"></a>jquery 对象和 DOM 原生对象有什么区别？如何转化？</h1><p>jQuery对象可以调用jQuery的方法，api，jQuery对象是一个类数组；DOM原生对象是文档对象模型，只能用原生JS的方法，DOM对象可以说一个，也可以是多个（类数组）</p>
-<p>jQuery对象转DOM原生对象：加下标 <code>$(&#39;selector&#39;)[0]</code> DOM原生对象转jQuery对象：$包裹原生对象</p>
+<p>jQuery对象转DOM原生对象：加下标 <code>$(&#39;selector&#39;)[0]</code> 或者<code>$(&#39;selector&#39;).get(0)</code></p>
+<p>DOM原生对象转jQuery对象：$包裹原生对象</p>
 <h1 id="jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"><a href="#jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？" class="headerlink" title="jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"></a>jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？</h1><ul>
 <li>jquery绑定事件：</li>
 </ul>
@@ -503,7 +504,7 @@
 <p><a href="https://yoowinsu.github.io/2017/06/06/jQuery%E8%8E%B7%E5%8F%96%E5%92%8C%E8%AE%BE%E7%BD%AE%E5%85%83%E7%B4%A0%E5%AE%BD%E9%AB%98/" target="_blank" rel="external">jQuery获取和设置元素宽高</a></p>
 <ul>
 <li><p>获取窗口滚动条垂直滚动距离</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node..scrollTop();</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.scrollTop();</div></pre></td></tr></table></figure>
 </li>
 <li><p>获取$node 到根节点水平、垂直偏移距离</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.offset();</div></pre></td></tr></table></figure>
@@ -673,7 +674,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">21</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -695,7 +696,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
