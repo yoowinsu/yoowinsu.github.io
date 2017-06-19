@@ -67,7 +67,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="css,选择器," />
+  <meta name="keywords" content="CSS,选择器," />
 
 
 
@@ -84,15 +84,15 @@
 
 
 <meta name="description" content="选择器分类标签选择器1234* 通用元素选择器，匹配页面任何元素（这也就决定了我们很少使用）#id id选择器，匹配特定id的元素.class 类选择器，匹配class包含(不是等于)特定类的元素element 标签选择器">
-<meta name="keywords" content="css,选择器">
+<meta name="keywords" content="CSS,选择器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css选择器">
+<meta property="og:title" content="CSS选择器">
 <meta property="og:url" content="http://yoursite.com/2017/04/16/CSS选择器/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="选择器分类标签选择器1234* 通用元素选择器，匹配页面任何元素（这也就决定了我们很少使用）#id id选择器，匹配特定id的元素.class 类选择器，匹配class包含(不是等于)特定类的元素element 标签选择器">
-<meta property="og:updated_time" content="2017-05-27T08:45:20.856Z">
+<meta property="og:updated_time" content="2017-06-19T11:23:47.729Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css选择器">
+<meta name="twitter:title" content="CSS选择器">
 <meta name="twitter:description" content="选择器分类标签选择器1234* 通用元素选择器，匹配页面任何元素（这也就决定了我们很少使用）#id id选择器，匹配特定id的元素.class 类选择器，匹配class包含(不是等于)特定类的元素element 标签选择器">
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <title>css选择器 | Yoowin's Blog</title>
+  <title>CSS选择器 | Yoowin's Blog</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -284,7 +284,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">css选择器</h2>
+          <h2 class="post-title" itemprop="name headline">CSS选择器</h2>
         
 
         <div class="post-meta">
@@ -319,8 +319,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/html和css/" itemprop="url" rel="index">
-                    <span itemprop="name">html和css</span>
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
                   </a>
                 </span>
 
@@ -365,10 +365,12 @@
 <h2 id="选择器的优先级是怎样的-对于复杂场景如何计算优先级？"><a href="#选择器的优先级是怎样的-对于复杂场景如何计算优先级？" class="headerlink" title="选择器的优先级是怎样的?对于复杂场景如何计算优先级？"></a>选择器的优先级是怎样的?对于复杂场景如何计算优先级？</h2></li>
 <li><p>就近原则，被选中元素的样式优先级大于元素继承样式的优先级；</p>
 </li>
-<li>优先级顺序如下： !important&gt;行内样式&gt;id选择器样式&gt;class选择器样式&gt;标签选择器样式</li>
-<li>复杂场景下，行内样式、id选择器样式、class选择器样式、标签选择器样式对应的值分别是1000、100、10、1，累计选择机的总和，值越大优先级越高</li>
+<li><p>优先级顺序如下： !important&gt;行内样式&gt;id选择器样式&gt;class选择器样式&gt;标签选择器样式</p>
+</li>
+<li><p>复杂场景下，行内样式、id选择器样式、class选择器样式、标签选择器样式对应的值分别是1000、100、10、1，累计选择机的总和，值越大优先级越高</p>
+</li>
 <li><p>优先级相同的情况下，后面的样式会覆盖掉前面的样式</p>
-<h2 id="a-link-a-hover-a-active-a-visited-的顺序是怎样的？-为什么？"><a href="#a-link-a-hover-a-active-a-visited-的顺序是怎样的？-为什么？" class="headerlink" title="a:link, a:hover, a:active, a:visited 的顺序是怎样的？ 为什么？"></a>a:link, a:hover, a:active, a:visited 的顺序是怎样的？ 为什么？</h2><p> 顺序依次是a:link&gt;&gt;a:visited&gt;&gt;a:hover&gt;&gt;a:active. 理由如下： 1.鼠标经过”未访问链接”同时拥有a:link、a:hover两种属性，考虑到后面会覆盖前面样式，又要显示hover的样式，所以a:hover需要在a:link的后面；</p>
+<h2 id="a-link-a-hover-a-active-a-visited-的顺序是怎样的？-为什么？"><a href="#a-link-a-hover-a-active-a-visited-的顺序是怎样的？-为什么？" class="headerlink" title="a:link, a:hover, a:active, a:visited 的顺序是怎样的？ 为什么？"></a>a:link, a:hover, a:active, a:visited 的顺序是怎样的？ 为什么？</h2><p>顺序依次是a:link&gt;&gt;a:visited&gt;&gt;a:hover&gt;&gt;a:active. 理由如下： 1.鼠标经过”未访问链接”同时拥有a:link、a:hover两种属性，考虑到后面会覆盖前面样式，又要显示hover的样式，所以a:hover需要在a:link的后面；</p>
 </li>
 </ul>
 <p>2.鼠标按下”链接”同时拥有a:hover、a:active两种属性，考虑到后面会覆盖前面样式，又要显示active的样式，所以a:active需要在a:hover的后面； 3.鼠标经过”访问过链接”同时拥有a:visited、a:hover两种属性，考虑到后面会覆盖前面样式，又要显示hover的样式，所以a:hover需要在a:visited的后面； 综上，顺序依次是a:link&gt;&gt;a:visited&gt;&gt;a:hover&gt;&gt;a:active</p>
@@ -408,7 +410,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/css/" rel="tag"># css</a>
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
           
             <a href="/tags/选择器/" rel="tag"># 选择器</a>
           
