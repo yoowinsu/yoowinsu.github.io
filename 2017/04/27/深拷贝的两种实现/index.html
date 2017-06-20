@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/04/27/深拷贝的两种实现/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="深拷贝和浅拷贝在JavaScript中，对于object等引用类型值，当从一个变量向另一个变量复制引用类型值时，这个值的副本其实是一个指针，两个变量指向同一个堆对象，改变其中一个变量，另一个也会受到影响。">
-<meta property="og:updated_time" content="2017-06-06T09:40:53.952Z">
+<meta property="og:updated_time" content="2017-06-20T15:27:33.812Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深拷贝的两种实现">
 <meta name="twitter:description" content="深拷贝和浅拷贝在JavaScript中，对于object等引用类型值，当从一个变量向另一个变量复制引用类型值时，这个值的副本其实是一个指针，两个变量指向同一个堆对象，改变其中一个变量，另一个也会受到影响。">
@@ -354,15 +354,15 @@
 
       
         <h1 id="深拷贝和浅拷贝"><a href="#深拷贝和浅拷贝" class="headerlink" title="深拷贝和浅拷贝"></a>深拷贝和浅拷贝</h1><p>在JavaScript中，对于object等引用类型值，当从一个变量向另一个变量复制引用类型值时，这个值的副本其实是一个指针，两个变量指向同一个堆对象，改变其中一个变量，另一个也会受到影响。 <a id="more"></a> 很多情况下，我们都需要给变量赋值，但希望和原来变量不再共存一个地址。所以就要实现深拷贝。</p>
-<h1 id="深拷贝的两种实现"><a href="#深拷贝的两种实现" class="headerlink" title="深拷贝的两种实现"></a>深拷贝的两种实现</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var obj1=&#123;</div><div class="line">    name: &apos;yoowin&apos;,</div><div class="line">    hobby: &#123;</div><div class="line">        nbateam: &apos;lakers&apos;,</div><div class="line">        singer: &#123;</div><div class="line">        man: &apos;zhangxueyou&apos;,</div><div class="line">        woman:  &apos;fanweiqi&apos;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="深拷贝的两种实现"><a href="#深拷贝的两种实现" class="headerlink" title="深拷贝的两种实现"></a>深拷贝的两种实现</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj1=&#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'yoowin'</span>,</div><div class="line">    <span class="attr">hobby</span>: &#123;</div><div class="line">        <span class="attr">nbateam</span>: <span class="string">'lakers'</span>,</div><div class="line">        <span class="attr">singer</span>: &#123;</div><div class="line">        <span class="attr">man</span>: <span class="string">'zhangxueyou'</span>,</div><div class="line">        <span class="attr">woman</span>:  <span class="string">'fanweiqi'</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <ul>
 <li>第一种深拷贝（通过递归实现深拷贝）</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">function deepCopy(obj)&#123;</div><div class="line">    var newObj=&#123;&#125;;</div><div class="line">    if(obj.hasOwnProperty)&#123;</div><div class="line">        for(var key in obj)&#123;</div><div class="line">            if (typeof obj[key] === &apos;number&apos; || typeof obj[key] === &apos;string&apos; || typeof obj[key] === undefined || typeof obj[key] === null || typeof obj[key] === &apos;boolean&apos;) &#123;</div><div class="line">                newObj[key] = obj[key];</div><div class="line">            &#125;else&#123;</div><div class="line">                newObj=deepCopy(obj[key]);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return newObj;</div><div class="line">&#125;</div><div class="line">var obj2=deepCopy(obj1);</div><div class="line">console.log(obj2)</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepCopy</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> newObj=&#123;&#125;;</div><div class="line">    <span class="keyword">if</span>(obj.hasOwnProperty)&#123;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> key <span class="keyword">in</span> obj)&#123;</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">typeof</span> obj[key] === <span class="string">'number'</span> || <span class="keyword">typeof</span> obj[key] === <span class="string">'string'</span> || <span class="keyword">typeof</span> obj[key] === <span class="literal">undefined</span> || <span class="keyword">typeof</span> obj[key] === <span class="literal">null</span> || <span class="keyword">typeof</span> obj[key] === <span class="string">'boolean'</span>) &#123;</div><div class="line">                newObj[key] = obj[key];</div><div class="line">            &#125;<span class="keyword">else</span>&#123;</div><div class="line">                newObj=deepCopy(obj[key]);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> newObj;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> obj2=deepCopy(obj1);</div><div class="line"><span class="built_in">console</span>.log(obj2)</div></pre></td></tr></table></figure>
 <ul>
 <li>第二种深拷贝（利用JSON对象中的parse和stringify）</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function deepCopy(obj)&#123;</div><div class="line">    var newObj=JSON.parse( JSON.stringify(obj) )</div><div class="line">    return newObj;</div><div class="line">&#125;</div><div class="line">var obj2=deepCopy(obj1);</div><div class="line">console.log(obj2)</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepCopy</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> newObj=<span class="built_in">JSON</span>.parse( <span class="built_in">JSON</span>.stringify(obj) )</div><div class="line">    <span class="keyword">return</span> newObj;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> obj2=deepCopy(obj1);</div><div class="line"><span class="built_in">console</span>.log(obj2)</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -407,8 +407,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/24/css常见样式/" rel="next" title="CSS常见样式">
-                <i class="fa fa-chevron-left"></i> CSS常见样式
+              <a href="/2017/04/25/JavaScript知识点和面试题总结/" rel="next" title="JavaScript知识点和面试题总结">
+                <i class="fa fa-chevron-left"></i> JavaScript知识点和面试题总结
               </a>
             
           </div>
@@ -417,7 +417,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/29/jquery中html-与text-的区别/" rel="prev" title="jQuery中html()与text()的区别">
+              <a href="/2017/04/29/jQuery中html()与text()的区别/" rel="prev" title="jQuery中html()与text()的区别">
                 jQuery中html()与text()的区别 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -491,7 +491,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -502,7 +502,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -513,7 +513,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">27</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

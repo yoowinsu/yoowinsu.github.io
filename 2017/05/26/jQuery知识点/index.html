@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/26/jQuery知识点/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
-<meta property="og:updated_time" content="2017-06-19T11:24:48.173Z">
+<meta property="og:updated_time" content="2017-06-20T15:52:03.196Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery知识点">
 <meta name="twitter:description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
@@ -368,12 +368,12 @@
 <li>jquery绑定事件：</li>
 </ul>
 <p>jQuery提供一系列方法，允许直接为常见事件绑定回调函数。比如，click方法可以为一个元素绑定click事件的回调函数。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(&apos;li&apos;).click(function (e)&#123;</div><div class="line">  console.log($(this).text());</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'li'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log($(<span class="keyword">this</span>).text());</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <ul>
 <li>on方法</li>
 </ul>
 <p>on方法是jQuery事件绑定的统一接口。事件绑定的那些简便方法，其实都是on方法的简写形式。 on方法接受两个参数，第一个是事件名称，第二个是回调函数。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(&apos;li&apos;).on(&apos;click&apos;, function (e)&#123;</div><div class="line">  console.log($(this).text());</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'li'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log($(<span class="keyword">this</span>).text());</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <ul>
 <li>bind()</li>
 </ul>
@@ -397,17 +397,17 @@
 <p>绑定事件推荐： 推荐使用on，它的功能最齐全，也是官方推荐的事件绑定语法。</p>
 <ul>
 <li><p>使用on进行事件代理：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(&apos;ul&apos;).on(&apos;click&apos;,&apos;li&apos;,function()&#123;</div><div class="line">  console(this);</div><div class="line">&#125;);</div><div class="line">//事件源为li时出发绑定事件</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'ul'</span>).on(<span class="string">'click'</span>,<span class="string">'li'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>(<span class="keyword">this</span>);</div><div class="line">&#125;);</div><div class="line"><span class="comment">//事件源为li时出发绑定事件</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h1 id="jquery-如何展示-隐藏元素？"><a href="#jquery-如何展示-隐藏元素？" class="headerlink" title="jquery 如何展示/隐藏元素？"></a>jquery 如何展示/隐藏元素？</h1><ul>
 <li>show()</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.show( [duration ] [, easing ] [, complete ] )</div><div class="line">//1.duration (默认: 400) .一个字符串或者数字决定动画将运行多久。字符串 &apos;fast&apos; 和 &apos;slow&apos; 分别代表200和600毫秒的延时。</div><div class="line"></div><div class="line">//2.easing (默认: swing). 一个字符串，表示过渡使用哪种缓动函数。easing默认的是调用  swing, 如果想要在一个恒定的速度进行动画，那么调用 linear</div><div class="line"></div><div class="line">//3.complete. 在动画完成时执行的函数。</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.show( [duration ] [, easing ] [, complete ] )</div><div class="line"><span class="comment">//1.duration (默认: 400) .一个字符串或者数字决定动画将运行多久。字符串 'fast' 和 'slow' 分别代表200和600毫秒的延时。</span></div><div class="line"></div><div class="line"><span class="comment">//2.easing (默认: swing). 一个字符串，表示过渡使用哪种缓动函数。easing默认的是调用  swing, 如果想要在一个恒定的速度进行动画，那么调用 linear</span></div><div class="line"></div><div class="line"><span class="comment">//3.complete. 在动画完成时执行的函数。</span></div></pre></td></tr></table></figure>
 <ul>
 <li>hide()</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.hide( [duration ] [, easing ] [, complete ] )</div><div class="line">//1.duration (默认: 400) .一个字符串或者数字决定动画将运行多久。字符串 &apos;fast&apos; 和 &apos;slow&apos; 分别代表200和600毫秒的延时。</div><div class="line"></div><div class="line">//2.easing (默认: swing). 一个字符串，表示过渡使用哪种缓动函数。easing默认的是调用  swing, 如果想要在一个恒定的速度进行动画，那么调用 linear</div><div class="line"></div><div class="line">//3.complete. 在动画完成时执行的函数。</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.hide( [duration ] [, easing ] [, complete ] )</div><div class="line"><span class="comment">//1.duration (默认: 400) .一个字符串或者数字决定动画将运行多久。字符串 'fast' 和 'slow' 分别代表200和600毫秒的延时。</span></div><div class="line"></div><div class="line"><span class="comment">//2.easing (默认: swing). 一个字符串，表示过渡使用哪种缓动函数。easing默认的是调用  swing, 如果想要在一个恒定的速度进行动画，那么调用 linear</span></div><div class="line"></div><div class="line"><span class="comment">//3.complete. 在动画完成时执行的函数。</span></div></pre></td></tr></table></figure>
 <ul>
 <li>toggle() 切换显示或隐藏当前元素。</li>
 </ul>
@@ -429,14 +429,14 @@
 <li>（2）animate方法</li>
 </ul>
 <p>上面这些动画效果方法，实际上都是animate方法的简便写法。在幕后，jQuery都是统一使用animate方法生成各种动画效果。 animate方法接受两个参数，第一个参数是一个对象，表示动画结束时相关CSS属性的值，第二个参数是动画持续的毫秒数。需要注意的是，第一个参数对象的成员名称，必须与CSS属性名称一致，如果CSS属性名称带有连字号，则需要用”骆驼拼写法”改写。animate方法还可以接受第三个参数，表示动画结束时的回调函数。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(&apos;div&apos;).animate(&#123;</div><div class="line">    left: &apos;+=50&apos;, // 增加50</div><div class="line">    opacity: 0.25,</div><div class="line">    fontSize: &apos;12px&apos;</div><div class="line">  &#125;,</div><div class="line">  300, // 持续时间</div><div class="line">  function() &#123; // 回调函数</div><div class="line">     console.log(&apos;done!&apos;);</div><div class="line">  &#125;</div><div class="line">);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'div'</span>).animate(&#123;</div><div class="line">    <span class="attr">left</span>: <span class="string">'+=50'</span>, <span class="comment">// 增加50</span></div><div class="line">    opacity: <span class="number">0.25</span>,</div><div class="line">    <span class="attr">fontSize</span>: <span class="string">'12px'</span></div><div class="line">  &#125;,</div><div class="line">  <span class="number">300</span>, <span class="comment">// 持续时间</span></div><div class="line">  <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">// 回调函数</span></div><div class="line">     <span class="built_in">console</span>.log(<span class="string">'done!'</span>);</div><div class="line">  &#125;</div><div class="line">);</div></pre></td></tr></table></figure>
 <ul>
 <li>（3）stop方法，delay方法</li>
 </ul>
 <p>stop方法表示立即停止执行当前的动画。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(&quot;#stop&quot;).click(function() &#123;</div><div class="line">  $(&quot;.block&quot;).stop();</div><div class="line">&#125;);</div><div class="line">//点击按钮后，block元素的动画效果停止</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#stop"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  $(<span class="string">".block"</span>).stop();</div><div class="line">&#125;);</div><div class="line"><span class="comment">//点击按钮后，block元素的动画效果停止</span></div></pre></td></tr></table></figure>
 <p>delay方法接受一个时间参数，表示暂停多少毫秒后继续执行。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(&quot;#foo&quot;).slideUp(300).delay(800).fadeIn(400)</div><div class="line">//slideUp动画之后，暂停800毫秒，然后继续执行fadeIn动画</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#foo"</span>).slideUp(<span class="number">300</span>).delay(<span class="number">800</span>).fadeIn(<span class="number">400</span>)</div><div class="line"><span class="comment">//slideUp动画之后，暂停800毫秒，然后继续执行fadeIn动画</span></div></pre></td></tr></table></figure>
 <h1 id="如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"><a href="#如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？" class="headerlink" title="如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"></a>如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？</h1><ul>
 <li>.val([value])</li>
 </ul>
@@ -446,95 +446,93 @@
 </ul>
 <p>这是一个读写双用的方法，用来处理元素属性，当方法没有参数的时候返回元素属性值，当传递了一个参数的时候，方法修改元素属性值</p>
 <h1 id="extend-的作用和用法"><a href="#extend-的作用和用法" class="headerlink" title="$.extend 的作用和用法?"></a>$.extend 的作用和用法?</h1><p>$.extend方法用于将多个对象合并进第一个对象。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var o1 = &#123;p1:&apos;a&apos;,p2:&apos;b&apos;&#125;;</div><div class="line">var o2 = &#123;p1:&apos;c&apos;&#125;;</div><div class="line"></div><div class="line">$.extend(o1,o2);</div><div class="line">o1.p1 // &quot;c&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> o1 = &#123;<span class="attr">p1</span>:<span class="string">'a'</span>,<span class="attr">p2</span>:<span class="string">'b'</span>&#125;;</div><div class="line"><span class="keyword">var</span> o2 = &#123;<span class="attr">p1</span>:<span class="string">'c'</span>&#125;;</div><div class="line"></div><div class="line">$.extend(o1,o2);</div><div class="line">o1.p1 <span class="comment">// "c"</span></div></pre></td></tr></table></figure>
 <p>$.extend的另一种用法是生成一个新对象，用来继承原有对象。这时，它的第一个参数应该是一个空对象。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var o1 = &#123;p1:&apos;a&apos;,p2:&apos;b&apos;&#125;;</div><div class="line">var o2 = &#123;p1:&apos;c&apos;&#125;;</div><div class="line"></div><div class="line">var o = $.extend(&#123;&#125;,o1,o2);</div><div class="line">o</div><div class="line">// Object &#123;p1: &quot;c&quot;, p2: &quot;b&quot;&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> o1 = &#123;<span class="attr">p1</span>:<span class="string">'a'</span>,<span class="attr">p2</span>:<span class="string">'b'</span>&#125;;</div><div class="line"><span class="keyword">var</span> o2 = &#123;<span class="attr">p1</span>:<span class="string">'c'</span>&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> o = $.extend(&#123;&#125;,o1,o2);</div><div class="line">o</div><div class="line"><span class="comment">// Object &#123;p1: "c", p2: "b"&#125;</span></div></pre></td></tr></table></figure>
 <p>默认情况下，extend方法生成的对象是”浅拷贝”，也就是说，如果某个属性是对象或数组，那么只会生成指向这个对象或数组的指针，而不会复制值。如果想要”深拷贝”，可以在extend方法的第一个参数传入布尔值true。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var o1 = &#123;p1:[&apos;a&apos;,&apos;b&apos;]&#125;;</div><div class="line"></div><div class="line">var o2 = $.extend(&#123;&#125;,o1);</div><div class="line">var o3 = $.extend(true,&#123;&#125;,o1);</div><div class="line"></div><div class="line">o1.p1[0]=&apos;c&apos;;</div><div class="line"></div><div class="line">o2.p1 // [&quot;c&quot;, &quot;b&quot;]</div><div class="line">o3.p1 // [&quot;a&quot;, &quot;b&quot;]</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> o1 = &#123;<span class="attr">p1</span>:[<span class="string">'a'</span>,<span class="string">'b'</span>]&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> o2 = $.extend(&#123;&#125;,o1);</div><div class="line"><span class="keyword">var</span> o3 = $.extend(<span class="literal">true</span>,&#123;&#125;,o1);</div><div class="line"></div><div class="line">o1.p1[<span class="number">0</span>]=<span class="string">'c'</span>;</div><div class="line"></div><div class="line">o2.p1 <span class="comment">// ["c", "b"]</span></div><div class="line">o3.p1 <span class="comment">// ["a", "b"]</span></div></pre></td></tr></table></figure>
 <p>上面代码中，o2是浅拷贝，o3是深拷贝。结果，改变原始数组的属性，o2会跟着一起变，而o3不会。</p>
 <h1 id="jQuery-的链式调用是什么？"><a href="#jQuery-的链式调用是什么？" class="headerlink" title="jQuery 的链式调用是什么？"></a>jQuery 的链式调用是什么？</h1><p>jQuery最方便的一点就是，它的大部分方法返回的都是jQuery对象，因此可以链式操作。也就是说，后一个方法可以紧跟着写在前一个方法后面。</p>
 <h1 id="jQuery-中-data-函数的作用"><a href="#jQuery-中-data-函数的作用" class="headerlink" title="jQuery 中 data 函数的作用"></a>jQuery 中 data 函数的作用</h1><p>data方法用于在一个DOM对象上储存数据。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// 储存数据</div><div class="line">$(&quot;body&quot;).data(&quot;foo&quot;, 52);</div><div class="line"></div><div class="line">// 读取数据</div><div class="line">$(&quot;body&quot;).data(&quot;foo&quot;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 储存数据</span></div><div class="line">$(<span class="string">"body"</span>).data(<span class="string">"foo"</span>, <span class="number">52</span>);</div><div class="line"></div><div class="line"><span class="comment">// 读取数据</span></div><div class="line">$(<span class="string">"body"</span>).data(<span class="string">"foo"</span>);</div></pre></td></tr></table></figure>
 <p>该方法可以在DOM节点上储存各种类型的数据。</p>
 <h1 id="写出以下功能对应的-jQuery-方法："><a href="#写出以下功能对应的-jQuery-方法：" class="headerlink" title="写出以下功能对应的 jQuery 方法："></a>写出以下功能对应的 jQuery 方法：</h1><ul>
 <li><p>给元素 $node 添加 class active，给元素 $noed 删除 class active</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$node.addClass(&apos;active&apos;);</div><div class="line">$node.removeClass(&apos;active&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$node.addClass(<span class="string">'active'</span>);</div><div class="line">$node.removeClass(<span class="string">'active'</span>);</div></pre></td></tr></table></figure>
 </li>
 <li><p>展示元素$node, 隐藏元素$node</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$node.show();</div><div class="line">$node.hide();</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$node.show();</div><div class="line">$node.hide();</div></pre></td></tr></table></figure>
 </li>
 <li><p>获取元素$node 的 属性: id、src、title， 修改以上属性</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$node.attr(&apos;id&apos;);</div><div class="line">$node.sttr(&apos;src&apos;);</div><div class="line">$node.sttr(&apos;title&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$node.attr(<span class="string">'id'</span>);</div><div class="line">$node.sttr(<span class="string">'src'</span>);</div><div class="line">$node.sttr(<span class="string">'title'</span>);</div></pre></td></tr></table></figure>
 </li>
 <li><p>给$node 添加自定义属性data-src</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.attr(&apos;data-src&apos;,&apos;something&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.attr(<span class="string">'data-src'</span>,<span class="string">'something'</span>);</div></pre></td></tr></table></figure>
 </li>
 <li><p>在$ct 内部最开头添加元素$node</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.prepend(&apos;node&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.prepend(<span class="string">'node'</span>);</div></pre></td></tr></table></figure>
 </li>
 <li><p>在$ct 内部最末尾添加元素$node</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.append(&apos;node&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.append(<span class="string">'node'</span>);</div></pre></td></tr></table></figure>
 </li>
 <li><p>删除$node</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.remove();</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.remove();</div></pre></td></tr></table></figure>
 </li>
 <li><p>把$ct里内容清空</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.html(&apos;&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.html(<span class="string">''</span>);</div></pre></td></tr></table></figure>
 </li>
 <li><p>在$ct 里设置 html</p>
-<div class="btn"><br></div>
-
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.html(&apos;&lt;div class=&quot;btn&quot;&gt;&lt;/div&gt;&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.html(<span class="string">'&lt;div class="btn"&gt;&lt;/div&gt;'</span>);</div></pre></td></tr></table></figure>
 <ul>
 <li>获取、设置$node 的宽度、高度(分别不包括内边距、包括内边距、包括边框、包括外边距)</li>
 </ul>
 <p><a href="https://yoowinsu.github.io/2017/06/06/jQuery%E8%8E%B7%E5%8F%96%E5%92%8C%E8%AE%BE%E7%BD%AE%E5%85%83%E7%B4%A0%E5%AE%BD%E9%AB%98/" target="_blank" rel="external">jQuery获取和设置元素宽高</a></p>
 <ul>
 <li><p>获取窗口滚动条垂直滚动距离</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.scrollTop();</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.scrollTop();</div></pre></td></tr></table></figure>
 </li>
 <li><p>获取$node 到根节点水平、垂直偏移距离</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.offset();</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.offset();</div></pre></td></tr></table></figure>
 </li>
 <li><p>修改$node 的样式，字体颜色设置红色，字体大小设置14px</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.css(&#123;&apos;color&apos;:&apos;red&apos;,&apos;font-size&apos;:&apos;14px&apos;&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.css(&#123;<span class="string">'color'</span>:<span class="string">'red'</span>,<span class="string">'font-size'</span>:<span class="string">'14px'</span>&#125;);</div></pre></td></tr></table></figure>
 </li>
 <li><p>遍历节点，把每个节点里面的文本内容重复一遍</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$element.each(function()&#123;</div><div class="line">  $(this).text($(this).text()+$(this).text())</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$element.each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  $(<span class="keyword">this</span>).text($(<span class="keyword">this</span>).text()+$(<span class="keyword">this</span>).text())</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 </li>
 <li><p>从$ct 里查找 class 为 .item的子元素</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.find(&apos;item&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.find(<span class="string">'item'</span>);</div></pre></td></tr></table></figure>
 </li>
 <li><p>获取$ct 里面的所有孩子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.children();</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.children();</div></pre></td></tr></table></figure>
 </li>
 <li><p>对于$node，向上找到 class 为’.ct’的父亲，在从该父亲找到’.panel’的孩子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.parents(&apos;.ct&apos;).find(&apos;.panel&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$node.parents(<span class="string">'.ct'</span>).find(<span class="string">'.panel'</span>);</div></pre></td></tr></table></figure>
 </li>
 <li><p>获取选择元素的数量</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$element.length;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$element.length;</div></pre></td></tr></table></figure>
 </li>
 <li><p>获取当前元素在兄弟中的排行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$element.index();</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$element.index();</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h1 id="用jQuery实现以下操作"><a href="#用jQuery实现以下操作" class="headerlink" title="用jQuery实现以下操作"></a>用jQuery实现以下操作</h1><ul>
 <li><p>当点击$btn 时，让 $btn 的背景色变为红色再变为蓝色</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$btn.on(&apos;click&apos;,function()&#123;</div><div class="line">  $(this).css(&apos;background&apos;,&apos;red&apos;);</div><div class="line">  setTimeout(function()&#123;</div><div class="line">      $btn.css(&#123;&apos;background&apos;:&apos;blue&apos;,&apos;transition&apos;:&apos;2s&apos;&#125;)</div><div class="line">&#125;,1000)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$btn.on(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  $(<span class="keyword">this</span>).css(<span class="string">'background'</span>,<span class="string">'red'</span>);</div><div class="line">  setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">      $btn.css(&#123;<span class="string">'background'</span>:<span class="string">'blue'</span>,<span class="string">'transition'</span>:<span class="string">'2s'</span>&#125;)</div><div class="line">&#125;,<span class="number">1000</span>)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
 <li><p>当窗口滚动时，获取垂直滚动距离</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(window).on(&apos;scroll&apos;,function()&#123;</div><div class="line">  console.log($(window).scrollTop())</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="built_in">window</span>).on(<span class="string">'scroll'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log($(<span class="built_in">window</span>).scrollTop())</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
 <li><p>当鼠标放置到$div 上，把$div 背景色改为红色，移出鼠标背景色变为白色</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$div.on(&apos;mouseover&apos;,function()&#123;</div><div class="line">  $(this).css(&apos;background-color&apos;,&apos;red&apos;);</div><div class="line">&#125;)</div><div class="line">$div.on(&apos;mouseleave&apos;,function()&#123;</div><div class="line">  $(this).css(&apos;background-color&apos;,&apos;#fff&apos;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$div.on(<span class="string">'mouseover'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  $(<span class="keyword">this</span>).css(<span class="string">'background-color'</span>,<span class="string">'red'</span>);</div><div class="line">&#125;)</div><div class="line">$div.on(<span class="string">'mouseleave'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  $(<span class="keyword">this</span>).css(<span class="string">'background-color'</span>,<span class="string">'#fff'</span>);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
 <li><p>当鼠标激活 input 输入框时让输入框边框变为蓝色，当输入框内容改变时把输入框里的文字小写变为大写，当输入框失去焦点时去掉边框蓝色，控制台展示输入框里的文字</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(&apos;input&apos;).on(&apos;focus&apos;,function()&#123;</div><div class="line">  $(this).css(&apos;border-color&apos;,&apos;blue&apos;);</div><div class="line">&#125;)</div><div class="line">$(&apos;input&apos;).on(&apos;input&apos;,function()&#123;</div><div class="line">  $(this).val($(this).val().toUpperCase());</div><div class="line">&#125;)</div><div class="line">$(&apos;input&apos;).on(&apos;blur&apos;,function()&#123;</div><div class="line">  $(this).css(&apos;border-color&apos;,&apos;none&apos;);</div><div class="line">  console.log($(this).val());</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'input'</span>).on(<span class="string">'focus'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  $(<span class="keyword">this</span>).css(<span class="string">'border-color'</span>,<span class="string">'blue'</span>);</div><div class="line">&#125;)</div><div class="line">$(<span class="string">'input'</span>).on(<span class="string">'input'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  $(<span class="keyword">this</span>).val($(<span class="keyword">this</span>).val().toUpperCase());</div><div class="line">&#125;)</div><div class="line">$(<span class="string">'input'</span>).on(<span class="string">'blur'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  $(<span class="keyword">this</span>).css(<span class="string">'border-color'</span>,<span class="string">'none'</span>);</div><div class="line">  <span class="built_in">console</span>.log($(<span class="keyword">this</span>).val());</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
 <li><p>当选择 select 后，获取用户选择的内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(&apos;select&apos;).on(&apos;change&apos;,function()&#123;</div><div class="line">console.log($(&apos;select option:selected&apos;).text())</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'select'</span>).on(<span class="string">'change'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="built_in">console</span>.log($(<span class="string">'select option:selected'</span>).text())</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
 </ul>
 
@@ -579,7 +577,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/01/ajax封装/" rel="next" title="AJAX封装">
+              <a href="/2017/05/01/AJAX封装/" rel="next" title="AJAX封装">
                 <i class="fa fa-chevron-left"></i> AJAX封装
               </a>
             
@@ -663,7 +661,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -674,7 +672,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -685,7 +683,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">27</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

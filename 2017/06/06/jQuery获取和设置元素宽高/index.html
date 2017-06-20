@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/06/jQuery获取和设置元素宽高/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="width()和height()  获取匹配元素集合中的第一个元素的当前计算高度值 或 设置每一个匹配元素的高度值。第一个参数表示设置。(不包括内边距)">
-<meta property="og:updated_time" content="2017-06-19T11:24:34.986Z">
+<meta property="og:updated_time" content="2017-06-20T15:46:55.433Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery获取和设置元素宽高">
 <meta name="twitter:description" content="width()和height()  获取匹配元素集合中的第一个元素的当前计算高度值 或 设置每一个匹配元素的高度值。第一个参数表示设置。(不包括内边距)">
@@ -357,22 +357,22 @@
 <li>width()和height()</li>
 </ul>
 <p>获取匹配元素集合中的第一个元素的当前计算高度值 或 设置每一个匹配元素的高度值。第一个参数表示设置。(不包括内边距) <a id="more"></a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(&apos;selector&apos;).width();//获取只包括content的宽度</div><div class="line">$(&apos;selector&apos;).width(&apos;100px&apos;);//设置只包括content的宽度</div><div class="line">$(&apos;selector&apos;).height();//获取只包括content的高度</div><div class="line">$(&apos;selector&apos;).height(&apos;100px&apos;);//设置只包括content的高度</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'selector'</span>).width();<span class="comment">//获取只包括content的宽度</span></div><div class="line">$(<span class="string">'selector'</span>).width(<span class="string">'100px'</span>);<span class="comment">//设置只包括content的宽度</span></div><div class="line">$(<span class="string">'selector'</span>).height();<span class="comment">//获取只包括content的高度</span></div><div class="line">$(<span class="string">'selector'</span>).height(<span class="string">'100px'</span>);<span class="comment">//设置只包括content的高度</span></div></pre></td></tr></table></figure>
 <ul>
 <li>innerWidth()和innerWidth()</li>
 </ul>
 <p>为匹配的元素集合中获取第一个元素的当前计算高度值,包括padding，但是不包括border。第一个参数表示设置。(包括内边距)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(&apos;selector&apos;).innerWidth();//获取包括内边距的宽度</div><div class="line">$(&apos;selector&apos;).innerWidth(&apos;100px&apos;);//获取包括内边距的宽度</div><div class="line">$(&apos;selector&apos;).innerHeight();//获取包括内边距的高度</div><div class="line">$(&apos;selector&apos;).innerHeight(&apos;100px&apos;);//获取包括内边距的高度</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'selector'</span>).innerWidth();<span class="comment">//获取包括内边距的宽度</span></div><div class="line">$(<span class="string">'selector'</span>).innerWidth(<span class="string">'100px'</span>);<span class="comment">//获取包括内边距的宽度</span></div><div class="line">$(<span class="string">'selector'</span>).innerHeight();<span class="comment">//获取包括内边距的高度</span></div><div class="line">$(<span class="string">'selector'</span>).innerHeight(<span class="string">'100px'</span>);<span class="comment">//获取包括内边距的高度</span></div></pre></td></tr></table></figure>
 <ul>
 <li>outerWidth()和outerHeight()</li>
 </ul>
 <p>获取元素集合中第一个元素的当前计算宽度值,包括padding，border和选择性的margin。第一个参数表示设置。(包括边框)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(&apos;selector&apos;).outerWidth();//获取包括内边距和边框的宽度</div><div class="line">$(&apos;selector&apos;).outerWidth(&apos;100px&apos;);//获取包括内边距和边框的宽度</div><div class="line">$(&apos;selector&apos;).outerHeight();//获取包括内边距和边框的高度</div><div class="line">$(&apos;selector&apos;).outerHeight(&apos;100px&apos;);//设置包括内边距和边框的高度</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'selector'</span>).outerWidth();<span class="comment">//获取包括内边距和边框的宽度</span></div><div class="line">$(<span class="string">'selector'</span>).outerWidth(<span class="string">'100px'</span>);<span class="comment">//获取包括内边距和边框的宽度</span></div><div class="line">$(<span class="string">'selector'</span>).outerHeight();<span class="comment">//获取包括内边距和边框的高度</span></div><div class="line">$(<span class="string">'selector'</span>).outerHeight(<span class="string">'100px'</span>);<span class="comment">//设置包括内边距和边框的高度</span></div></pre></td></tr></table></figure>
 <ul>
 <li>outerWidth()outerHeight()</li>
 </ul>
 <p>outerWidth()和outerHeight()的参数省略或者false，padding 和 border会被包含在计算中；如果参数为true，margin也会被包含在计算中 。第一个参数为值，第二个参数为true可以设置包括padding和border以及margin的宽高值(包括外边距)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(&apos;selector&apos;).outerWidth(true);//获取包括内外边距和边框的宽度</div><div class="line">$(&apos;selector&apos;).outerWidth(&apos;100px&apos;,true);//设置包括内外边距和边框的宽度</div><div class="line">$(&apos;selector&apos;).outerHeight(true);//获取包括内外边距和边框的高度</div><div class="line">$(&apos;selector&apos;).outerHeight(&apos;100px&apos;,true);//设置包括内外边距和边框的高度</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'selector'</span>).outerWidth(<span class="literal">true</span>);<span class="comment">//获取包括内外边距和边框的宽度</span></div><div class="line">$(<span class="string">'selector'</span>).outerWidth(<span class="string">'100px'</span>,<span class="literal">true</span>);<span class="comment">//设置包括内外边距和边框的宽度</span></div><div class="line">$(<span class="string">'selector'</span>).outerHeight(<span class="literal">true</span>);<span class="comment">//获取包括内外边距和边框的高度</span></div><div class="line">$(<span class="string">'selector'</span>).outerHeight(<span class="string">'100px'</span>,<span class="literal">true</span>);<span class="comment">//设置包括内外边距和边框的高度</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -417,7 +417,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/03/jsonp的笔记汇总/" rel="next" title="JSONP的问题汇总">
+              <a href="/2017/06/03/JSONP的笔记汇总/" rel="next" title="JSONP的问题汇总">
                 <i class="fa fa-chevron-left"></i> JSONP的问题汇总
               </a>
             
@@ -492,7 +492,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -503,7 +503,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -514,7 +514,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">27</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
