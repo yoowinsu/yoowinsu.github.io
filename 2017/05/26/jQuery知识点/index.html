@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/26/jQuery知识点/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
-<meta property="og:updated_time" content="2017-06-20T15:52:03.196Z">
+<meta property="og:updated_time" content="2017-06-20T16:07:49.998Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery知识点">
 <meta name="twitter:description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
@@ -396,10 +396,9 @@
 <p>移除一个事件处理函数。</p>
 <p>绑定事件推荐： 推荐使用on，它的功能最齐全，也是官方推荐的事件绑定语法。</p>
 <ul>
-<li><p>使用on进行事件代理：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'ul'</span>).on(<span class="string">'click'</span>,<span class="string">'li'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>(<span class="keyword">this</span>);</div><div class="line">&#125;);</div><div class="line"><span class="comment">//事件源为li时出发绑定事件</span></div></pre></td></tr></table></figure>
-</li>
+<li>使用on进行事件代理：</li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'ul'</span>).on(<span class="string">'click'</span>,<span class="string">'li'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>(<span class="keyword">this</span>);</div><div class="line">&#125;);</div><div class="line"><span class="comment">//事件源为li时出发绑定事件</span></div></pre></td></tr></table></figure>
 <h1 id="jquery-如何展示-隐藏元素？"><a href="#jquery-如何展示-隐藏元素？" class="headerlink" title="jquery 如何展示/隐藏元素？"></a>jquery 如何展示/隐藏元素？</h1><ul>
 <li>show()</li>
 </ul>
@@ -412,7 +411,7 @@
 <li>toggle() 切换显示或隐藏当前元素。</li>
 </ul>
 <h1 id="jquery-动画如何使用？"><a href="#jquery-动画如何使用？" class="headerlink" title="jquery 动画如何使用？"></a>jquery 动画如何使用？</h1><ul>
-<li>（1）jQuery提供以下一些动画效果方法。</li>
+<li>jQuery提供以下一些动画效果方法。</li>
 </ul>
 <blockquote>
 <p>show：显示当前元素。</p>
@@ -426,12 +425,12 @@
 <p>slideToggle：以垂直滑入或滑出的方式，折叠显示当前元素。</p>
 </blockquote>
 <ul>
-<li>（2）animate方法</li>
+<li>animate方法</li>
 </ul>
 <p>上面这些动画效果方法，实际上都是animate方法的简便写法。在幕后，jQuery都是统一使用animate方法生成各种动画效果。 animate方法接受两个参数，第一个参数是一个对象，表示动画结束时相关CSS属性的值，第二个参数是动画持续的毫秒数。需要注意的是，第一个参数对象的成员名称，必须与CSS属性名称一致，如果CSS属性名称带有连字号，则需要用”骆驼拼写法”改写。animate方法还可以接受第三个参数，表示动画结束时的回调函数。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'div'</span>).animate(&#123;</div><div class="line">    <span class="attr">left</span>: <span class="string">'+=50'</span>, <span class="comment">// 增加50</span></div><div class="line">    opacity: <span class="number">0.25</span>,</div><div class="line">    <span class="attr">fontSize</span>: <span class="string">'12px'</span></div><div class="line">  &#125;,</div><div class="line">  <span class="number">300</span>, <span class="comment">// 持续时间</span></div><div class="line">  <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">// 回调函数</span></div><div class="line">     <span class="built_in">console</span>.log(<span class="string">'done!'</span>);</div><div class="line">  &#125;</div><div class="line">);</div></pre></td></tr></table></figure>
 <ul>
-<li>（3）stop方法，delay方法</li>
+<li>stop方法，delay方法</li>
 </ul>
 <p>stop方法表示立即停止执行当前的动画。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#stop"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  $(<span class="string">".block"</span>).stop();</div><div class="line">&#125;);</div><div class="line"><span class="comment">//点击按钮后，block元素的动画效果停止</span></div></pre></td></tr></table></figure>
@@ -482,11 +481,10 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.html(<span class="string">''</span>);</div></pre></td></tr></table></figure>
 </li>
 <li><p>在$ct 里设置 html</p>
-</li>
-</ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ct.html(<span class="string">'&lt;div class="btn"&gt;&lt;/div&gt;'</span>);</div></pre></td></tr></table></figure>
-<ul>
-<li>获取、设置$node 的宽度、高度(分别不包括内边距、包括内边距、包括边框、包括外边距)</li>
+</li>
+<li><p>获取、设置$node 的宽度、高度(分别不包括内边距、包括内边距、包括边框、包括外边距)</p>
+</li>
 </ul>
 <p><a href="https://yoowinsu.github.io/2017/06/06/jQuery%E8%8E%B7%E5%8F%96%E5%92%8C%E8%AE%BE%E7%BD%AE%E5%85%83%E7%B4%A0%E5%AE%BD%E9%AB%98/" target="_blank" rel="external">jQuery获取和设置元素宽高</a></p>
 <ul>
