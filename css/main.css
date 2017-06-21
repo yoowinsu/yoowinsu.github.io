@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff260f;
+  background: #38a1c1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2596,4 +2596,23 @@ ul {
 }
 .site-author-name {
   font-family: 'Comic Sans MS', sans-serif;
+}
+.sidebar {
+  background: rgba(255,255,255,0.65) url("https://ooo.0o0.ooo/2017/06/21/594a0874ca7de.jpg") no-repeat;
+}
+.site-author-image:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.links-of-author a {
+  border-bottom: none;
+}
+.sidebar a {
+  color: #666;
+}
+.site-state-item {
+  border-left: 1px solid #777;
 }
