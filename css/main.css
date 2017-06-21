@@ -426,6 +426,7 @@ td {
 html,
 body {
   height: 100%;
+  background: #f5f7f9;
 }
 .container {
   position: relative;
@@ -1695,7 +1696,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #05ff8f;
+  background: #8f22fe;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2576,4 +2577,7 @@ embed {
   moz-transition: 1.4s all;
   ms-transition: 1.4s all;
   transition: 1.4s all;
+}
+ul {
+  list-style-type: disc;
 }
