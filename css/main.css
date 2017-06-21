@@ -426,7 +426,6 @@ td {
 html,
 body {
   height: 100%;
-  background: #f5f7f9;
 }
 .container {
   position: relative;
@@ -1696,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e995aa;
+  background: #ff260f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2547,7 +2546,7 @@ embed {
   display: inline-block;
 }
 .header {
-  background: rgba(255,255,255,0.65) url("https://images.pexels.com/photos/6675/flight-mountains-sky-flying.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") no-repeat;
+  background: rgba(255,255,255,0.65) url("https://ooo.0o0.ooo/2017/06/21/594a0874ca7de.jpg") no-repeat;
   background-size: 100%;
 }
 .brand {
@@ -2563,7 +2562,7 @@ embed {
   line-height: 56px;
   font-size: 30px;
   color: #555;
-  font-family: 'Lobster Two', 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Comic Sans MS', sans-serif;
 }
 .site-author-image {
   margin-top: 50px;
@@ -2580,4 +2579,21 @@ embed {
 }
 ul {
   list-style-type: disc;
+}
+.posts-expand {
+  box-shadow: box-shadow;
+  padding: 0 20px;
+  padding-top: 80px;
+  background: #fff;
+  margin-top: 40px;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+.post-button .btn {
+  border-radius: 20px;
+}
+.header-inner {
+  padding: 20px;
+}
+.site-author-name {
+  font-family: 'Comic Sans MS', sans-serif;
 }
