@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e35efb;
+  background: #ff9834;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2652,8 +2652,11 @@ ul {
 }
 .posts-expand .post-title:hover,
 .posts-expand .post-title-link:hover {
-  color: #87daff;
+/*color: #87daff;*/
   border-bottom: none;
+}
+.posts-expand .post-title-link::before {
+  width: 0;
 }
 .pagination {
   margin: 120px 0 20px;
