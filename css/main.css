@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d7a869;
+  background: #55b66e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2652,9 +2652,7 @@ ul {
 .posts-expand .post-eof {
   width: 100%;
 }
-a:hover {
-  border-bottom: none;
-}
 .posts-expand .post-title:hover {
   color: #87daff;
+  border-bottom: none;
 }
