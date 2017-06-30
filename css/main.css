@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #dee4b8;
+  background: #13c79c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2576,6 +2576,13 @@ body {
   font-size: 30px;
   color: #555;
   font-family: 'Comic Sans MS', sans-serif;
+}
+.site-subtitle {
+  color: #555;
+  font-family: 'Comic Sans MS', sans-serif;
+  margin: 5px 0;
+  font-size: 12px;
+  font-weight: 400;
 }
 .site-author-image {
   margin-top: 50px;
