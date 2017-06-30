@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e8eefc;
+  background: #737718;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2578,7 +2578,7 @@ body {
   font-family: 'Comic Sans MS', sans-serif;
 }
 .site-description:before {
-  content: '����������һ��֪ʶ�������ߣ����β��Ǵ�������';
+  content: '\u535a\u5ba2\u9996\u5148\u662f\u4e00\u79cd\u77e5\u8bc6\u7ba1\u7406\u5de5\u5177\uff0c\u5176\u6b21\u624d\u662f\u4f20\u64ad\u5de5\u5177';
   color: #555;
   display: block;
   margin-top: 5px;
