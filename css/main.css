@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #737718;
+  background: #24ff28;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2599,7 +2599,7 @@ body {
   transition: 1.4s all;
 }
 ul {
-  list-style-type: disc;
+  list-style-type: disc; /*����ԲΪcircle��ʵ��ԲΪ disc*/
 }
 .post-button .btn {
   border-radius: 20px;
