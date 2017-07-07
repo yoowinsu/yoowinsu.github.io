@@ -88,11 +88,11 @@
 <meta property="og:title" content="烦人的强制类型转换">
 <meta property="og:url" content="http://yoursite.com/2017/07/07/烦人的强制类型转换/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:image" content="https://unsplash.it/800/400/?image=292">
-<meta property="og:updated_time" content="2017-07-06T19:25:04.210Z">
+<meta property="og:image" content="https://unsplash.it/800/400/?image=400">
+<meta property="og:updated_time" content="2017-07-07T06:27:17.586Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="烦人的强制类型转换">
-<meta name="twitter:image" content="https://unsplash.it/800/400/?image=292">
+<meta name="twitter:image" content="https://unsplash.it/800/400/?image=400">
 
 
 
@@ -352,7 +352,7 @@
       
 
       
-        <p><img src="https://unsplash.it/800/400/?image=292" alt=""><br><a id="more"></a><br>强制类型转换在流程判断和部分代码不规范的相等运算符中应用比较多，至于为什么说代码不规范，我们后面会说到。<br>强制类型转换会让一些JavaScript初学者摸不着头脑，但是掌握其中的转换规则之后，就能轻松应对了。</p>
+        <p><img src="https://unsplash.it/800/400/?image=400" alt=""><br><a id="more"></a><br>强制类型转换在流程判断和部分代码不规范的相等运算符中应用比较多，至于为什么说代码不规范，我们后面会说到。<br>强制类型转换会让一些JavaScript初学者摸不着头脑，但是掌握其中的转换规则之后，就能轻松应对了。</p>
 <h4 id="流程判断"><a href="#流程判断" class="headerlink" title="流程判断"></a>流程判断</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(<span class="string">''</span>)&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'true'</span>)  </div><div class="line">&#125;</div><div class="line"><span class="comment">//undefined</span></div></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(<span class="string">' '</span>)&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'true'</span>)  </div><div class="line">&#125;</div><div class="line"><span class="comment">//true</span></div></pre></td></tr></table></figure>
 <p>上面两段代码中返回值一个是undefined，一个是true，看起来会摸不着头脑，两段代码的区别之处在于流程判断时一个是空字符串，一个是空格字符串。<br>在流程判断中，条件部分的值会被强制转换为布尔值，系统内部会自动调用Boolean函数。<br>所以上面例子中空字符串会被转化为false，空格字符串被转化为true，下面是转化规则，除了下面几种情况外，都为true：<br>（x代表条件部分的值）</p>
