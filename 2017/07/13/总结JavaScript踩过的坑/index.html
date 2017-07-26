@@ -88,11 +88,11 @@
 <meta property="og:title" content="总结JavaScript踩过的坑">
 <meta property="og:url" content="http://yoursite.com/2017/07/13/总结JavaScript踩过的坑/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:image" content="https://unsplash.it/800/400/?image=408">
-<meta property="og:updated_time" content="2017-07-13T15:17:05.103Z">
+<meta property="og:image" content="https://i.loli.net/2017/07/26/59786f209f00b.jpg">
+<meta property="og:updated_time" content="2017-07-26T10:30:09.211Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="总结JavaScript踩过的坑">
-<meta name="twitter:image" content="https://unsplash.it/800/400/?image=408">
+<meta name="twitter:image" content="https://i.loli.net/2017/07/26/59786f209f00b.jpg">
 
 
 
@@ -352,7 +352,7 @@
       
 
       
-        <p><img src="https://unsplash.it/800/400/?image=408" alt=""><br><a id="more"></a></p>
+        <p><img src="https://i.loli.net/2017/07/26/59786f209f00b.jpg" alt=""><br><a id="more"></a></p>
 <h2 id="数组排序问题"><a href="#数组排序问题" class="headerlink" title="数组排序问题"></a>数组排序问题</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">0</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">8</span>,<span class="number">-2</span>].sort();  <span class="comment">//[[-2, 0, 1, 10, 11, 8]</span></div></pre></td></tr></table></figure>
 <p>sort()默认情况下会按照Unicode码点排序，而不是数值顺序排序，所以正确的解决方案为：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">0</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">8</span>,<span class="number">-2</span>].sort(<span class="function">(<span class="params">a,b</span>)=&gt;</span>a-b);  <span class="comment">//[[-2, 0, 1, 8, 10, 11]</span></div></pre></td></tr></table></figure></p>
 <h2 id="0-1-0-2-0-3的问题"><a href="#0-1-0-2-0-3的问题" class="headerlink" title="0.1+0.2 !== 0.3的问题"></a>0.1+0.2 !== 0.3的问题</h2><p>先看如下代码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="number">0.1</span> + <span class="number">0.2</span> === <span class="number">0.30000000000000004</span>     <span class="comment">//true</span></div><div class="line"><span class="number">1000000000000000128</span> === <span class="number">1000000000000000129</span>     <span class="comment">//true</span></div></pre></td></tr></table></figure></p>
