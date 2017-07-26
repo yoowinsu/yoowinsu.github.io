@@ -88,11 +88,11 @@
 <meta property="og:title" content="JavaScript函数重载">
 <meta property="og:url" content="http://yoursite.com/2017/06/09/JavaScript函数重载/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:image" content="https://unsplash.it/800/400/?image=405">
-<meta property="og:updated_time" content="2017-07-08T17:53:19.715Z">
+<meta property="og:image" content="https://i.loli.net/2017/07/26/597873cb2d798.jpg">
+<meta property="og:updated_time" content="2017-07-26T10:51:43.004Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript函数重载">
-<meta name="twitter:image" content="https://unsplash.it/800/400/?image=405">
+<meta name="twitter:image" content="https://i.loli.net/2017/07/26/597873cb2d798.jpg">
 
 
 
@@ -352,7 +352,7 @@
       
 
       
-        <p><img src="https://unsplash.it/800/400/?image=405" alt=""><br><a id="more"></a></p>
+        <p><img src="https://i.loli.net/2017/07/26/597873cb2d798.jpg" alt=""><br><a id="more"></a></p>
 <h2 id="重载是什么"><a href="#重载是什么" class="headerlink" title="重载是什么"></a>重载是什么</h2><p>重载是很多面向对象语言实现多态的手段之一，在C#和JAVA等编程语言中函数重载是指在一个类中可以定义多个方法名相同但是方法参数和顺序不同的方法，以此来实现不同的功能和操作，这就是重载。</p>
 <h2 id="JavaScript函数没有重载"><a href="#JavaScript函数没有重载" class="headerlink" title="JavaScript函数没有重载"></a>JavaScript函数没有重载</h2><p>JavaScript函数不能像传统意义上那样实现重载。因为在JavaScript函数中通过名字确定唯一性，参数不同也被认为是相同的函数，后面的函数覆盖前面的函数。如下例：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addNum</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">	num+=<span class="number">10</span>;</div><div class="line">	<span class="keyword">return</span> num;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addNum</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">	num+=<span class="number">100</span>;</div><div class="line">	<span class="keyword">return</span> num;</div><div class="line">&#125;</div><div class="line">addNum(<span class="number">3</span>); <span class="comment">//103</span></div></pre></td></tr></table></figure>
