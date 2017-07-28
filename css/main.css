@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #df534d;
+  background: #98ff2d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2659,11 +2659,12 @@ ul {
   width: 100%;
 }
 a {
-  color: #999 !important;
+  color: #999;
+  border-bottom: 1px solid transparent;
 }
 a:hover {
-  color: #00bcd4 !important;
-  border-bottom-color: #00bcd4;
+  color: #87daff;
+  border-bottom-color: #87daff;
 }
 .posts-expand .post-title:hover,
 .posts-expand .post-title-link:hover {
@@ -2677,4 +2678,10 @@ a:hover {
   margin: 120px 0 20px;
   padding-top: 22px;
   transition: all 1s;
+}
+.posts-expand a {
+  color: #999 !important;
+}
+.posts-expand a:hover {
+  color: #87daff !important;
 }
