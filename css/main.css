@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8ff;
+  background: #b85ea6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2630,7 +2630,7 @@ ul {
   border-left: 1px solid #777;
 }
 .btn {
-  border: 2px solid #555;
+  border: 2px solid #555 !important;
 }
 .post-button .btn {
   background: #555;
@@ -2670,14 +2670,16 @@ a {
   border-bottom-color: #87daff !important;
 }
 .post-body .btn:hover {
-  border: 2px solid #555 !important;
+  border-bottom-color: #555 !important;
 }
 a:hover {
   color: #87daff;
   border-bottom-color: #87daff;
   transition: all 0.7s;
 }
-.pagination a:hover {
+.pagination .prev:hover,
+.pagination .next:hover,
+.pagination .page-number:hover {
   border-top-color: #87daff;
 }
 posts-expand .post-title-link {
