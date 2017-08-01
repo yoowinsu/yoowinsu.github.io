@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b85ea6;
+  background: #ffffe5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2629,7 +2629,7 @@ ul {
 .site-state-item {
   border-left: 1px solid #777;
 }
-.btn {
+.post-body .btn {
   border: 2px solid #555 !important;
 }
 .post-button .btn {
