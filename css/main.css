@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bd75ff;
+  background: #bbffbd;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2698,4 +2698,16 @@ posts-expand .post-title-link {
 }
 .posts-expand a:hover {
   color: #87daff !important;
+}
+#��ϵ��ʽ+p>a:hover img[src="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"] {
+  display: block;
+}
+#��ϵ��ʽ+p {
+  position: relitive;
+}
+img[src="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"] {
+  displaty: none;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
