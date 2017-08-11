@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f28c6b;
+  background: #75ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2699,12 +2699,12 @@ posts-expand .post-title-link {
 .posts-expand a:hover {
   color: #87daff !important;
 }
-a[href="nohref"]:hover a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"] {
+.posts-expand p:nth-of-type(7) a:hover a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"] {
   display: block;
 }
-.content .posts-expand:nth-child(7) {
+.posts-expand p:nth-of-type(7) {
   position: relative;
-  color: #f00;
+  background-color: #ffc0cb;
 }
 img[src="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"] {
   display: none;
