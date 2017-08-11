@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #29a782;
+  background: #ebff2d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2699,17 +2699,16 @@ posts-expand .post-title-link {
 .posts-expand a:hover {
   color: #87daff !important;
 }
-a[href="https://yoowinsu.github.io/about/"]:hover+a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"] {
+a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"]:hover+a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"] {
   display: block;
 }
 .posts-expand p:nth-child(7) {
   position: relative;
-  background-color: #ffc0cb;
 }
 a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"] {
   display: none;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 220px;
+  top: -80px;
   width: 256px;
 }
