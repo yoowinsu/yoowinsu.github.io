@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1258ff;
+  background: #b9ffaf;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2701,7 +2701,7 @@ posts-expand .post-title-link {
 }
 a[href="https://yoowinsu.github.io/about/"] {
   pointer-events: none;
-  cursor: default;
+  cursor: pointer;
 }
 a[href="https://yoowinsu.github.io/about/"]:hover+a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"] {
   display: block;
