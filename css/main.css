@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #628c30;
+  background: #ffda4d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2557,19 +2557,21 @@ embed {
 body {
   background: #f5f7f9;
 }
+.brand {
+  background-color: transparent;
+}
+a {
+  border-bottom: 1px solid transparent;
+}
+a:hover {
+  color: #87daff;
+  border-bottom-color: #87daff;
+  transition: all 0.7s;
+}
 .header {
   background: rgba(255,255,255,0.65) url("https://ooo.0o0.ooo/2017/06/21/594a0874ca7de.jpg") no-repeat;
   background-size: 100%;
   box-shadow: inset 0 -4px 20px 0 #999;
-}
-.brand {
-  background-color: transparent;
-}
-.menu {
-  background: rgba(255,255,255,0.25);
-  margin-left: auto;
-  margin-right: auto;
-  width: 450px;
 }
 .site-title {
   line-height: 56px;
@@ -2584,6 +2586,23 @@ body {
   font-size: 12px;
   font-weight: 400;
 }
+.header .header-inner {
+  padding: 0;
+  padding-bottom: 2px;
+}
+.menu {
+  background: rgba(255,255,255,0.25);
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+}
+.menu .menu-item a {
+  border-bottom: none;
+}
+.menu .menu-item a:hover {
+  border-bottom: none;
+  transition: color 0.5s;
+}
 .site-author-image {
   margin-top: 50px;
   padding: 2px;
@@ -2597,15 +2616,15 @@ body {
   ms-transition: 1.4s all;
   transition: 1.4s all;
 }
-ul {
-  list-style-type: disc; /*����ԲΪcircle��ʵ��ԲΪ disc*/
+.post-toc ol a {
+  color: #333;
 }
-.post-button .btn {
-  border-radius: 20px;
+.post-toc ol a:hover {
+  color: #222;
+  background-color: #eee;
 }
-.header .header-inner {
-  padding: 0;
-  padding-bottom: 2px;
+.post-toc ol a {
+  border-bottom: none;
 }
 .site-author-name {
   font-family: 'Comic Sans MS', sans-serif;
@@ -2629,39 +2648,26 @@ ul {
 .site-state-item {
   border-left: 1px solid #777;
 }
+.posts-expand .post-body ul li {
+  list-style: disc; /*����ԲΪcircle��ʵ��ԲΪ disc*/
+}
+.post-button .btn {
+  border-radius: 20px;
+}
 .post-body .btn {
   border: 2px solid #555 !important;
+}
+.post-button .btn:hover {
+  background: #f5f7f9;
+  color: #555 !important;
 }
 .post-button .btn {
   background: #555;
   color: #fff !important;
   transition: all 0.7s;
 }
-.post-button .btn:hover {
-  background: #f5f7f9;
-  color: #555 !important;
-}
-.menu .menu-item a {
-  border-bottom: none;
-}
-.menu .menu-item a:hover {
-  border-bottom: none;
-}
-.post-toc ol a {
-  color: #333;
-}
-.post-toc ol a:hover {
-  color: #222;
-  background-color: #eee;
-}
-.post-toc ol a {
-  border-bottom: none;
-}
 .posts-expand .post-eof {
   width: 100%;
-}
-a {
-  border-bottom: 1px solid transparent;
 }
 .post-body a {
   border-bottom: 1px solid #999 !important;
@@ -2672,21 +2678,16 @@ a {
 .post-body .btn:hover {
   border-bottom-color: #555 !important;
 }
-a:hover {
-  color: #87daff;
-  border-bottom-color: #87daff;
-  transition: all 0.7s;
+.posts-expand .post-title-link {
+  color: #777 !important;
+}
+.posts-expand .post-title-link::before {
+  width: 0;
 }
 .pagination .prev:hover,
 .pagination .next:hover,
 .pagination .page-number:hover {
   border-top-color: #87daff;
-}
-posts-expand .post-title-link {
-  color: #777 !important;
-}
-.posts-expand .post-title-link::before {
-  width: 0;
 }
 .pagination {
   margin: 120px 0 20px;
