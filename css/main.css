@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffda4d;
+  background: #cde8ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2591,10 +2591,13 @@ a:hover {
   padding-bottom: 2px;
 }
 .menu {
-  background: rgba(255,255,255,0.25);
   margin-left: auto;
   margin-right: auto;
   width: 450px;
+}
+.menu:hover {
+  background: rgba(255,255,255,0.2);
+  transition: background 1.5s;
 }
 .menu .menu-item a {
   border-bottom: none;
