@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff3eff;
+  background: #32ffc4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2547,7 +2547,6 @@ embed {
 }
 @media screen and (min-width: 800px) {
   .main-inner {
-    padding: 20px 40px 2px;
     margin-top: 30px;
     max-width: 800px;
     background-color: #f5f5d5;
@@ -2598,7 +2597,7 @@ a:hover {
   transition: background 1s;
 }
 .header .header-inner:hover {
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.6);
 }
 .menu {
   margin-left: auto;
