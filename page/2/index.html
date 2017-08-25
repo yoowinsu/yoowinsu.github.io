@@ -769,8 +769,7 @@
 
       
         
-          <h1 id="实现效果："><a href="#实现效果：" class="headerlink" title="实现效果："></a>实现效果：</h1><p><img src="https://ooo.0o0.ooo/2017/06/21/5949772740a67.png" alt="空心三角箭头"></p>
-<h1 id="实现原理："><a href="#实现原理：" class="headerlink" title="实现原理："></a>实现原理：</h1>
+          <h1 id="实现效果："><a href="#实现效果：" class="headerlink" title="实现效果："></a>实现效果：</h1><p><img src="https://ooo.0o0.ooo/2017/06/21/5949772740a67.png" alt="空心三角箭头"><br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/05/01/CSS实现三角指示箭头/#more" rel="contents">
@@ -911,6 +910,11 @@
           <h1 id="DOM0-事件和DOM2级事件监听使用方式上有什么区别？"><a href="#DOM0-事件和DOM2级事件监听使用方式上有什么区别？" class="headerlink" title="DOM0 事件和DOM2级事件监听使用方式上有什么区别？"></a>DOM0 事件和DOM2级事件监听使用方式上有什么区别？</h1><ul>
 <li><p>DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序 </p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">target.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>DOM2级事件:可以添加多个相同事件程序，移除应用程序是不能移除匿名函数（因为匿名函数在内存中是地址，无法获取该地址），不兼容ie低版本;</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 使用格式</span></div><div class="line">target.addEventListener(type, listener[, useCapture]);</div><div class="line"><span class="comment">//type：事件名称，大小写敏感。</span></div><div class="line"><span class="comment">//listener：监听函数。事件发生时，会调用该监听函数。</span></div><div class="line"><span class="comment">//useCapture：布尔值，表示监听函数是否在捕获阶段（capture）触发，默认为false（监听函数只在冒泡阶段被触发）</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
           <!--noindex-->
@@ -1054,7 +1058,9 @@
 <li><h3 id="html"><a href="#html" class="headerlink" title="html()"></a>html()</h3></li>
 </ul>
 <p>1.不传参</p>
-<p>html()：不管取得的jQuery对象是否为多个，只获取匹配的第一个元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档，返回的是一个String<br>
+<p>html()：不管取得的jQuery对象是否为多个，只获取匹配的第一个元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档，返回的是一个String </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//html页面代码</div><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>早上<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>好<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>;</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//jquery代码</div><div class="line">$(&quot;p&quot;).html();</div><div class="line"></div><div class="line">//结果</div><div class="line">//&lt;span&gt;早上&lt;/span&gt;;</div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/04/29/jQuery中html()与text()的区别/#more" rel="contents">
@@ -1192,7 +1198,9 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/07/26/59786dbb46889.jpg" alt=""><br>
+          <p><img src="https://i.loli.net/2017/08/25/599fcff4dc717.jpg" alt=""></p>
+<h1 id="深拷贝和浅拷贝"><a href="#深拷贝和浅拷贝" class="headerlink" title="深拷贝和浅拷贝"></a>深拷贝和浅拷贝</h1><p>在JavaScript中，对于object等引用类型值，当从一个变量向另一个变量复制引用类型值时，这个值的副本其实是一个指针，两个变量指向同一个堆对象，改变其中一个变量，另一个也会受到影响。 </p>
+<p>很多情况下，我们都需要给变量赋值，但希望和原来变量不再共存一个地址。所以就要实现深拷贝。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/04/27/深拷贝的两种实现/#more" rel="contents">
@@ -1470,7 +1478,7 @@
       
         
           <p><img src="https://i.loli.net/2017/08/25/599fb62346da1.jpg" alt=""></p>
-<h1 id="d，-w-s-a-zA-Z0-9-b-x-3-分别是什么"><a href="#d，-w-s-a-zA-Z0-9-b-x-3-分别是什么" class="headerlink" title="\d，\w,\s,[a-zA-Z0-9],\b,.,*,+,?,x{3},^,$分别是什么?"></a>\d，\w,\s,[a-zA-Z0-9],\b,.,*,+,?,x{3},^,$分别是什么?</h1>
+<h1 id="写一个函数trim-str-，去除字符串两边的空白字符"><a href="#写一个函数trim-str-，去除字符串两边的空白字符" class="headerlink" title="写一个函数trim(str)，去除字符串两边的空白字符"></a>写一个函数trim(str)，去除字符串两边的空白字符</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">trim</span>(<span class="params">str</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> str=str.replace(<span class="regexp">/^\s+|\s+$/g</span>,<span class="string">''</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/04/20/正则表达式知识点/#more" rel="contents">
@@ -1613,6 +1621,7 @@
 <ul>
 <li>第一种：</li>
 </ul>
+<p>将父元素的 font-size 设置为0，然后在 inline-block 元素中将 font-size 设置为 14px.<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/04/15/inline-block的两个Bug/#more" rel="contents">

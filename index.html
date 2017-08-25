@@ -353,7 +353,8 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/07/27/5979bdd61d9fd.jpg" alt=""><br>
+          <p><img src="https://i.loli.net/2017/07/27/5979bdd61d9fd.jpg" alt=""></p>
+<p>看了方应杭老师的一篇解释let的<a href="https://zhuanlan.zhihu.com/p/28140450" target="_blank" rel="external">文章</a>，对JavaScript中的声明有了深刻的理解，这里也就有了总结一下JavaScript中各种声明之间区别的这篇文章。<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/07/27/let、var、const声明的区别/#more" rel="contents">
@@ -491,7 +492,7 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/07/26/5978721a12e23.jpg" alt=""></p>
+          <p><img src="https://i.loli.net/2017/08/25/599fd0940fbb5.jpg" alt=""></p>
 <h2 id="数组排序问题"><a href="#数组排序问题" class="headerlink" title="数组排序问题"></a>数组排序问题</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">0</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">8</span>,<span class="number">-2</span>].sort();  <span class="comment">//[[-2, 0, 1, 10, 11, 8]</span></div></pre></td></tr></table></figure>
 <p>sort()默认情况下会按照Unicode码点排序，而不是数值顺序排序，所以正确的解决方案为：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">0</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">8</span>,<span class="number">-2</span>].sort(<span class="function">(<span class="params">a,b</span>)=&gt;</span>a-b);  <span class="comment">//[[-2, 0, 1, 8, 10, 11]</span></div></pre></td></tr></table></figure></p>
           <!--noindex-->
@@ -631,8 +632,8 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/07/26/59787561714f4.jpg" alt=""></p>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>最新的 ECMAScript 标准定义了 7 种数据类型:<br>6 种 原始类型：Boolean、Null、Undefined、Number、String、Symbol (ECMAScript 6 新定义)和引用类型：Object。<br>
+          <h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>最新的 ECMAScript 标准定义了 7 种数据类型:<br>6 种 原始类型：Boolean、Null、Undefined、Number、String、Symbol (ECMAScript 6 新定义)和引用类型：Object。</p>
+<p>原始类型中，一般我们认为null和undefined是两个特殊的值；<br>引用类型是指向实际对象的指针，包括Object、Function、Array、RegExp、Date等等。<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/07/08/检测数据类型的N种方法/#more" rel="contents">
@@ -770,7 +771,8 @@
 
       
         
-          <h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>强制类型转换在流程判断和部分代码不规范的相等运算符中应用比较多，至于为什么说代码不规范，我们后面会说到。<br>强制类型转换会让一些JavaScript初学者摸不着头脑，但是掌握其中的转换规则之后，就能轻松应对了。</p>
+          <p><img src="https://i.loli.net/2017/08/25/599fc371ecff5.jpg" alt=""></p>
+<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>强制类型转换在流程判断和部分代码不规范的相等运算符中应用比较多，至于为什么说代码不规范，我们后面会说到。<br>强制类型转换会让一些JavaScript初学者摸不着头脑，但是掌握其中的转换规则之后，就能轻松应对了。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/07/07/烦人的强制类型转换/#more" rel="contents">
@@ -1046,7 +1048,8 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/07/26/59786cb113dc5.jpg" alt=""><br>
+          <p><img src="https://i.loli.net/2017/08/25/599fc5a094cc9.jpg" alt=""></p>
+<h2 id="一个div，宽度是100px，此时设置padding是20px，添加一个什么css属性可以让div的实际宽度仍然保持在100px，而不是140px？"><a href="#一个div，宽度是100px，此时设置padding是20px，添加一个什么css属性可以让div的实际宽度仍然保持在100px，而不是140px？" class="headerlink" title="一个div，宽度是100px，此时设置padding是20px，添加一个什么css属性可以让div的实际宽度仍然保持在100px，而不是140px？"></a>一个div，宽度是100px，此时设置padding是20px，添加一个什么css属性可以让div的实际宽度仍然保持在100px，而不是140px？</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">selector</span>&#123;<span class="attribute">box-sizing</span>: border-box;&#125;</div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/06/26/面试题总结之CSS篇/#more" rel="contents">
@@ -1184,8 +1187,8 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/07/26/597873cb2d798.jpg" alt=""></p>
-<h2 id="重载是什么"><a href="#重载是什么" class="headerlink" title="重载是什么"></a>重载是什么</h2><p>重载是很多面向对象语言实现多态的手段之一，在C#和JAVA等编程语言中函数重载是指在一个类中可以定义多个方法名相同但是方法参数和顺序不同的方法，以此来实现不同的功能和操作，这就是重载。<br>
+          <h2 id="重载是什么"><a href="#重载是什么" class="headerlink" title="重载是什么"></a>重载是什么</h2><p>重载是很多面向对象语言实现多态的手段之一，在C#和JAVA等编程语言中函数重载是指在一个类中可以定义多个方法名相同但是方法参数和顺序不同的方法，以此来实现不同的功能和操作，这就是重载。</p>
+<h2 id="JavaScript函数没有重载"><a href="#JavaScript函数没有重载" class="headerlink" title="JavaScript函数没有重载"></a>JavaScript函数没有重载</h2><p>JavaScript函数不能像传统意义上那样实现重载。因为在JavaScript函数中通过名字确定唯一性，参数不同也被认为是相同的函数，后面的函数覆盖前面的函数。<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/06/09/JavaScript函数重载/#more" rel="contents">
@@ -1323,11 +1326,11 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/07/26/597873caa48ac.jpg" alt=""></p>
-<ul>
+          <ul>
 <li>width()和height()</li>
 </ul>
-<p>获取匹配元素集合中的第一个元素的当前计算高度值 或 设置每一个匹配元素的高度值。第一个参数表示设置。(不包括内边距)<br>
+<p>获取匹配元素集合中的第一个元素的当前计算高度值 或 设置每一个匹配元素的高度值。第一个参数表示设置。(不包括内边距) </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'selector'</span>).width();<span class="comment">//获取只包括content的宽度</span></div><div class="line">$(<span class="string">'selector'</span>).width(<span class="string">'100px'</span>);<span class="comment">//设置只包括content的宽度</span></div><div class="line">$(<span class="string">'selector'</span>).height();<span class="comment">//获取只包括content的高度</span></div><div class="line">$(<span class="string">'selector'</span>).height(<span class="string">'100px'</span>);<span class="comment">//设置只包括content的高度</span></div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/06/06/jQuery获取和设置元素宽高/#more" rel="contents">
@@ -1465,31 +1468,18 @@
 
       
         
-          
-            <h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p>清除浮动是指清除浮动所造成的影响。</p>
+          <h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p>清除浮动是指清除浮动所造成的影响。</p>
 <h3 id="清除浮动方法"><a href="#清除浮动方法" class="headerlink" title="清除浮动方法"></a>清除浮动方法</h3><ul>
-<li><p><strong>目前最主流的方法：clearfix</strong></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">.clearfix：after&#123;</div><div class="line">  content:"";</div><div class="line">  display:block;</div><div class="line">  clear:both;</div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;!-- more --&gt;</div><div class="line"></div><div class="line">.clearfix&#123;</div><div class="line">  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p><strong>overflow:hidden;或overflow:auto;</strong><br>父容器会形成BFC。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clear</span>&#123;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li><strong>目前最主流的方法：clearfix</strong><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.clearfix：after&#123;</div><div class="line">  content:"";</div><div class="line">  display:block;</div><div class="line">  clear:both;</div><div class="line">&#125;</div><div class="line">.clearfix&#123;</div><div class="line">  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>目前也有不少开发者使用这种方法。<br>缺点：不适用于像下拉菜单等内部子元素有定位且超出容器的情况</p>
-<ul>
-<li><strong>添加空标签并设置样式clear:both;</strong><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clearfix</span>&#123;</div><div class="line">  <span class="attribute">clear</span>: both</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>优点：简洁，浏览器兼容性好<br>缺点：标签无语义，不提倡！</p>
-<ul>
-<li><p><strong>给浮动元素的父容器添加浮动</strong><br>父容器也添加浮动之后，可以清除内部的浮动，但是会影响整体布局。<br>缺点：拆东墙补西墙的做法，不提倡</p>
-</li>
-<li><p><strong>浮动元素后面的元素添加clear属性</strong><br>浮动元素什么都不做，给浮动元素后面的元素添加clear属性。<br>缺点：高度塌陷的问题还没有解决，没有解决问题的根本——闭合浮动，所以不提倡此方法</p>
-</li>
-</ul>
-<p>总结，目前来看第一种方法是最佳的选择，也是我开发中一直用的方法，不过未来的趋势是流行了这么多年的“浮动+定位”布局会渐渐被“flexbox+grid”布局取代，一起迎接并见证吧！</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/03/清除浮动全总结/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1550,7 +1540,7 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/03/七个对我最重要的职业建议（转载）/" itemprop="url">【转载】七个对我最重要的职业建议</a></h2>
+                <a class="post-title-link" href="/2017/06/03/七个对我最重要的职业建议（转载）/" itemprop="url">七个对我最重要的职业建议（转载）</a></h2>
         
 
         <div class="post-meta">
@@ -1623,7 +1613,8 @@
           <p><img src="https://i.loli.net/2017/08/25/599face70d49a.jpg" alt=""></p>
 <h2 id="不要别人点什么，就做什么"><a href="#不要别人点什么，就做什么" class="headerlink" title="不要别人点什么，就做什么"></a>不要别人点什么，就做什么</h2><p>我的第一份工作，只干了8个月，那家公司就倒闭了。我问经理，接下来我该怎么办，他说：</p>
 <blockquote>
-<p>不要接受那样一份工作，别人下命令你该干什么，以及怎么干。 你要去一个地方，那里的人肯定你对产品的想法，相信你的能力，放手让你去做。”
+<p>不要接受那样一份工作，别人下命令你该干什么，以及怎么干。 你要去一个地方，那里的人肯定你对产品的想法，相信你的能力，放手让你去做。” </p>
+</blockquote>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/06/03/七个对我最重要的职业建议（转载）/#more" rel="contents">

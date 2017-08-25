@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="jQuery中html()与text()的区别 html()  1.不传参 html()：不管取得的jQuery对象是否为多个，只获取匹配的第一个元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档，返回的是一个String">
+<meta name="description" content="jQuery中html()与text()的区别 html()  1.不传参 html()：不管取得的jQuery对象是否为多个，只获取匹配的第一个元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档，返回的是一个String  12345//html页面代码&amp;lt;div&amp;gt;    &amp;lt;p&amp;gt;&amp;lt;span&amp;gt;早上&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;">
 <meta name="keywords" content="JavaScript,jQuery">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuery中html()与text()的区别">
 <meta property="og:url" content="http://yoursite.com/2017/04/29/jQuery中html()与text()的区别/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:description" content="jQuery中html()与text()的区别 html()  1.不传参 html()：不管取得的jQuery对象是否为多个，只获取匹配的第一个元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档，返回的是一个String">
-<meta property="og:updated_time" content="2017-08-25T05:25:38.236Z">
+<meta property="og:description" content="jQuery中html()与text()的区别 html()  1.不传参 html()：不管取得的jQuery对象是否为多个，只获取匹配的第一个元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档，返回的是一个String  12345//html页面代码&amp;lt;div&amp;gt;    &amp;lt;p&amp;gt;&amp;lt;span&amp;gt;早上&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;">
+<meta property="og:updated_time" content="2017-08-25T06:44:37.561Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery中html()与text()的区别">
-<meta name="twitter:description" content="jQuery中html()与text()的区别 html()  1.不传参 html()：不管取得的jQuery对象是否为多个，只获取匹配的第一个元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档，返回的是一个String">
+<meta name="twitter:description" content="jQuery中html()与text()的区别 html()  1.不传参 html()：不管取得的jQuery对象是否为多个，只获取匹配的第一个元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档，返回的是一个String  12345//html页面代码&amp;lt;div&amp;gt;    &amp;lt;p&amp;gt;&amp;lt;span&amp;gt;早上&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;">
 
 
 
@@ -357,9 +357,10 @@
 <li><h3 id="html"><a href="#html" class="headerlink" title="html()"></a>html()</h3></li>
 </ul>
 <p>1.不传参</p>
-<p>html()：不管取得的jQuery对象是否为多个，只获取匹配的第一个元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档，返回的是一个String<br><a id="more"></a></p>
+<p>html()：不管取得的jQuery对象是否为多个，只获取匹配的第一个元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档，返回的是一个String </p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//html页面代码</div><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>早上<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>好<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>;</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//jquery代码</div><div class="line">$(&quot;p&quot;).html();</div><div class="line"></div><div class="line">//结果</div><div class="line">//&lt;span&gt;早上&lt;/span&gt;;</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>2.传参</p>
 <p>html(val)：设置每一个匹配元素的html内容。这个函数不能用于XML文档。但可以用于XHTML文档。如果传参包括HTML节点，则会以生成元素节点的形式添加。返回一个jQuery对象</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//html页面代码</div><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>这里会显示：</div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>

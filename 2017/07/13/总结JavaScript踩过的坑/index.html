@@ -90,12 +90,12 @@
 <meta property="og:url" content="http://yoursite.com/2017/07/13/总结JavaScript踩过的坑/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="数组排序问题1[0,1,10,11,8,-2].sort();  //[[-2, 0, 1, 10, 11, 8] sort()默认情况下会按照Unicode码点排序，而不是数值顺序排序，所以正确的解决方案为：1[0,1,10,11,8,-2].sort((a,b)=&amp;gt;a-b);  //[[-2, 0, 1, 8, 10, 11]">
-<meta property="og:image" content="https://i.loli.net/2017/07/26/5978721a12e23.jpg">
-<meta property="og:updated_time" content="2017-08-25T05:34:24.684Z">
+<meta property="og:image" content="https://i.loli.net/2017/08/25/599fd0940fbb5.jpg">
+<meta property="og:updated_time" content="2017-08-25T07:24:17.328Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="总结JavaScript踩过的坑">
 <meta name="twitter:description" content="数组排序问题1[0,1,10,11,8,-2].sort();  //[[-2, 0, 1, 10, 11, 8] sort()默认情况下会按照Unicode码点排序，而不是数值顺序排序，所以正确的解决方案为：1[0,1,10,11,8,-2].sort((a,b)=&amp;gt;a-b);  //[[-2, 0, 1, 8, 10, 11]">
-<meta name="twitter:image" content="https://i.loli.net/2017/07/26/5978721a12e23.jpg">
+<meta name="twitter:image" content="https://i.loli.net/2017/08/25/599fd0940fbb5.jpg">
 
 
 
@@ -355,7 +355,7 @@
       
 
       
-        <p><img src="https://i.loli.net/2017/07/26/5978721a12e23.jpg" alt=""></p>
+        <p><img src="https://i.loli.net/2017/08/25/599fd0940fbb5.jpg" alt=""></p>
 <h2 id="数组排序问题"><a href="#数组排序问题" class="headerlink" title="数组排序问题"></a>数组排序问题</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">0</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">8</span>,<span class="number">-2</span>].sort();  <span class="comment">//[[-2, 0, 1, 10, 11, 8]</span></div></pre></td></tr></table></figure>
 <p>sort()默认情况下会按照Unicode码点排序，而不是数值顺序排序，所以正确的解决方案为：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">0</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">8</span>,<span class="number">-2</span>].sort(<span class="function">(<span class="params">a,b</span>)=&gt;</span>a-b);  <span class="comment">//[[-2, 0, 1, 8, 10, 11]</span></div></pre></td></tr></table></figure></p>
 <a id="more"></a>

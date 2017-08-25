@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序  1target.onclick = function()&amp;#123;&amp;#125;">
+<meta name="description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序  1target.onclick = function()&amp;#123;&amp;#125;    DOM2级事件:可以添加多个相同事件程序，移除应用程序是不能移除匿名函数（因为匿名函数在内存中是地址，无法获取该地址），不兼">
 <meta name="keywords" content="事件,DOM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DOM事件">
 <meta property="og:url" content="http://yoursite.com/2017/04/30/DOM事件/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序  1target.onclick = function()&amp;#123;&amp;#125;">
-<meta property="og:updated_time" content="2017-08-25T05:38:18.158Z">
+<meta property="og:description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序  1target.onclick = function()&amp;#123;&amp;#125;    DOM2级事件:可以添加多个相同事件程序，移除应用程序是不能移除匿名函数（因为匿名函数在内存中是地址，无法获取该地址），不兼">
+<meta property="og:updated_time" content="2017-08-25T06:44:09.108Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM事件">
-<meta name="twitter:description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序  1target.onclick = function()&amp;#123;&amp;#125;">
+<meta name="twitter:description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序  1target.onclick = function()&amp;#123;&amp;#125;    DOM2级事件:可以添加多个相同事件程序，移除应用程序是不能移除匿名函数（因为匿名函数在内存中是地址，无法获取该地址），不兼">
 
 
 
@@ -358,12 +358,12 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">target.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<a id="more"></a>
 <ul>
 <li><p>DOM2级事件:可以添加多个相同事件程序，移除应用程序是不能移除匿名函数（因为匿名函数在内存中是地址，无法获取该地址），不兼容ie低版本;</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 使用格式</span></div><div class="line">target.addEventListener(type, listener[, useCapture]);</div><div class="line"><span class="comment">//type：事件名称，大小写敏感。</span></div><div class="line"><span class="comment">//listener：监听函数。事件发生时，会调用该监听函数。</span></div><div class="line"><span class="comment">//useCapture：布尔值，表示监听函数是否在捕获阶段（capture）触发，默认为false（监听函数只在冒泡阶段被触发）</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
+<a id="more"></a>
 <h1 id="attachEvent与addEventListener的区别？"><a href="#attachEvent与addEventListener的区别？" class="headerlink" title="attachEvent与addEventListener的区别？"></a>attachEvent与addEventListener的区别？</h1><ul>
 <li><p>参数个数不相同，这个最直观，addEventListener有三个参数，attachEvent只有两个，attachEvent添加的事件处理程序只能发生在冒泡阶段，addEventListener第三个参数可以决定添加的事件处理程序是在捕获阶段还是冒泡阶段处理（我们一般为了浏览器兼容性都设置为冒泡阶段）</p>
 </li>

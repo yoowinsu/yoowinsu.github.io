@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="清除浮动清除浮动是指清除浮动所造成的影响。 清除浮动方法 目前最主流的方法：clearfix 1234567891011.clearfix：after&amp;#123;  content:&quot;&quot;;  display:block;  clear:both;&amp;#125;&amp;lt;!-- more --&amp;gt;.clearfix&amp;#123;  *zoom:1;    /*兼容IE6，触发IE6中的hasLayou">
+<meta name="description" content="清除浮动清除浮动是指清除浮动所造成的影响。 清除浮动方法 目前最主流的方法：clearfix12345678.clearfix：after&amp;#123;  content:&quot;&quot;;  display:block;  clear:both;&amp;#125;.clearfix&amp;#123;  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/&amp;#125;">
 <meta name="keywords" content="CSS,浮动,清除浮动">
 <meta property="og:type" content="article">
 <meta property="og:title" content="清除浮动全总结">
 <meta property="og:url" content="http://yoursite.com/2017/06/03/清除浮动全总结/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:description" content="清除浮动清除浮动是指清除浮动所造成的影响。 清除浮动方法 目前最主流的方法：clearfix 1234567891011.clearfix：after&amp;#123;  content:&quot;&quot;;  display:block;  clear:both;&amp;#125;&amp;lt;!-- more --&amp;gt;.clearfix&amp;#123;  *zoom:1;    /*兼容IE6，触发IE6中的hasLayou">
-<meta property="og:updated_time" content="2017-08-25T05:39:15.251Z">
+<meta property="og:description" content="清除浮动清除浮动是指清除浮动所造成的影响。 清除浮动方法 目前最主流的方法：clearfix12345678.clearfix：after&amp;#123;  content:&quot;&quot;;  display:block;  clear:both;&amp;#125;.clearfix&amp;#123;  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/&amp;#125;">
+<meta property="og:updated_time" content="2017-08-25T06:42:28.565Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="清除浮动全总结">
-<meta name="twitter:description" content="清除浮动清除浮动是指清除浮动所造成的影响。 清除浮动方法 目前最主流的方法：clearfix 1234567891011.clearfix：after&amp;#123;  content:&quot;&quot;;  display:block;  clear:both;&amp;#125;&amp;lt;!-- more --&amp;gt;.clearfix&amp;#123;  *zoom:1;    /*兼容IE6，触发IE6中的hasLayou">
+<meta name="twitter:description" content="清除浮动清除浮动是指清除浮动所造成的影响。 清除浮动方法 目前最主流的方法：clearfix12345678.clearfix：after&amp;#123;  content:&quot;&quot;;  display:block;  clear:both;&amp;#125;.clearfix&amp;#123;  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/&amp;#125;">
 
 
 
@@ -355,11 +355,12 @@
       
         <h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p>清除浮动是指清除浮动所造成的影响。</p>
 <h3 id="清除浮动方法"><a href="#清除浮动方法" class="headerlink" title="清除浮动方法"></a>清除浮动方法</h3><ul>
-<li><p><strong>目前最主流的方法：clearfix</strong></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">.clearfix：after&#123;</div><div class="line">  content:"";</div><div class="line">  display:block;</div><div class="line">  clear:both;</div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;!-- more --&gt;</div><div class="line"></div><div class="line">.clearfix&#123;</div><div class="line">  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li><strong>目前最主流的方法：clearfix</strong><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.clearfix：after&#123;</div><div class="line">  content:"";</div><div class="line">  display:block;</div><div class="line">  clear:both;</div><div class="line">&#125;</div><div class="line">.clearfix&#123;</div><div class="line">  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p><strong>overflow:hidden;或overflow:auto;</strong><br>父容器会形成BFC。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clear</span>&#123;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</ul>
+<a id="more"></a>
+<ul>
+<li><strong>overflow:hidden;或overflow:auto;</strong><br>父容器会形成BFC。<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clear</span>&#123;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>目前也有不少开发者使用这种方法。<br>缺点：不适用于像下拉菜单等内部子元素有定位且超出容器的情况</p>
@@ -421,8 +422,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/03/七个对我最重要的职业建议（转载）/" rel="next" title="【转载】七个对我最重要的职业建议">
-                <i class="fa fa-chevron-left"></i> 【转载】七个对我最重要的职业建议
+              <a href="/2017/06/03/七个对我最重要的职业建议（转载）/" rel="next" title="七个对我最重要的职业建议（转载）">
+                <i class="fa fa-chevron-left"></i> 七个对我最重要的职业建议（转载）
               </a>
             
           </div>

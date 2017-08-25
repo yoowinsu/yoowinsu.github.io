@@ -90,10 +90,12 @@
 <meta property="og:url" content="http://yoursite.com/2017/07/07/烦人的强制类型转换/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="强制类型转换强制类型转换在流程判断和部分代码不规范的相等运算符中应用比较多，至于为什么说代码不规范，我们后面会说到。强制类型转换会让一些JavaScript初学者摸不着头脑，但是掌握其中的转换规则之后，就能轻松应对了。">
-<meta property="og:updated_time" content="2017-08-25T05:29:19.553Z">
+<meta property="og:image" content="https://i.loli.net/2017/08/25/599fc371ecff5.jpg">
+<meta property="og:updated_time" content="2017-08-25T06:28:38.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="烦人的强制类型转换">
 <meta name="twitter:description" content="强制类型转换强制类型转换在流程判断和部分代码不规范的相等运算符中应用比较多，至于为什么说代码不规范，我们后面会说到。强制类型转换会让一些JavaScript初学者摸不着头脑，但是掌握其中的转换规则之后，就能轻松应对了。">
+<meta name="twitter:image" content="https://i.loli.net/2017/08/25/599fc371ecff5.jpg">
 
 
 
@@ -353,7 +355,8 @@
       
 
       
-        <h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>强制类型转换在流程判断和部分代码不规范的相等运算符中应用比较多，至于为什么说代码不规范，我们后面会说到。<br>强制类型转换会让一些JavaScript初学者摸不着头脑，但是掌握其中的转换规则之后，就能轻松应对了。</p>
+        <p><img src="https://i.loli.net/2017/08/25/599fc371ecff5.jpg" alt=""></p>
+<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>强制类型转换在流程判断和部分代码不规范的相等运算符中应用比较多，至于为什么说代码不规范，我们后面会说到。<br>强制类型转换会让一些JavaScript初学者摸不着头脑，但是掌握其中的转换规则之后，就能轻松应对了。</p>
 <a id="more"></a>
 <h4 id="流程判断"><a href="#流程判断" class="headerlink" title="流程判断"></a>流程判断</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(<span class="string">''</span>)&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'true'</span>)  </div><div class="line">&#125;</div><div class="line"><span class="comment">//undefined</span></div></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(<span class="string">' '</span>)&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'true'</span>)  </div><div class="line">&#125;</div><div class="line"><span class="comment">//true</span></div></pre></td></tr></table></figure>
