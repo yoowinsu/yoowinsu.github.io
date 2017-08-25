@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff7a1a;
+  background: #c63396;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2545,7 +2545,7 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 867px) {
   .main-inner {
     margin-top: 30px;
     max-width: 800px;
@@ -2610,6 +2610,11 @@ a:hover {
 }
 .menu .menu-item a:hover {
   border-bottom: none;
+}
+@media (max-width: 767px) {
+  .header-inner {
+    margin-bottom: 40px;
+  }
 }
 .sidebar {
   box-shadow: 0 0 2px rgba(0,0,0,0.7);
