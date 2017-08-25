@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #32ffc4;
+  background: #ffbf60;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2694,6 +2694,26 @@ a:hover {
   background: #f5f2f0;
   border-radius: 6px;
 }
+.use-motion .post {
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 0;
+  background: transparent;
+  border-radius: 0;
+}
+.posts-collapse .post-header:hover {
+  border-bottom-color: #03a9f4;
+  color: #03a9f4;
+}
+.posts-collapse .post {
+  margin: 20px 0;
+}
+.posts-collapse .post-header:hover h3 span {
+  color: #03a9f4;
+}
+.posts-collapse .post-header:hover::before {
+  background: #03a9f4;
+}
 .category-all-page .category-list-count {
   color: #999;
 }
@@ -2769,6 +2789,9 @@ a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"]:hover+a[href="https://
 .posts-expand p:nth-child(7) {
   position: relative;
 }
+.posts-expand {
+  padding-top: 0;
+}
 a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"] {
   display: none;
   position: absolute;
@@ -2798,4 +2821,20 @@ a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"]:before {
 }
 .footer {
   color: #777;
+}
+#photo #posts .fancybox img,
+#photo .fancybox img {
+  display: inline-block;
+  float: right;
+  margin: 10px;
+  width: 300px;
+}
+#photo .fancybox img {
+  box-shadow: 0 0 3px #cacbcb;
+  border: 6px solid #ccc;
+}
+#photo:after {
+  content: "";
+  display: block;
+  clear: both;
 }
