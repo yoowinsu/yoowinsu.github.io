@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1ced73;
+  background: #f424ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2554,6 +2554,10 @@ embed {
 /*box-shadow: 0px 0px 4px 0 #555;*/
   }
 }
+::selection {
+  background: #03a9f4;
+  color: #f5f5d5;
+}
 body {
   background: #f5f5d5;
 }
@@ -2565,7 +2569,7 @@ body .headband {
 }
 a {
   border-bottom: 1px solid transparent;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 a:hover {
   color: #03a9f4;
@@ -2588,7 +2592,7 @@ a:hover {
   width: 100%;
   padding: 0;
   padding-bottom: 2px;
-  transition: background 1.5s;
+  transition: background 1s;
 }
 .header .header-inner:hover {
   background: rgba(255,255,255,0.4);
@@ -2600,7 +2604,7 @@ a:hover {
 }
 .menu .menu-item a {
   border-bottom: none;
-  transition: color 0.5s;
+  transition: color 0.4s;
 }
 .menu .menu-item a:hover {
   border-bottom: none;
@@ -2619,10 +2623,10 @@ a:hover {
   height: auto;
   border: none;
   border-radius: 50%;
-  webkit-transition: 1.4s all;
-  moz-transition: 1.4s all;
-  ms-transition: 1.4s all;
-  transition: 1.4s all;
+  webkit-transition: 1s all;
+  moz-transition: 1s all;
+  ms-transition: 1s all;
+  transition: 1s all;
 }
 .post-toc ol a {
   color: #333;
@@ -2704,13 +2708,13 @@ a:hover {
   border: 2px solid #999 !important;
 }
 .post-button .btn:hover {
-  background: #f5f5d5;
+  background: #f5f2f0;
   color: #999 !important;
 }
 .post-button .btn {
   background: #999;
-  color: #f5f5d5 !important;
-  transition: all 0.7s;
+  color: #f5f2f0 !important;
+  transition: all 0.4s;
 }
 .posts-expand .post-eof {
   width: 100%;
