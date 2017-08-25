@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #37ff63;
+  background: #e9f085;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2562,11 +2562,11 @@ body {
 }
 a {
   border-bottom: 1px solid transparent;
+  transition: all 0.7s;
 }
 a:hover {
   color: #87daff;
   border-bottom-color: #87daff;
-  transition: all 0.7s;
 }
 .header {
   background: rgba(255,255,255,0.65) url("https://ooo.0o0.ooo/2017/06/21/594a0874ca7de.jpg") no-repeat;
@@ -2594,17 +2594,17 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 450px;
+  transition: background 1.5s;
 }
 .menu:hover {
   background: rgba(255,255,255,0.2);
-  transition: background 1.5s;
 }
 .menu .menu-item a {
   border-bottom: none;
+  transition: color 0.5s;
 }
 .menu .menu-item a:hover {
   border-bottom: none;
-  transition: color 0.5s;
 }
 .site-author-image {
   margin-top: 50px;
