@@ -83,15 +83,18 @@
 
 
 
+<meta name="description" content="数据类型最新的 ECMAScript 标准定义了 7 种数据类型:6 种 原始类型：Boolean、Null、Undefined、Number、String、Symbol (ECMAScript 6 新定义)和引用类型：Object。">
 <meta name="keywords" content="JavaScript,数据类型">
 <meta property="og:type" content="article">
 <meta property="og:title" content="检测数据类型的N种方法">
 <meta property="og:url" content="http://yoursite.com/2017/07/08/检测数据类型的N种方法/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
+<meta property="og:description" content="数据类型最新的 ECMAScript 标准定义了 7 种数据类型:6 种 原始类型：Boolean、Null、Undefined、Number、String、Symbol (ECMAScript 6 新定义)和引用类型：Object。">
 <meta property="og:image" content="https://i.loli.net/2017/07/26/59787561714f4.jpg">
-<meta property="og:updated_time" content="2017-07-26T10:57:17.053Z">
+<meta property="og:updated_time" content="2017-08-25T05:31:47.602Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="检测数据类型的N种方法">
+<meta name="twitter:description" content="数据类型最新的 ECMAScript 标准定义了 7 种数据类型:6 种 原始类型：Boolean、Null、Undefined、Number、String、Symbol (ECMAScript 6 新定义)和引用类型：Object。">
 <meta name="twitter:image" content="https://i.loli.net/2017/07/26/59787561714f4.jpg">
 
 
@@ -352,9 +355,8 @@
       
 
       
-        <p><img src="https://i.loli.net/2017/07/26/59787561714f4.jpg" alt=""><br><a id="more"></a></p>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>最新的 ECMAScript 标准定义了 7 种数据类型:<br>6 种 原始类型：Boolean、Null、Undefined、Number、String、Symbol (ECMAScript 6 新定义)和引用类型：Object。</p>
-<p>原始类型中，一般我们认为null和undefined是两个特殊的值；<br>引用类型是指向实际对象的指针，包括Object、Function、Array、RegExp、Date等等。<br>下面开始总结检测数据类型的几种方法：</p>
+        <p><img src="https://i.loli.net/2017/07/26/59787561714f4.jpg" alt=""></p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>最新的 ECMAScript 标准定义了 7 种数据类型:<br>6 种 原始类型：Boolean、Null、Undefined、Number、String、Symbol (ECMAScript 6 新定义)和引用类型：Object。<br><a id="more"></a><br>原始类型中，一般我们认为null和undefined是两个特殊的值；<br>引用类型是指向实际对象的指针，包括Object、Function、Array、RegExp、Date等等。<br>下面开始总结检测数据类型的几种方法：</p>
 <h3 id="typeof"><a href="#typeof" class="headerlink" title="typeof"></a>typeof</h3><p>typeof可以检测Number、String、Symbol、Boolean、Undefined、Function的类型，其他的类型都返回Object，也就是说区分不出一个数据到底是数组还是对象还是正则表达式，所以这个办法不适合检测对象的数据类型<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typeof</span> <span class="string">''</span>; <span class="comment">// string</span></div><div class="line"><span class="keyword">typeof</span> <span class="number">1</span>; <span class="comment">// number</span></div><div class="line"><span class="keyword">typeof</span> <span class="literal">true</span>; <span class="comment">//boolean</span></div><div class="line"><span class="keyword">typeof</span> (<span class="built_in">Symbol</span>());<span class="comment">//symbol</span></div><div class="line"><span class="keyword">typeof</span> (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;); <span class="comment">// function</span></div><div class="line"><span class="keyword">typeof</span> <span class="literal">undefined</span>; <span class="comment">//undefined</span></div><div class="line"><span class="keyword">typeof</span> <span class="literal">null</span>; <span class="comment">//object</span></div><div class="line"><span class="keyword">typeof</span> [] ; <span class="comment">//object</span></div><div class="line"><span class="keyword">typeof</span> <span class="keyword">new</span> <span class="built_in">Date</span>(); <span class="comment">//object</span></div><div class="line"><span class="keyword">typeof</span> <span class="keyword">new</span> <span class="built_in">RegExp</span>(); <span class="comment">//object</span></div></pre></td></tr></table></figure></p>
 <h3 id="instanceof"><a href="#instanceof" class="headerlink" title="instanceof"></a>instanceof</h3><p>instanceof运算符返回一个布尔值，表示指定对象是否为某个构造函数的实例。<br>instanceof的原理是检查原型链，对于那些不存在原型链的对象，就无法判断。下面代码中，obj不存在原型，因此instanceof就认为该对象不是Object的实例。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = <span class="built_in">Object</span>.create(<span class="literal">null</span>)</div><div class="line">obj <span class="keyword">instanceof</span> <span class="built_in">Object</span> <span class="comment">// false</span></div></pre></td></tr></table></figure></p>
 <p>除了上面的特殊情况，JavaScript之中，只要是对象，就有对应的构造函数。因此，instanceof运算符的一个用处，是判断值的类型。如下：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>] <span class="keyword">instanceof</span> <span class="built_in">Array</span> <span class="comment">// true</span></div><div class="line">&#123;&#125; <span class="keyword">instanceof</span> <span class="built_in">Object</span> <span class="comment">// true</span></div><div class="line"><span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125; <span class="keyword">instanceof</span> <span class="built_in">Function</span> <span class="comment">//true</span></div><div class="line"><span class="keyword">new</span> <span class="built_in">Date</span>() <span class="keyword">instanceof</span> <span class="built_in">Date</span>  <span class="comment">//true</span></div></pre></td></tr></table></figure></p>
@@ -493,7 +495,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -515,7 +517,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-count">32</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

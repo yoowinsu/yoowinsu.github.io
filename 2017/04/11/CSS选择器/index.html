@@ -83,16 +83,19 @@
 
 
 
+<meta name="description" content="选择器分类CSS选择器是学习CSS以及Web编程的基础。 整理出常用的CSS选择器，供自己和大家一起学习。">
 <meta name="keywords" content="CSS,选择器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS选择器">
 <meta property="og:url" content="http://yoursite.com/2017/04/11/CSS选择器/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:image" content="https://i.loli.net/2017/07/26/59786dbb39e38.jpg">
-<meta property="og:updated_time" content="2017-08-15T08:26:48.130Z">
+<meta property="og:description" content="选择器分类CSS选择器是学习CSS以及Web编程的基础。 整理出常用的CSS选择器，供自己和大家一起学习。">
+<meta property="og:image" content="https://i.loli.net/2017/08/25/599fb357df8b1.png">
+<meta property="og:updated_time" content="2017-08-25T05:19:41.096Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS选择器">
-<meta name="twitter:image" content="https://i.loli.net/2017/07/26/59786dbb39e38.jpg">
+<meta name="twitter:description" content="选择器分类CSS选择器是学习CSS以及Web编程的基础。 整理出常用的CSS选择器，供自己和大家一起学习。">
+<meta name="twitter:image" content="https://i.loli.net/2017/08/25/599fb357df8b1.png">
 
 
 
@@ -352,9 +355,9 @@
       
 
       
-        <p><img src="https://i.loli.net/2017/07/26/59786dbb39e38.jpg" alt=""><br><a id="more"></a></p>
+        <p><img src="https://i.loli.net/2017/08/25/599fb357df8b1.png" alt=""></p>
 <h1 id="选择器分类"><a href="#选择器分类" class="headerlink" title="选择器分类"></a>选择器分类</h1><p>CSS选择器是学习CSS以及Web编程的基础。</p>
-<p>整理出常用的CSS选择器，供自己和大家一起学习。</p>
+<p>整理出常用的CSS选择器，供自己和大家一起学习。<br><a id="more"></a></p>
 <h2 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">* <span class="comment">/*通用元素选择器，匹配页面任何元素（这也就决定了我们很少使用）*/</span></div><div class="line"><span class="selector-id">#id</span> <span class="comment">/*id选择器，匹配id是'id'的元素*/</span></div><div class="line"><span class="selector-class">.class</span> <span class="comment">/*类选择器，匹配所有类名中包含'class'的元素*/</span></div><div class="line"><span class="selector-tag">E</span>  <span class="comment">/*标签选择器*/</span></div></pre></td></tr></table></figure>
 <h2 id="组合选择器"><a href="#组合选择器" class="headerlink" title="组合选择器"></a>组合选择器</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">E</span>,<span class="selector-tag">F</span>   <span class="comment">/* 多元素选择器，用,(半角)分隔，同时匹配元素E和元素F*/</span></div><div class="line"><span class="selector-tag">E</span> <span class="selector-tag">F</span>    <span class="comment">/*后代选择器，用空格分隔，匹配E元素所有的后代（不只是子元素、子元素向下递归）元素F*/</span></div><div class="line"><span class="selector-tag">E</span>&gt;<span class="selector-tag">F</span>    <span class="comment">/*子元素选择器，用&gt;分隔，匹配E元素的所有直接子元素*/</span></div><div class="line"><span class="selector-tag">E</span>+<span class="selector-tag">F</span>    <span class="comment">/*直接相邻选择器，匹配E元素之后的相邻的一个同级元素F（只匹配一个）*/</span></div><div class="line"><span class="selector-tag">E</span>~<span class="selector-tag">F</span>    <span class="comment">/*普通相邻选择器（兄弟选择器），匹配E元素之后的同级元素F（无论直接相邻与否）*/</span></div><div class="line"><span class="selector-class">.class1</span><span class="selector-class">.class2</span>    <span class="comment">/*匹配类名既包括'class1'又包括'class2'的元素*/</span></div><div class="line"><span class="selector-tag">element</span><span class="selector-id">#id</span>   <span class="comment">/* 匹配id为'id'的element标签的元素*/</span></div></pre></td></tr></table></figure>
 <h2 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">E</span><span class="selector-attr">[attr]</span>    <span class="comment">/*匹配所有具有属性attr的元素，div[id]就能取到所有有id属*/</span>性的<span class="selector-tag">div</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-attr">[attr = value]</span>    <span class="comment">/*匹配属性attr值等于value的元素，div[id='test'],匹配id为test的div*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-attr">[attr ~= value]</span>    <span class="comment">/*匹配所有属性attr具有多个空格分隔、其中一个值等于value的元素*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-attr">[attr ^= value]</span>    <span class="comment">/*匹配属性attr的值以value开头的元素*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-attr">[attr $= value]</span>    <span class="comment">/*匹配属性attr的值以value结尾的元素*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-attr">[attr *= value]</span>    <span class="comment">/*匹配属性attr的值包含value的元素*/</span></div></pre></td></tr></table></figure>
@@ -530,7 +533,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -552,7 +555,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-count">32</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

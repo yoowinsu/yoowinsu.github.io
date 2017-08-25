@@ -83,16 +83,17 @@
 
 
 
+<meta name="description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序  1target.onclick = function()&amp;#123;&amp;#125;">
 <meta name="keywords" content="事件,DOM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DOM事件">
 <meta property="og:url" content="http://yoursite.com/2017/04/30/DOM事件/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
-<meta property="og:image" content="https://i.loli.net/2017/07/26/5978721a0d673.jpg">
-<meta property="og:updated_time" content="2017-07-26T10:43:36.498Z">
+<meta property="og:description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序  1target.onclick = function()&amp;#123;&amp;#125;">
+<meta property="og:updated_time" content="2017-08-25T05:38:18.158Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM事件">
-<meta name="twitter:image" content="https://i.loli.net/2017/07/26/5978721a0d673.jpg">
+<meta name="twitter:description" content="DOM0 事件和DOM2级事件监听使用方式上有什么区别？ DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序  1target.onclick = function()&amp;#123;&amp;#125;">
 
 
 
@@ -352,11 +353,13 @@
       
 
       
-        <p><img src="https://i.loli.net/2017/07/26/5978721a0d673.jpg" alt=""><br><a id="more"></a></p>
-<h1 id="DOM0-事件和DOM2级事件监听使用方式上有什么区别？"><a href="#DOM0-事件和DOM2级事件监听使用方式上有什么区别？" class="headerlink" title="DOM0 事件和DOM2级事件监听使用方式上有什么区别？"></a>DOM0 事件和DOM2级事件监听使用方式上有什么区别？</h1><ul>
+        <h1 id="DOM0-事件和DOM2级事件监听使用方式上有什么区别？"><a href="#DOM0-事件和DOM2级事件监听使用方式上有什么区别？" class="headerlink" title="DOM0 事件和DOM2级事件监听使用方式上有什么区别？"></a>DOM0 事件和DOM2级事件监听使用方式上有什么区别？</h1><ul>
 <li><p>DOM0 事件:事件应用程序被当做是元素的方法，属性名小写，移除事件时把属性值设为null即可，一个元素只能有一个同类事件程序 </p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">target.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</div></pre></td></tr></table></figure>
 </li>
+</ul>
+<a id="more"></a>
+<ul>
 <li><p>DOM2级事件:可以添加多个相同事件程序，移除应用程序是不能移除匿名函数（因为匿名函数在内存中是地址，无法获取该地址），不兼容ie低版本;</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 使用格式</span></div><div class="line">target.addEventListener(type, listener[, useCapture]);</div><div class="line"><span class="comment">//type：事件名称，大小写敏感。</span></div><div class="line"><span class="comment">//listener：监听函数。事件发生时，会调用该监听函数。</span></div><div class="line"><span class="comment">//useCapture：布尔值，表示监听函数是否在捕获阶段（capture）触发，默认为false（监听函数只在冒泡阶段被触发）</span></div></pre></td></tr></table></figure>
 </li>
@@ -526,7 +529,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -548,7 +551,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-count">32</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
