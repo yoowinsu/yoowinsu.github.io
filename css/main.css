@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4fabc6;
+  background: #ff7a1a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2694,7 +2694,7 @@ a:hover {
   background: #f5f2f0;
   border-radius: 6px;
 }
-.use-motion .post {
+.posts-collapse .post {
   box-shadow: none;
   padding: 0;
   margin-bottom: 0;
