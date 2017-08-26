@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #eefeb0;
+  background: #ff2881;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2591,17 +2591,16 @@ a:hover {
   font-weight: 400;
 }
 @media (max-width: 766px) {
-  .header a img {
+  .header>a>img {
     display: none;
   }
 }
-.header a img {
+.header>a>img {
   z-index: 1;
 }
 .header .header-inner {
   padding: 0;
   padding-bottom: 2px;
-/*transition: background 1s;*/
 }
 .menu {
   margin-left: auto;
