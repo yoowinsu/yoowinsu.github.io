@@ -67,7 +67,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="CSS,选择器," />
+  <meta name="keywords" content="选择器,CSS," />
 
 
 
@@ -84,14 +84,14 @@
 
 
 <meta name="description" content="选择器分类CSS选择器是学习CSS以及Web编程的基础。 整理出常用的CSS选择器，供自己和大家一起学习。">
-<meta name="keywords" content="CSS,选择器">
+<meta name="keywords" content="选择器,CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS选择器">
 <meta property="og:url" content="http://yoursite.com/2017/01/11/CSS选择器/index.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="选择器分类CSS选择器是学习CSS以及Web编程的基础。 整理出常用的CSS选择器，供自己和大家一起学习。">
 <meta property="og:image" content="https://i.loli.net/2017/08/25/599fb357df8b1.png">
-<meta property="og:updated_time" content="2017-08-25T06:54:32.909Z">
+<meta property="og:updated_time" content="2017-08-26T08:16:27.222Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS选择器">
 <meta name="twitter:description" content="选择器分类CSS选择器是学习CSS以及Web编程的基础。 整理出常用的CSS选择器，供自己和大家一起学习。">
@@ -400,31 +400,7 @@
 <h2 id="hover选择器"><a href="#hover选择器" class="headerlink" title="hover选择器"></a>hover选择器</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">F</span>    <span class="comment">/*E元素是悬浮元素，F是E的子元素，E的hover可以改变F的状态*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:hover</span>&gt;<span class="selector-tag">F</span>    <span class="comment">/*E元素是悬浮元素，F是E的直接子元素，E的hover可以改变F的状态*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:hover+F</span>    <span class="comment">/*E元素是悬浮元素，F是E的直接相邻的一个同级元素，E的hover可以改变F的状态*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:hover</span>~<span class="selector-tag">F</span>    <span class="comment">/*E元素是悬浮元素，F是E的同级元素（兄弟元素），E的hover可以改变F的状态*/</span></div></pre></td></tr></table></figure>
 <h2 id="nth-child选择器"><a href="#nth-child选择器" class="headerlink" title="nth-child选择器"></a>nth-child选择器</h2><p>CSS选择器中n表示非负整数<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:nth-child(1)</span>  <span class="comment">/*匹配E的父元素下第一个子元素且为E元素*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:nth-child(n)</span>  <span class="comment">/*所有E元素（和E标签选择器貌似没什么区别。。）*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:nth-child(2n)</span>  <span class="comment">/*匹配E的父元素下所有子元素次序是偶数的E元素（比如第2,4,6,8...个）*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:nth-child(even)</span>  <span class="comment">/*等于E:nth-child(2n) */</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:nth-child(2n+1)</span>  <span class="comment">/*匹配E的父元素下所有子元素次序是奇数的E元素（比如第1,3,5,7..个）*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:nth-child(odd)</span>  <span class="comment">/*等于E:nth-child(2n+1) */</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:nth-child(n+4)</span>  <span class="comment">/*匹配E的父元素下所有子元素次序大于等于4的E元素（比如第4,5,6,7...个）*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:nth-child(-n+5)</span>  <span class="comment">/*匹配E的父元素下所有子元素次序小于等于5的E元素（比如第1,2,3,4,5个）*/</span></div><div class="line"><span class="selector-tag">E</span><span class="selector-pseudo">:nth-child(3n+2)</span>  <span class="comment">/*匹配E的父元素下所有子元素次序符合3n+2的E元素（比如第2,5,8,11个）*/</span></div></pre></td></tr></table></figure></p>
 <p>ps:nth-last-child选择也是同理</p>
-<h1 id="选择器知识点"><a href="#选择器知识点" class="headerlink" title="选择器知识点"></a>选择器知识点</h1><h2 id="class-和-id-的使用场景"><a href="#class-和-id-的使用场景" class="headerlink" title="class 和 id 的使用场景?"></a>class 和 id 的使用场景?</h2><ul>
-<li>id选择器 页面中id选择器只能出现一次。 一般最大曾的容器性的标签使用id选择器。</li>
-<li>class选择器 页面中一个class可以出现多次，同一个标签可以有多个不同的class。 多个元素具有同样的样式可以使用同样的class类名赋予样式，这样可以得到复用。</li>
-</ul>
-<h2 id="选择器的优先级是怎样的-对于复杂场景如何计算优先级？"><a href="#选择器的优先级是怎样的-对于复杂场景如何计算优先级？" class="headerlink" title="选择器的优先级是怎样的?对于复杂场景如何计算优先级？"></a>选择器的优先级是怎样的?对于复杂场景如何计算优先级？</h2><ul>
-<li><p>就近原则，被选中元素的样式优先级大于元素继承样式的优先级；</p>
-</li>
-<li><p>优先级顺序如下： !important&gt;行内样式&gt;id选择器样式&gt;class选择器样式&gt;标签选择器样式</p>
-</li>
-<li><p>复杂场景下，行内样式、id选择器样式、class选择器样式、标签选择器样式对应的值分别是1000、100、10、1，累计选择机的总和，值越大优先级越高</p>
-</li>
-<li><p>优先级相同的情况下，后面的样式会覆盖掉前面的样式</p>
-</li>
-</ul>
-<h2 id="a-link-a-hover-a-active-a-visited-的顺序是怎样的？-为什么？"><a href="#a-link-a-hover-a-active-a-visited-的顺序是怎样的？-为什么？" class="headerlink" title="a:link, a:hover, a:active, a:visited 的顺序是怎样的？ 为什么？"></a>a:link, a:hover, a:active, a:visited 的顺序是怎样的？ 为什么？</h2><p>顺序依次是a:link&gt;&gt;a:visited&gt;&gt;a:hover&gt;&gt;a:active. 理由如下： </p>
-<p>1.鼠标经过”未访问链接”同时拥有a:link、a:hover两种属性，考虑到后面会覆盖前面样式，又要显示hover的样式，所以a:hover需要在a:link的后面；</p>
-<p>2.鼠标按下”链接”同时拥有a:hover、a:active两种属性，考虑到后面会覆盖前面样式，又要显示active的样式，所以a:active需要在a:hover的后面； </p>
-<p>3.鼠标经过”访问过链接”同时拥有a:visited、a:hover两种属性，考虑到后面会覆盖前面样式，又要显示hover的样式，所以a:hover需要在a:visited的后面； 综上，顺序依次是a:link&gt;&gt;a:visited&gt;&gt;a:hover&gt;&gt;a:active</p>
-<h2 id="以下选择器分别是什么意思"><a href="#以下选择器分别是什么意思" class="headerlink" title="以下选择器分别是什么意思?"></a>以下选择器分别是什么意思?</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#header</span>&#123;  <span class="comment">/* id为header的元素*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-class">.header</span>&#123;  <span class="comment">/*class为header的元素*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-class">.header</span> <span class="selector-class">.logo</span>&#123;  <span class="comment">/*class为header的元素中class为logo的子元素*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-class">.header</span><span class="selector-class">.mobile</span>&#123;  <span class="comment">/*class中既有header又有logo的元素*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-class">.header</span> <span class="selector-tag">p</span>, <span class="selector-class">.header</span> <span class="selector-tag">h3</span>&#123;  <span class="comment">/*class为header的元素中的p元素以及class为header中的h3元素*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-id">#header</span> <span class="selector-class">.nav</span>&gt;<span class="selector-tag">li</span>&#123;  <span class="comment">/*id为header的元素中li的class为nav 的子元素*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-id">#header</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;  <span class="comment">/*id为header的元素中a元素的鼠标经过样式*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-id">#header</span> <span class="selector-class">.logo</span>~<span class="selector-tag">p</span>&#123;  <span class="comment">/*id为header的元素中class为logo的元素的后面所有同级p元素*/</span></div><div class="line">&#125;</div><div class="line"><span class="selector-id">#header</span> <span class="selector-tag">input</span><span class="selector-attr">[type="text"]</span>&#123;  <span class="comment">/*id为header的元素中input有[type="text"]属性的子元素*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>div:first-child和div:first-of-type的作用和区别 div:first-child是选中父元素中第一个子元素且该元素必须为div元素才会生效； div:first-of-type是选中父元素中第一个为div的元素，如果是类名的话，则是选中所有为该类名的所有类型 第一个元素。</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line"><span class="selector-class">.item1</span><span class="selector-pseudo">:first-child</span>&#123;</div><div class="line">  <span class="attribute">color</span>: red;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.item1</span><span class="selector-pseudo">:first-of-type</span>&#123;</div><div class="line">  <span class="attribute">background</span>: blue;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"ct"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"item1"</span>&gt;</span>aa<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">"item1"</span>&gt;</span>bb<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">"item1"</span>&gt;</span>ccc<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></div><div class="line"> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>1.”aa”显示为红色是因为div的第一个子元素正好为class为item1的元素；</p>
-<p>2.”aa”和”bb”背景为蓝色是因为他们类名为item1，且他们都是该类型的第一个元素。</p>
+<h2 id="a-link-a-hover-a-active-a-visited-的顺序"><a href="#a-link-a-hover-a-active-a-visited-的顺序" class="headerlink" title="a:link, a:hover, a:active, a:visited 的顺序"></a>a:link, a:hover, a:active, a:visited 的顺序</h2><p>顺序依次是a:link&gt;&gt;a:visited&gt;&gt;a:hover&gt;&gt;a:active</p>
 
       
     </div>
@@ -454,9 +430,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
-          
             <a href="/tags/选择器/" rel="tag"><i class="fa fa-tag"></i> 选择器</a>
+          
+            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
           
         </div>
       
@@ -639,7 +615,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#选择器分类"><span class="nav-number">1.</span> <span class="nav-text">选择器分类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本选择器"><span class="nav-number">1.1.</span> <span class="nav-text">基本选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组合选择器"><span class="nav-number">1.2.</span> <span class="nav-text">组合选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性选择器"><span class="nav-number">1.3.</span> <span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪类选择器"><span class="nav-number">1.4.</span> <span class="nav-text">伪类选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪元素选择器"><span class="nav-number">1.5.</span> <span class="nav-text">伪元素选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hover选择器"><span class="nav-number">1.6.</span> <span class="nav-text">hover选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nth-child选择器"><span class="nav-number">1.7.</span> <span class="nav-text">nth-child选择器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#选择器知识点"><span class="nav-number">2.</span> <span class="nav-text">选择器知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#class-和-id-的使用场景"><span class="nav-number">2.1.</span> <span class="nav-text">class 和 id 的使用场景?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择器的优先级是怎样的-对于复杂场景如何计算优先级？"><span class="nav-number">2.2.</span> <span class="nav-text">选择器的优先级是怎样的?对于复杂场景如何计算优先级？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#a-link-a-hover-a-active-a-visited-的顺序是怎样的？-为什么？"><span class="nav-number">2.3.</span> <span class="nav-text">a:link, a:hover, a:active, a:visited 的顺序是怎样的？ 为什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以下选择器分别是什么意思"><span class="nav-number">2.4.</span> <span class="nav-text">以下选择器分别是什么意思?</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#选择器分类"><span class="nav-number">1.</span> <span class="nav-text">选择器分类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本选择器"><span class="nav-number">1.1.</span> <span class="nav-text">基本选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组合选择器"><span class="nav-number">1.2.</span> <span class="nav-text">组合选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性选择器"><span class="nav-number">1.3.</span> <span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪类选择器"><span class="nav-number">1.4.</span> <span class="nav-text">伪类选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪元素选择器"><span class="nav-number">1.5.</span> <span class="nav-text">伪元素选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hover选择器"><span class="nav-number">1.6.</span> <span class="nav-text">hover选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nth-child选择器"><span class="nav-number">1.7.</span> <span class="nav-text">nth-child选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#a-link-a-hover-a-active-a-visited-的顺序"><span class="nav-number">1.8.</span> <span class="nav-text">a:link, a:hover, a:active, a:visited 的顺序</span></a></li></ol></li></ol></div>
             
 
           </div>
