@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffa1ff;
+  background: #ff8ee4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2798,10 +2798,6 @@ a:hover {
   .posts-collapse {
     z-index: 0;
   }
-}
-a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"] {
-  pointer-events: none;
-  cursor: default;
 }
 a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"]:hover+a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"] {
   display: block;

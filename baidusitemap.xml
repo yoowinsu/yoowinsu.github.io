@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://yoowin.me/2016/11/markdown-knowledge.html</loc>
+    <lastmod>2017-08-27T10:24:00.621Z</lastmod>
+    <data>
+        <display>
+        <title>markdown简介</title>
+        <pubTime>2016-11-02T18:03:16.000Z</pubTime>
+        
+        <tag>markdown</tag>
+         
+        <tag>前端工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="http://yoowin.me/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2016/11/line-height-difference.html</loc>
+    <lastmod>2017-08-27T10:23:43.867Z</lastmod>
+    <data>
+        <display>
+        <title>line-height的值为2和200%的区别</title>
+        <pubTime>2016-11-17T15:57:13.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>line-height</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://yoowin.me/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/06/jquery-width-and-height.html</loc>
+    <lastmod>2017-08-27T10:23:14.070Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery获取和设置元素宽高</title>
+        <pubTime>2017-06-06T09:19:23.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>jQuery</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/05/jquery-knowledge-alls.html</loc>
+    <lastmod>2017-08-27T10:22:52.337Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery知识点</title>
+        <pubTime>2017-05-26T11:09:45.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>jQuery</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/04/jquery-html-and-text.html</loc>
+    <lastmod>2017-08-27T10:22:34.940Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery中html()与text()的区别</title>
+        <pubTime>2017-04-29T15:36:07.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>jQuery</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/04/javascript-knowledge-and-audition.html</loc>
+    <lastmod>2017-08-27T10:22:14.018Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript知识点和面试题总结</title>
+        <pubTime>2017-04-25T14:46:37.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>面试</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/06/function-overloaded.html</loc>
+    <lastmod>2017-08-27T10:21:43.832Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript函数重载</title>
+        <pubTime>2017-06-08T17:35:20.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>函数重载</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/04/two-inline-block-bugs.html</loc>
+    <lastmod>2017-08-27T10:21:18.172Z</lastmod>
+    <data>
+        <display>
+        <title>inline-block的两个Bug</title>
+        <pubTime>2017-04-15T12:03:54.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>inline-block</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://yoowin.me/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/04/dom-events-alls.html</loc>
+    <lastmod>2017-08-27T10:20:50.799Z</lastmod>
+    <data>
+        <display>
+        <title>DOM事件</title>
+        <pubTime>2017-04-30T14:46:24.000Z</pubTime>
+        
+        <tag>事件</tag>
+         
+        <tag>DOM</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/01/css-selectors.html</loc>
+    <lastmod>2017-08-27T10:20:35.552Z</lastmod>
+    <data>
+        <display>
+        <title>CSS选择器</title>
+        <pubTime>2017-01-11T14:33:55.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>选择器</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://yoowin.me/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2016/12/css-knowledge-alls.html</loc>
+    <lastmod>2017-08-27T10:20:22.159Z</lastmod>
+    <data>
+        <display>
+        <title>CSS知识点总结</title>
+        <pubTime>2016-12-20T19:07:25.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://yoowin.me/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/05/css-triangle.html</loc>
+    <lastmod>2017-08-27T10:19:57.412Z</lastmod>
+    <data>
+        <display>
+        <title>CSS实现空心三角指示箭头</title>
+        <pubTime>2017-04-30T16:22:36.000Z</pubTime>
+        
+        <tag>CSS三角形</tag>
+         
+        <tag>CSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://yoowin.me/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/05/ajax-package.html</loc>
+    <lastmod>2017-08-27T10:19:22.975Z</lastmod>
+    <data>
+        <display>
+        <title>AJAX的封装</title>
+        <pubTime>2017-05-25T16:12:57.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>AJAX</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/06/audition-css.html</loc>
+    <lastmod>2017-08-27T10:18:34.915Z</lastmod>
+    <data>
+        <display>
+        <title>面试题总结之CSS篇</title>
+        <pubTime>2017-06-26T12:01:43.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>面试</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://yoowin.me/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/02/get-fe-knowledge.html</loc>
+    <lastmod>2017-08-27T10:18:07.198Z</lastmod>
+    <data>
+        <display>
+        <title>获取前端知识</title>
+        <pubTime>2017-02-09T17:55:26.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="http://yoowin.me/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/03/coding-specification.html</loc>
+    <lastmod>2017-08-27T10:17:42.954Z</lastmod>
+    <data>
+        <display>
+        <title>编码规范</title>
+        <pubTime>2017-03-26T16:04:06.000Z</pubTime>
+        
+        <tag>规范</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="http://yoowin.me/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/07/the-turn-type.html</loc>
+    <lastmod>2017-08-27T10:16:47.207Z</lastmod>
+    <data>
+        <display>
+        <title>烦人的强制类型转换</title>
+        <pubTime>2017-07-06T19:23:54.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>数据类型</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/06/clear-float-alls.html</loc>
+    <lastmod>2017-08-27T10:16:15.615Z</lastmod>
+    <data>
+        <display>
+        <title>清除浮动全总结</title>
+        <pubTime>2017-06-03T14:29:52.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>浮动</tag>
+         
+        <tag>清除浮动</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://yoowin.me/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/04/deepcopy-methods.html</loc>
+    <lastmod>2017-08-27T10:15:56.582Z</lastmod>
+    <data>
+        <display>
+        <title>深拷贝的两种实现</title>
+        <pubTime>2017-04-26T16:06:01.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>深拷贝</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/04/float-position-bfc.html</loc>
+    <lastmod>2017-08-27T10:15:34.170Z</lastmod>
+    <data>
+        <display>
+        <title>浮动、定位、BFC和边距合并</title>
+        <pubTime>2017-04-02T16:44:30.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>浮动</tag>
+         
+        <tag>定位</tag>
+         
+        <tag>BFC</tag>
+         
+        <tag>边距合并</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://yoowin.me/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/04/regexp-knowledge.html</loc>
+    <lastmod>2017-08-27T10:15:11.058Z</lastmod>
+    <data>
+        <display>
+        <title>正则表达式知识点</title>
+        <pubTime>2017-04-20T14:59:52.000Z</pubTime>
+        
+        <tag>RegExp</tag>
+         
+        <tag>正则表达式</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/05/my-love-movies.html</loc>
+    <lastmod>2017-08-27T10:14:27.517Z</lastmod>
+    <data>
+        <display>
+        <title>我推荐的电影</title>
+        <pubTime>2017-05-30T14:45:49.000Z</pubTime>
+        
+        <tag>生活</tag>
+         
+        <tag>电影</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://yoowin.me/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/07/js-bug.html</loc>
+    <lastmod>2017-08-27T10:13:56.152Z</lastmod>
+    <data>
+        <display>
+        <title>总结JavaScript踩过的坑</title>
+        <pubTime>2017-07-13T15:16:10.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/04/center-methods.html</loc>
+    <lastmod>2017-08-27T10:13:39.759Z</lastmod>
+    <data>
+        <display>
+        <title>垂直居中的几种方法</title>
+        <pubTime>2017-04-02T14:29:49.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>居中</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://yoowin.me/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/07/fe-base.html</loc>
+    <lastmod>2017-08-27T10:13:19.128Z</lastmod>
+    <data>
+        <display>
+        <title>前端入门基础</title>
+        <pubTime>2017-07-01T10:10:16.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="http://yoowin.me/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/07/detects-data-types.html</loc>
+    <lastmod>2017-08-27T10:12:54.336Z</lastmod>
+    <data>
+        <display>
+        <title>检测数据类型的N种方法</title>
+        <pubTime>2017-07-08T10:29:31.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>数据类型</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/07/let-const-var.html</loc>
+    <lastmod>2017-08-27T10:11:46.532Z</lastmod>
+    <data>
+        <display>
+        <title>let、var、const声明的区别</title>
+        <pubTime>2017-07-27T10:00:30.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>let</tag>
+         
+        <tag>var</tag>
+         
+        <tag>const</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoowin.me/2017/06/seven-suggestions.html</loc>
+    <lastmod>2017-08-27T10:11:20.516Z</lastmod>
+    <data>
+        <display>
+        <title>七个对我最重要的职业建议（转载）</title>
+        <pubTime>2017-06-03T11:14:46.000Z</pubTime>
+        
+        <tag>职业建议</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="http://yoowin.me/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+    
+</urlset>
