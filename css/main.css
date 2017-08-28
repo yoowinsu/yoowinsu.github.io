@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #948767;
+  background: #c41d95;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2889,4 +2889,8 @@ a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"]:before {
 a[href="https://i.loli.net/2017/08/27/59a27fe15e9e8.png"] {
   pointer-events: none;
   cursor: default;
+}
+#wapper #fake-form {
+  border-radius: 20px;
+  overflow: hidden;
 }
