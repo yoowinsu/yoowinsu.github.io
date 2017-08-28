@@ -1,9 +1,11 @@
-# hexo robots.txt
 User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
+Allow: /categories/life/
+Allow: /images/
+Allow: /about/
 
 Disallow: /vendors/
 Disallow: /js/

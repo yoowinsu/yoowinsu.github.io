@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb8d6;
+  background: #b8ffad;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2819,7 +2819,7 @@ a:hover {
 a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"]:hover+a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"] {
   display: block;
 }
-.posts-expand p:nth-child(6) {
+.posts-expand .call+p {
   position: relative;
 }
 .posts-expand {
