@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2da434;
+  background: #ffb8d6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2637,6 +2637,33 @@ a:hover {
   moz-transition: 1s all;
   ms-transition: 1s all;
   transition: 1s all;
+  cursor: pointer;
+}
+.site-author-image:before {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: #ffc0cb;
+  cursor: pointer;
+}
+.site-author-image:hover {
+  -webkit-transform: scale(1.2) translate(0, -20px);
+  -moz-transform: scale(1.2) translate(0, -20px);
+  -ms-transform: scale(1.2) translate(0, -20px);
+  -o-transform: scale(1.2) translate(0, -20px);
+  transform: scale(1.2) translate(0, -20px);
+}
+.site-author-name {
+  font-family: 'Comic Sans MS', sans-serif;
+  transition: 1s all;
+}
+.site-author-image:hover+.site-author-name {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
 }
 .post-toc ol a {
   color: #333;
@@ -2669,18 +2696,8 @@ a:hover {
 .post-toc ol a {
   border-bottom: none;
 }
-.site-author-name {
-  font-family: 'Comic Sans MS', sans-serif;
-}
 .sidebar {
   background: rgba(255,255,255,0.65) url("https://ooo.0o0.ooo/2017/06/21/594a0874ca7de.jpg") 30% no-repeat;
-}
-.site-author-image:hover {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 .links-of-author a {
   border-bottom: none;
