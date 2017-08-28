@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b8ffad;
+  background: #1fff9d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2816,7 +2816,10 @@ a:hover {
     z-index: 0;
   }
 }
-a[href="https://i.loli.net/2017/08/11/598d7e0397f37.jpg"]:hover+a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"] {
+.wechat {
+  cursor: pointer;
+}
+.wechat:hover+a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"] {
   display: block;
 }
 .posts-expand .call+p {
