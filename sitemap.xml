@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yoowin.me/message/index.html</loc>
+    <loc>https://yoowin.me//404.html</loc>
     
-    <lastmod>2017-08-28T09:05:39.347Z</lastmod>
+    <lastmod>2017-08-28T09:54:14.079Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://yoowin.me/about/index.html</loc>
     
-    <lastmod>2017-08-28T06:23:55.687Z</lastmod>
+    <lastmod>2017-08-28T09:54:10.955Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yoowin.me/categories/index.html</loc>
+    
+    <lastmod>2017-08-28T09:54:08.366Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yoowin.me/images/index.html</loc>
+    
+    <lastmod>2017-08-28T09:54:01.356Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yoowin.me/tags/index.html</loc>
+    
+    <lastmod>2017-08-28T09:53:10.654Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yoowin.me/message/index.html</loc>
+    
+    <lastmod>2017-08-28T09:05:39.347Z</lastmod>
     
   </url>
   
@@ -212,37 +240,9 @@
   </url>
   
   <url>
-    <loc>https://yoowin.me//404.html</loc>
-    
-    <lastmod>2017-08-27T08:52:57.920Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yoowin.me/images/index.html</loc>
-    
-    <lastmod>2017-08-25T12:14:09.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yoowin.me/tags/index.html</loc>
-    
-    <lastmod>2017-08-25T10:56:54.805Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://yoowin.me/life/index.html</loc>
     
     <lastmod>2017-08-25T10:47:06.563Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yoowin.me/categories/index.html</loc>
-    
-    <lastmod>2017-08-25T10:27:12.736Z</lastmod>
     
   </url>
   
