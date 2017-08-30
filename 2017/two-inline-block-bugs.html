@@ -98,7 +98,7 @@
 <meta property="og:image" content="https://ooo.0o0.ooo/2017/06/21/5949e229ba60f.png">
 <meta property="og:image" content="https://ooo.0o0.ooo/2017/06/21/5949e229b9989.png">
 <meta property="og:image" content="https://ooo.0o0.ooo/2017/06/21/5949e229bb1de.png">
-<meta property="og:updated_time" content="2017-08-27T10:21:18.172Z">
+<meta property="og:updated_time" content="2017-08-30T08:58:02.717Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="inline-block的两个Bug">
 <meta name="twitter:description" content="1.元素之间的间隙两个inline-block 元素之间会出现间隙。如下图： 解决方法：  第一种：  将父元素的 font-size 设置为0，然后在 inline-block 元素中将 font-size 设置为 14px.">
@@ -406,7 +406,7 @@
       
 
       
-        <h1 id="1-元素之间的间隙"><a href="#1-元素之间的间隙" class="headerlink" title="1.元素之间的间隙"></a>1.元素之间的间隙</h1><p>两个inline-block 元素之间会出现间隙。如下图：</p>
+        <h2 id="1-元素之间的间隙"><a href="#1-元素之间的间隙" class="headerlink" title="1.元素之间的间隙"></a>1.元素之间的间隙</h2><p>两个inline-block 元素之间会出现间隙。如下图：</p>
 <p><img src="https://ooo.0o0.ooo/2017/06/21/5949e229b7b47.png" alt="空隙"><br>解决方法：</p>
 <ul>
 <li>第一种：</li>
@@ -416,22 +416,23 @@
 <ul>
 <li>第二种：</li>
 </ul>
-<p>去掉元素之间的空格、回车、tab。如下图：</p>
+<p>去掉元素之间的空格、回车、tab（弊端就是代码不美观，可读性差，不易维护）<br>如下图：</p>
 <p><img src="https://ooo.0o0.ooo/2017/06/21/5949e229b52c3.png" alt="去掉空格、换行"></p>
-<h1 id="2-不同高度的元素无法对齐"><a href="#2-不同高度的元素无法对齐" class="headerlink" title="2.不同高度的元素无法对齐"></a>2.不同高度的元素无法对齐</h1><p>两个不同高度的 inline-block 元素无法对齐。如下图：</p>
+<h2 id="2-不同高度的元素无法对齐"><a href="#2-不同高度的元素无法对齐" class="headerlink" title="2.不同高度的元素无法对齐"></a>2.不同高度的元素无法对齐</h2><p>两个不同高度的 inline-block 元素无法对齐。如下图：</p>
 <p><img src="https://ooo.0o0.ooo/2017/06/21/5949e229b8b23.png" alt="对不齐的情况"></p>
 <p>解决方法：</p>
 <p>改变 inline-block 元素的 vertical-align，一般改为 top 或 middle.如下图：</p>
 <p><img src="https://ooo.0o0.ooo/2017/06/21/5949e2299cbfe.png" alt="top"></p>
 <p><img src="https://ooo.0o0.ooo/2017/06/21/5949e229ba60f.png" alt="middle"></p>
-<h1 id="还有一种现象就是img元素下面无缘无故多出几像素（img默认是inline-block）"><a href="#还有一种现象就是img元素下面无缘无故多出几像素（img默认是inline-block）" class="headerlink" title="还有一种现象就是img元素下面无缘无故多出几像素（img默认是inline-block）"></a>还有一种现象就是img元素下面无缘无故多出几像素（img默认是inline-block）</h1><p>img下面留白,如下图：</p>
+<h2 id="元素专有的BUG"><a href="#元素专有的BUG" class="headerlink" title="元素专有的BUG"></a><img>元素专有的BUG</h2><p>还有一种现象就是img元素下面无缘无故多出几像素（img默认是inline-block）</p>
+<p>img下面留白,如下图：</p>
 <p><img src="https://ooo.0o0.ooo/2017/06/21/5949e229b9989.png" alt="img下面留白"></p>
+<p>原因可以看<a href="https://www.zhihu.com/question/21558138" target="_blank" rel="external">知乎–元素底部为何有空白？</a></p>
 <p>解决办法：</p>
-<p>设置vertical-align为bottom，如下图：</p>
+<p>设置vertical-align为bottom或者middle，如下图：</p>
 <p><img src="https://ooo.0o0.ooo/2017/06/21/5949e229bb1de.png" alt="vertical-align为bottom"></p>
-<h1 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h1><p>工作中，使用 float 或 flex，尽量不要使用 inline-block，如果要使用，请避开bug</p>
+<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><p>工作中，使用 float 或 flex，尽量不要使用 inline-block，如果要使用，请用合理方法避开bug</p>
 <h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/" target="_blank" rel="external">张鑫旭–去除inline-block元素间间距的N种方法</a></p>
-<p><a href="https://www.zhihu.com/question/21558138" target="_blank" rel="external">知乎–<img src="" alt="">元素底部为何有空白？</a></p>
 
       
     </div>
@@ -648,7 +649,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-元素之间的间隙"><span class="nav-number">1.</span> <span class="nav-text">1.元素之间的间隙</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-不同高度的元素无法对齐"><span class="nav-number">2.</span> <span class="nav-text">2.不同高度的元素无法对齐</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#还有一种现象就是img元素下面无缘无故多出几像素（img默认是inline-block）"><span class="nav-number">3.</span> <span class="nav-text">还有一种现象就是img元素下面无缘无故多出几像素（img默认是inline-block）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#建议"><span class="nav-number">4.</span> <span class="nav-text">建议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#更多"><span class="nav-number">4.1.</span> <span class="nav-text">更多</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-元素之间的间隙"><span class="nav-number">1.</span> <span class="nav-text">1.元素之间的间隙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-不同高度的元素无法对齐"><span class="nav-number">2.</span> <span class="nav-text">2.不同高度的元素无法对齐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元素专有的BUG"><span class="nav-number">3.</span> <span class="nav-text">元素专有的BUG</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建议"><span class="nav-number">4.</span> <span class="nav-text">建议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更多"><span class="nav-number">5.</span> <span class="nav-text">更多</span></a></li></ol></div>
             
 
           </div>
