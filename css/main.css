@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #08adff;
+  background: #b629b6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2553,6 +2553,17 @@ embed {
 /*box-shadow: 0px 0px 4px 0 #555;*/
   }
 }
+::-webkit-scrollbar {
+  width: 10px; /*��ֱ��������������*/
+  height: 10px; /*ˮƽ�����������߶�*/
+}
+::-webkit-scrollbar-track {
+  background-color: #e8e8ce;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 5px;
+}
 ::selection {
   background: #03a9f4;
   color: #f5f5d5;
@@ -2579,9 +2590,9 @@ a:hover {
 }
 .site-title {
   line-height: 56px;
-  font-size: 26px;
+  font-size: 24px;
   color: #555;
-/*font-family: 'Comic Sans MS', sans-serif;*/
+  font-family: 'Comic Sans MS', sans-serif;
 }
 .site-subtitle {
   color: #555;
@@ -2701,12 +2712,16 @@ a:hover {
 }
 .links-of-author a {
   border-bottom: none;
+  font-size: 12px;
 }
 .sidebar a {
   color: #666;
 }
 .site-state-item {
   border-left: 1px solid #555;
+}
+.site-state-item-count {
+  font-size: 16px;
 }
 .back-to-top,
 .sidebar-toggle {

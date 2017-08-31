@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yoowin.me/about/index.html</loc>
+    
+    <lastmod>2017-08-31T08:45:33.195Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yoowin.me/message/index.html</loc>
+    
+    <lastmod>2017-08-31T08:40:01.824Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yoowin.me/2017/two-inline-block-bugs.html</loc>
     
     <lastmod>2017-08-30T09:44:30.354Z</lastmod>
@@ -37,13 +51,6 @@
   </url>
   
   <url>
-    <loc>https://yoowin.me/about/index.html</loc>
-    
-    <lastmod>2017-08-28T09:54:10.955Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://yoowin.me/categories/index.html</loc>
     
     <lastmod>2017-08-28T09:54:08.366Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://yoowin.me/tags/index.html</loc>
     
     <lastmod>2017-08-28T09:53:10.654Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yoowin.me/message/index.html</loc>
-    
-    <lastmod>2017-08-28T09:05:39.347Z</lastmod>
     
   </url>
   
