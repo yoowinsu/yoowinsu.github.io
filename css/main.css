@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c720cd;
+  background: #14ffeb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2588,11 +2588,45 @@ a:hover {
   color: #03a9f4;
   border-bottom-color: #03a9f4;
 }
+@media (min-width: 769px) {
+  .header .header-inner {
+    height: 80px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #ddd;
+  }
+  .site-brand-wrapper {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .site-nav {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .menu .menu-item {
+    margin: 0 14px 0 0;
+  }
+}
+.brand {
+  padding: 0;
+}
 .site-title {
   line-height: 56px;
-  font-size: 24px;
+  font-size: 22px;
+  font-weight: 600;
   color: #555;
-  font-family: 'Comic Sans MS', sans-serif;
+/*font-family: 'Comic Sans MS', sans-serif;*/
 }
 .site-subtitle {
   color: #555;
@@ -2600,8 +2634,9 @@ a:hover {
   margin: 5px 0;
   font-size: 12px;
   font-weight: 400;
+  display: none;
 }
-@media (max-width: 766px) {
+@media (max-width: 1300px) {
   .header>a>img {
     display: none;
   }
@@ -2616,7 +2651,6 @@ a:hover {
 .menu {
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
 }
 .menu .menu-item a {
   border-bottom: none;
