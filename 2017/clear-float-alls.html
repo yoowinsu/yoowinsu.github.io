@@ -90,7 +90,7 @@
 <meta property="og:url" content="https://yoowin.me/2017/clear-float-alls.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="清除浮动清除浮动是指清除浮动所造成的影响。 清除浮动方法 目前最主流的方法：clearfix12345678.clearfix：after&amp;#123;  content:&quot;&quot;;  display:block;  clear:both;&amp;#125;.clearfix&amp;#123;  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/&amp;#125;">
-<meta property="og:updated_time" content="2017-08-27T10:16:15.615Z">
+<meta property="og:updated_time" content="2017-09-05T09:15:42.119Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="清除浮动全总结">
 <meta name="twitter:description" content="清除浮动清除浮动是指清除浮动所造成的影响。 清除浮动方法 目前最主流的方法：clearfix12345678.clearfix：after&amp;#123;  content:&quot;&quot;;  display:block;  clear:both;&amp;#125;.clearfix&amp;#123;  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/&amp;#125;">
@@ -399,24 +399,24 @@
       
         <h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p>清除浮动是指清除浮动所造成的影响。</p>
 <h3 id="清除浮动方法"><a href="#清除浮动方法" class="headerlink" title="清除浮动方法"></a>清除浮动方法</h3><ul>
-<li><strong>目前最主流的方法：clearfix</strong><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.clearfix：after&#123;</div><div class="line">  content:"";</div><div class="line">  display:block;</div><div class="line">  clear:both;</div><div class="line">&#125;</div><div class="line">.clearfix&#123;</div><div class="line">  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li><h4 id="目前最主流的方法：clearfix"><a href="#目前最主流的方法：clearfix" class="headerlink" title="目前最主流的方法：clearfix"></a>目前最主流的方法：clearfix</h4><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.clearfix：after&#123;</div><div class="line">  content:"";</div><div class="line">  display:block;</div><div class="line">  clear:both;</div><div class="line">&#125;</div><div class="line">.clearfix&#123;</div><div class="line">  *zoom:1;    /*兼容IE6，触发IE6中的hasLayout属性，达到BFC类似作用*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <a id="more"></a>
 <ul>
-<li><strong>overflow:hidden;或overflow:auto;</strong><br>父容器会形成BFC。<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clear</span>&#123;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li><h4 id="overflow-hidden-或overflow-auto"><a href="#overflow-hidden-或overflow-auto" class="headerlink" title="overflow:hidden;或overflow:auto;"></a>overflow:hidden;或overflow:auto;</h4>父容器会形成BFC。<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clear</span>&#123;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>目前也有不少开发者使用这种方法。<br>缺点：不适用于像下拉菜单等内部子元素有定位且超出容器的情况</p>
 <ul>
-<li><strong>添加空标签并设置样式clear:both;</strong><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clearfix</span>&#123;</div><div class="line">  <span class="attribute">clear</span>: both</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li><h4 id="添加空标签并设置样式clear-both"><a href="#添加空标签并设置样式clear-both" class="headerlink" title="添加空标签并设置样式clear:both;"></a>添加空标签并设置样式clear:both;</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clearfix</span>&#123;</div><div class="line">  <span class="attribute">clear</span>: both</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>优点：简洁，浏览器兼容性好<br>缺点：标签无语义，不提倡！</p>
 <ul>
-<li><p><strong>给浮动元素的父容器添加浮动</strong><br>父容器也添加浮动之后，可以清除内部的浮动，但是会影响整体布局。<br>缺点：拆东墙补西墙的做法，不提倡</p>
+<li><h4 id="给浮动元素的父容器添加浮动"><a href="#给浮动元素的父容器添加浮动" class="headerlink" title="给浮动元素的父容器添加浮动"></a>给浮动元素的父容器添加浮动</h4><p>父容器也添加浮动之后，可以清除内部的浮动，但是会影响整体布局。<br>缺点：拆东墙补西墙的做法，不提倡</p>
 </li>
-<li><p><strong>浮动元素后面的元素添加clear属性</strong><br>浮动元素什么都不做，给浮动元素后面的元素添加clear属性。<br>缺点：高度塌陷的问题还没有解决，没有解决问题的根本——闭合浮动，所以不提倡此方法</p>
+<li><h4 id="浮动元素后面的元素添加clear属性"><a href="#浮动元素后面的元素添加clear属性" class="headerlink" title="浮动元素后面的元素添加clear属性"></a>浮动元素后面的元素添加clear属性</h4><p>浮动元素什么都不做，给浮动元素后面的元素添加clear属性。<br>缺点：高度塌陷的问题还没有解决，没有解决问题的根本——闭合浮动，所以不提倡此方法</p>
 </li>
 </ul>
 <p>总结，目前来看第一种方法是最佳的选择，也是我开发中一直用的方法，不过未来的趋势是流行了这么多年的“浮动+定位”布局会渐渐被“flexbox+grid”布局取代，一起迎接并见证吧！</p>
@@ -638,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#清除浮动"><span class="nav-number">1.</span> <span class="nav-text">清除浮动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清除浮动方法"><span class="nav-number">2.</span> <span class="nav-text">清除浮动方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#清除浮动"><span class="nav-number">1.</span> <span class="nav-text">清除浮动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清除浮动方法"><span class="nav-number">2.</span> <span class="nav-text">清除浮动方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#目前最主流的方法：clearfix"><span class="nav-number">2.1.</span> <span class="nav-text">目前最主流的方法：clearfix</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#overflow-hidden-或overflow-auto"><span class="nav-number">2.2.</span> <span class="nav-text">overflow:hidden;或overflow:auto;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加空标签并设置样式clear-both"><span class="nav-number">2.3.</span> <span class="nav-text">添加空标签并设置样式clear:both;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#给浮动元素的父容器添加浮动"><span class="nav-number">2.4.</span> <span class="nav-text">给浮动元素的父容器添加浮动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浮动元素后面的元素添加clear属性"><span class="nav-number">2.5.</span> <span class="nav-text">浮动元素后面的元素添加clear属性</span></a></li></ol></li></ol></div>
             
 
           </div>

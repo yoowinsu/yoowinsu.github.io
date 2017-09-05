@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yoowin.me/2017/clear-float-alls.html</loc>
+    
+    <lastmod>2017-09-05T09:15:42.119Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yoowin.me/2017/audition-css.html</loc>
     
-    <lastmod>2017-09-05T04:13:15.719Z</lastmod>
+    <lastmod>2017-09-05T09:11:25.150Z</lastmod>
     
   </url>
   
@@ -166,13 +173,6 @@
     <loc>https://yoowin.me/2017/the-turn-type.html</loc>
     
     <lastmod>2017-08-27T10:16:47.207Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yoowin.me/2017/clear-float-alls.html</loc>
-    
-    <lastmod>2017-08-27T10:16:15.615Z</lastmod>
     
   </url>
   
