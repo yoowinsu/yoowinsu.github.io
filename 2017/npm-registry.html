@@ -90,7 +90,7 @@
 <meta property="og:url" content="https://yoowin.me/2017/npm-registry.html">
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="npm 是一个基于 nodejs 的包管理工具，全称叫做node package manager. npm中的包其实就是可复用的代码，每个开发者都可以选择把自己的代码发布到 npm上面来管理。每次使用的时候直接npm install &amp;lt;package&amp;gt;就能安装到本地使用了。我们都可以下载别人公开发布到npm上面的包，像jQuery、express、bootstrap等框架都有被托管到n">
-<meta property="og:updated_time" content="2017-09-07T13:51:05.563Z">
+<meta property="og:updated_time" content="2017-09-07T13:53:27.055Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="切换NPM镜像源">
 <meta name="twitter:description" content="npm 是一个基于 nodejs 的包管理工具，全称叫做node package manager. npm中的包其实就是可复用的代码，每个开发者都可以选择把自己的代码发布到 npm上面来管理。每次使用的时候直接npm install &amp;lt;package&amp;gt;就能安装到本地使用了。我们都可以下载别人公开发布到npm上面的包，像jQuery、express、bootstrap等框架都有被托管到n">
@@ -422,7 +422,7 @@
 <li>选择镜像源</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nrm use taobao</div></pre></td></tr></table></figure>
-<p>再次nrm list的时候就可以看到已选择的是淘宝的镜像源<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">  npm ---- https://registry.npmjs.org/</div><div class="line">  cnpm --- http://r.cnpmjs.org/</div><div class="line">* taobao - https://registry.npm.taobao.org/</div><div class="line">  nj ----- https://registry.nodejitsu.com/</div><div class="line">  rednpm - http://registry.mirror.cqupt.edu.cn/</div><div class="line">  npmMirror  https://skimdb.npmjs.com/registry/</div><div class="line">  edunpm - http://registry.enpmjs.org/</div></pre></td></tr></table></figure></p>
+<p>再次<code>nrm list</code>的时候就可以看到已选择的是淘宝的镜像源<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">  npm ---- https://registry.npmjs.org/</div><div class="line">  cnpm --- http://r.cnpmjs.org/</div><div class="line">* taobao - https://registry.npm.taobao.org/</div><div class="line">  nj ----- https://registry.nodejitsu.com/</div><div class="line">  rednpm - http://registry.mirror.cqupt.edu.cn/</div><div class="line">  npmMirror  https://skimdb.npmjs.com/registry/</div><div class="line">  edunpm - http://registry.enpmjs.org/</div></pre></td></tr></table></figure></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>可以通过下面的指令来查看当前使用的是否为某个镜像源。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm config get registry</div></pre></td></tr></table></figure></p>
 <p>上面的几种方法都很简单，其实我个人倾向使用nrm的，安装简单，使用简单，基本不用copy命令行。</p>
 <p>总之，不管哪种方法，大家在以后安装npm包的时候速度飕飕的就可以啦。</p>
