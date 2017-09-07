@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffbe81;
+  background: #90d1c2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2554,8 +2554,8 @@ embed {
   }
 }
 ::-webkit-scrollbar {
-  width: 10px; /*��ֱ��������������*/
-  height: 10px; /*ˮƽ�����������߶�*/
+  width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
   background-color: #e8e8ce;
@@ -2717,6 +2717,8 @@ a:hover {
 }
 .post-toc ol a {
   color: #333;
+  padding: 0 2px;
+  transition: all 0.3s;
 }
 .sidebar a:hover {
   color: f5f5f5;
@@ -2724,6 +2726,8 @@ a:hover {
 .post-toc ol a:hover {
   color: #222;
   background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
 }
 .post-toc .nav .active-current > a {
   color: #f5f5f5;
@@ -2745,6 +2749,12 @@ a:hover {
 }
 .post-toc ol a {
   border-bottom: none;
+}
+.post-toc .nav .active > a {
+  color: #f5f5f5;
+}
+.post-toc .nav .active > a:hover {
+  background-color: transparent;
 }
 .sidebar {
   background: rgba(255,255,255,0.65) url("https://ooo.0o0.ooo/2017/06/21/594a0874ca7de.jpg") 30% no-repeat;
