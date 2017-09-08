@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://yoowin.me/2017/vue-cli-github-pages.html</loc>
+    <lastmod>2017-09-08T07:19:20.650Z</lastmod>
+    <data>
+        <display>
+        <title>关于vue-cli构建的项目在github上的预览问题</title>
+        <pubTime>2017-08-08T07:12:38.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+        <tag>路径</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="https://yoowin.me/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://yoowin.me/2017/npm-registry.html</loc>
     <lastmod>2017-09-07T13:53:27.055Z</lastmod>
     <data>
@@ -146,9 +170,9 @@
         <title>CSS选择器</title>
         <pubTime>2017-01-11T14:33:55.000Z</pubTime>
         
-        <tag>CSS</tag>
-         
         <tag>选择器</tag>
+         
+        <tag>CSS</tag>
          
          
            
@@ -345,9 +369,9 @@
         <title>CSS实现空心三角指示箭头</title>
         <pubTime>2017-04-30T16:22:36.000Z</pubTime>
         
-        <tag>CSS三角形</tag>
-         
         <tag>CSS</tag>
+         
+        <tag>CSS三角形</tag>
          
          
            
