@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7e719f;
+  background: #bfff85;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2912,7 +2912,8 @@ a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"] {
   left: 190px;
   top: -72px;
   width: 256px;
-  border: 6px solid rgba(204,204,204,0.6);
+  border: 4px solid rgba(204,204,204,0.6);
+  border-radius: 10px;
   box-sizing: border-box;
 }
 a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"]:after {
