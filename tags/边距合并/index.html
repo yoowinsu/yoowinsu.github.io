@@ -924,10 +924,12 @@ function render() {
 
     body.addEventListener('click',function(e){
       // e.preventDefault()
-      sidebar.style.display = 'block'
-      sidebar.classList.remove('to-right')
-      sidebar.classList.add('to-left')
-      sidebar.style.animation = 'to-left .5s'
+      if(sidebar.classList.contains('to-right')){
+        sidebar.style.display = 'block'
+        sidebar.classList.remove('to-right')
+        sidebar.classList.add('to-left')
+        sidebar.style.animation = 'to-left .5s'
+      }
     })
     sidebar.addEventListener('click',function(e){
       e.stopPropagation()
