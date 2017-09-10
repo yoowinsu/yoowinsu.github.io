@@ -919,10 +919,12 @@ function render() {
     })
     button.addEventListener('click',function(e){
       e.stopPropagation()
-      sidebar.style.display = 'block'
-      sidebar.classList.remove('to-left')
-      sidebar.classList.add('to-right')
-      sidebar.style.animation = 'to-right .4s'
+      setTimeout(function(){
+        sidebar.style.display = 'block'
+        sidebar.classList.remove('to-left')
+        sidebar.classList.add('to-right')
+        sidebar.style.animation = 'to-right .4s'
+      },100)
     })
 
 
