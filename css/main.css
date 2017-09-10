@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e265b8;
+  background: #60ff55;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2800,8 +2800,16 @@ a:hover {
   box-shadow: 0 0 3px #bbb;
   padding: 20px 30px;
   margin-bottom: 80px;
-  background: rgba(243,243,243,0.8);
+  background: rgba(243,243,213,0.8);
   border-radius: 6px;
+}
+@media (min-width: 769px) {
+  .posts-expand .post-body img {
+    border: none;
+  }
+}
+.posts-collapse {
+  background: rgba(243,243,213,0.5);
 }
 .posts-collapse .post {
   box-shadow: none;
@@ -2915,8 +2923,8 @@ a:hover {
 a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"] {
   display: none;
   position: absolute;
-  left: 190px;
-  top: -72px;
+  left: 240px;
+  bottom: 94px;
   width: 256px;
   border: 8px solid rgba(204,204,204,0.6);
   border-radius: 10px;
@@ -2943,9 +2951,13 @@ a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"]:before {
 .about {
   padding: 0 30px;
   margin-top: -30px;
+  background: rgba(243,243,213,0.5);
 }
 .about h2 {
   margin-bottom: 0;
+}
+.about h2.first {
+  margin-top: 0;
 }
 .footer {
   color: #444;
@@ -3093,6 +3105,9 @@ a[href="https://i.loli.net/2017/08/27/59a27fe15e9e8.png"] {
   }
   .posts-expand {
     margin: 0;
+  }
+  .category-list-item {
+    padding-left: 20px;
   }
 @-moz-keyframes to-right {
     0% {
