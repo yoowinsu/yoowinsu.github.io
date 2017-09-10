@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8659a7;
+  background: #7e81ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2962,7 +2962,7 @@ a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"]:before {
   display: inline-block;
   float: right;
   margin: 10px;
-  width: 300px;
+  width: 320px;
 }
 @media (max-width: 768px) {
   #photo #posts .fancybox img,
