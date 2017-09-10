@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://yoowin.me/2017/npm-registry.html</loc>
+    <lastmod>2017-09-10T16:52:08.196Z</lastmod>
+    <data>
+        <display>
+        <title>切换NPM镜像源</title>
+        <pubTime>2017-09-07T11:04:55.000Z</pubTime>
+        
+        <tag>npm镜像</tag>
+         
+        <tag>npm</tag>
+         
+         
+           
+             
+              <breadCrumb title="Node.js" url="https://yoowin.me/categories/Node-js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://yoowin.me/2017/vue-cli-github-pages.html</loc>
     <lastmod>2017-09-10T16:16:41.703Z</lastmod>
     <data>
@@ -46,28 +68,6 @@
            
              
               <breadCrumb title="JavaScript" url="https://yoowin.me/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yoowin.me/2017/npm-registry.html</loc>
-    <lastmod>2017-09-07T13:53:27.055Z</lastmod>
-    <data>
-        <display>
-        <title>切换NPM镜像源</title>
-        <pubTime>2017-09-07T11:04:55.000Z</pubTime>
-        
-        <tag>npm</tag>
-         
-        <tag>镜像</tag>
-         
-         
-           
-             
-              <breadCrumb title="Node.js" url="https://yoowin.me/categories/Node-js/"/>
           
         </display>
     </data>
