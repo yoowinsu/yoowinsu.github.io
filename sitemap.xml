@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yoowin.me/about/index.html</loc>
+    
+    <lastmod>2017-09-10T17:17:17.698Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yoowin.me/2017/npm-registry.html</loc>
     
     <lastmod>2017-09-10T16:52:08.196Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://yoowin.me/images/index.html</loc>
     
     <lastmod>2017-09-10T16:11:42.480Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yoowin.me/about/index.html</loc>
-    
-    <lastmod>2017-09-10T15:51:53.272Z</lastmod>
     
   </url>
   
