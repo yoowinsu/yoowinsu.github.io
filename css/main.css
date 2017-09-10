@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1fff2b;
+  background: #fffcb9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2607,6 +2607,9 @@ a:hover {
     background: #444;
   }
 }
+.posts-expand .post-title {
+  display: none;
+}
 @media (min-width: 769px) {
   .header .header-inner {
     height: 80px;
@@ -3067,9 +3070,6 @@ a[href="https://i.loli.net/2017/08/27/59a27fe15e9e8.png"] {
     width: 100%;
   }
   .menu .menu-item .fa {
-    display: none;
-  }
-  .posts-expand .post-title {
     display: none;
   }
 @-moz-keyframes to-right {
