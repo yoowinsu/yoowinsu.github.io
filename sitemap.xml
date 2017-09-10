@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yoowin.me/message/index.html</loc>
+    
+    <lastmod>2017-09-10T15:39:26.943Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yoowin.me/2017/regexp-knowledge.html</loc>
     
     <lastmod>2017-09-08T09:59:00.425Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>https://yoowin.me/about/index.html</loc>
     
     <lastmod>2017-08-31T15:18:13.736Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yoowin.me/message/index.html</loc>
-    
-    <lastmod>2017-08-31T09:38:03.157Z</lastmod>
     
   </url>
   
