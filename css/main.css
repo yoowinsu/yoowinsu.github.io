@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #79bbff;
+  background: #ffff29;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2607,7 +2607,7 @@ a:hover {
     background: #444;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .header .header-inner {
     height: 80px;
     margin-bottom: 100px;
@@ -3048,6 +3048,7 @@ a[href="https://i.loli.net/2017/08/27/59a27fe15e9e8.png"] {
   .site-nav-toggle {
     top: 0;
     left: 0;
+    display: block;
   }
   .site-nav-toggle button {
     padding: 9px 12px;
