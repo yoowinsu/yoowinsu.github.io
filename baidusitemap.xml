@@ -3,6 +3,30 @@
 
 
     
+  <url>
+    <loc>https://yoowin.me/2017/vue-cli-github-pages.html</loc>
+    <lastmod>2017-09-10T16:16:41.703Z</lastmod>
+    <data>
+        <display>
+        <title>关于vue-cli构建的项目在github上的预览问题</title>
+        <pubTime>2017-08-08T07:12:38.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+        <tag>路径</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="https://yoowin.me/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
     
     
@@ -22,30 +46,6 @@
            
              
               <breadCrumb title="JavaScript" url="https://yoowin.me/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yoowin.me/2017/vue-cli-github-pages.html</loc>
-    <lastmod>2017-09-08T07:19:20.651Z</lastmod>
-    <data>
-        <display>
-        <title>关于vue-cli构建的项目在github上的预览问题</title>
-        <pubTime>2017-08-08T07:12:38.000Z</pubTime>
-        
-        <tag>vue</tag>
-         
-        <tag>路径</tag>
-         
-        <tag>github</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue" url="https://yoowin.me/categories/vue/"/>
           
         </display>
     </data>
