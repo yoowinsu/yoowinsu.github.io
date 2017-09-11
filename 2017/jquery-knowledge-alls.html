@@ -1321,10 +1321,15 @@ function render() {
       }
     })
 
-    backTop.style.display = 'none'
+    if(window.pageYOffset == 0) {
+        console.log('000')
+        // backTop.style.visibility = 'hidden'
+        backTop.style.display = 'none'
+    }
     window.addEventListener('scroll', function () {
-      if (window.pageYOffset > 120 && !topScrolled) {
+      if (window.pageYOffset > 120) {
         backTop.style.display = 'block'
+        console.log('120')
       } else if (window.pageYOffset <= 120 && topScrolled) {
         backTop.style.display = 'none'
       }
