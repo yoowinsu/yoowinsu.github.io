@@ -1061,7 +1061,8 @@ function render() {
       }
     })
 
-     window.addEventListener('scroll', function () {
+    backTop.style.display = 'none'
+    window.addEventListener('scroll', function () {
       if (window.pageYOffset > 120 && !topScrolled) {
         backTop.style.display = 'block'
       } else if (window.pageYOffset <= 120 && topScrolled) {
