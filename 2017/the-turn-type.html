@@ -1181,11 +1181,17 @@ function render() {
 
 
     var topScrolled = false
+    var backTop = document.querySelector('.back-to-top')
+
     window.addEventListener('scroll', function () {
       if (window.pageYOffset > 60 && !topScrolled) {
+        backTop.style.display = 'block'
+
         topScrolled = true
         document.getElementById('header').classList.remove('top')
       } else if (window.pageYOffset <= 60 && topScrolled) {
+        backTop.style.display = 'none'
+
         topScrolled = false
         document.getElementById('header').classList.add('top')
       }
