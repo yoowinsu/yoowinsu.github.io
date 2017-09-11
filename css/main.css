@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #47ffc6;
+  background: #ff1a0e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2923,13 +2923,20 @@ a:hover {
 a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"] {
   display: none;
   position: absolute;
-  left: 240px;
+  left: 50%;
   bottom: 94px;
   width: 256px;
   border: 8px solid rgba(204,204,204,0.6);
   border-radius: 10px;
   box-sizing: border-box;
+  -webkit-transform: translateX(-100px);
+  -moz-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  -o-transform: translateX(-100px);
+  transform: translateX(-100px);
+*
 }
+*
 a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"]:after {
   content: '';
   position: absolute;
