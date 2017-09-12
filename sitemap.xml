@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yoowin.me/2017/array-unique.html</loc>
+    
+    <lastmod>2017-09-12T08:03:35.204Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yoowin.me/2017/jquery-knowledge-alls.html</loc>
     
     <lastmod>2017-09-12T07:59:43.009Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://yoowin.me/2017/jquery-width-and-height.html</loc>
     
     <lastmod>2017-09-12T07:57:06.862Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yoowin.me/2017/null.html</loc>
-    
-    <lastmod>2017-09-12T07:55:26.064Z</lastmod>
     
   </url>
   
