@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="Yoowin&#39;s Blog">
 <meta property="og:description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
 <meta property="og:image" content="https://i.loli.net/2017/08/25/599fb4a9a7066.jpg">
-<meta property="og:updated_time" content="2017-08-27T10:22:52.337Z">
+<meta property="og:updated_time" content="2017-09-12T07:59:43.009Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery知识点">
 <meta name="twitter:description" content="jQuery 中， $(document).ready()是什么意思？$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。">
@@ -391,12 +391,6 @@
       
         <p><img src="https://i.loli.net/2017/08/25/599fb4a9a7066.jpg" alt=""></p>
 <h1 id="jQuery-中，-document-ready-是什么意思？"><a href="#jQuery-中，-document-ready-是什么意思？" class="headerlink" title="jQuery 中， $(document).ready()是什么意思？"></a>jQuery 中， $(document).ready()是什么意思？</h1><p>$(document).ready方法接受一个函数作为参数，将该参数作为document对象的DOMContentLoaded事件的回调函数。也就是说，当页面解析完成（即下载完标签）以后，在所有外部资源（图片、脚本等）完成加载之前，该函数就会立刻运行。<br><a id="more"></a></p>
-<h1 id="库和框架的区别"><a href="#库和框架的区别" class="headerlink" title="库和框架的区别"></a>库和框架的区别</h1><ul>
-<li><p>类库 解决的是代码或者是模块级别的复用或者对复杂度的封装问题，例如将一个解决复杂问题的功能模块封装成一个函数，提供一个简单的接口。库它是一种工具，它提供了很多封装好的方法，用与不用取决于我们自身，即使用了也不会影响我们呢的代码结构。</p>
-</li>
-<li><p>框架 更多的是对模式级别的复用和对程序组织的规范。这里的模式是指比如MVC，为了实现M和V的解耦，把复杂的耦合关系由经常变化的业务代码转移到不经常变化的框架内部消化。是面向一个领域来提供一套解决方案，提高开发效率，如果我们选择了使用某框架，就应该遵循该框架所规定的规则。</p>
-</li>
-</ul>
 <h1 id="jquery-能做什么？"><a href="#jquery-能做什么？" class="headerlink" title="jquery 能做什么？"></a>jquery 能做什么？</h1><p>jQuery的最大优势有两个。首先，它基本是一个DOM操作工具，可以使操作DOM对象变得异常容易。其次，它统一了不同浏览器的API接口，使得代码在所有现代浏览器均能运行，开发者不用担心浏览器之间的差异。</p>
 <h1 id="jquery-对象和-DOM-原生对象有什么区别？如何转化？"><a href="#jquery-对象和-DOM-原生对象有什么区别？如何转化？" class="headerlink" title="jquery 对象和 DOM 原生对象有什么区别？如何转化？"></a>jquery 对象和 DOM 原生对象有什么区别？如何转化？</h1><p>jQuery对象可以调用jQuery的方法，api，jQuery对象是一个类数组；DOM原生对象是文档对象模型，只能用原生JS的方法，DOM对象可以说一个，也可以是多个（类数组）</p>
 <p>jQuery对象转DOM原生对象：加下标 <code>$(&#39;selector&#39;)[0]</code> 或者<code>$(&#39;selector&#39;).get(0)</code></p>
@@ -435,7 +429,7 @@
 <ul>
 <li>使用on进行事件代理：</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'ul'</span>).on(<span class="string">'click'</span>,<span class="string">'li'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>(<span class="keyword">this</span>);</div><div class="line">&#125;);</div><div class="line"><span class="comment">//事件源为li时出发绑定事件</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'ul'</span>).on(<span class="string">'click'</span>,<span class="string">'li'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>(<span class="keyword">this</span>);</div><div class="line">&#125;);</div><div class="line"><span class="comment">//事件源为li时触发绑定事件</span></div></pre></td></tr></table></figure>
 <h1 id="jquery-如何展示-隐藏元素？"><a href="#jquery-如何展示-隐藏元素？" class="headerlink" title="jquery 如何展示/隐藏元素？"></a>jquery 如何展示/隐藏元素？</h1><ul>
 <li>show()</li>
 </ul>
@@ -700,7 +694,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">所有博客</span>
               </a>
             </div>
@@ -722,7 +716,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">37</span>
+                <span class="site-state-item-count">39</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -786,7 +780,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-中，-document-ready-是什么意思？"><span class="nav-number">1.</span> <span class="nav-text">jQuery 中， $(document).ready()是什么意思？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#库和框架的区别"><span class="nav-number">2.</span> <span class="nav-text">库和框架的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-能做什么？"><span class="nav-number">3.</span> <span class="nav-text">jquery 能做什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-对象和-DOM-原生对象有什么区别？如何转化？"><span class="nav-number">4.</span> <span class="nav-text">jquery 对象和 DOM 原生对象有什么区别？如何转化？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"><span class="nav-number">5.</span> <span class="nav-text">jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-如何展示-隐藏元素？"><span class="nav-number">6.</span> <span class="nav-text">jquery 如何展示/隐藏元素？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-动画如何使用？"><span class="nav-number">7.</span> <span class="nav-text">jquery 动画如何使用？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"><span class="nav-number">8.</span> <span class="nav-text">如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#extend-的作用和用法"><span class="nav-number">9.</span> <span class="nav-text">$.extend 的作用和用法?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-的链式调用是什么？"><span class="nav-number">10.</span> <span class="nav-text">jQuery 的链式调用是什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-中-data-函数的作用"><span class="nav-number">11.</span> <span class="nav-text">jQuery 中 data 函数的作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写出以下功能对应的-jQuery-方法："><span class="nav-number">12.</span> <span class="nav-text">写出以下功能对应的 jQuery 方法：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用jQuery实现以下操作"><span class="nav-number">13.</span> <span class="nav-text">用jQuery实现以下操作</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-中，-document-ready-是什么意思？"><span class="nav-number">1.</span> <span class="nav-text">jQuery 中， $(document).ready()是什么意思？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-能做什么？"><span class="nav-number">2.</span> <span class="nav-text">jquery 能做什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-对象和-DOM-原生对象有什么区别？如何转化？"><span class="nav-number">3.</span> <span class="nav-text">jquery 对象和 DOM 原生对象有什么区别？如何转化？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？"><span class="nav-number">4.</span> <span class="nav-text">jquery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-如何展示-隐藏元素？"><span class="nav-number">5.</span> <span class="nav-text">jquery 如何展示/隐藏元素？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery-动画如何使用？"><span class="nav-number">6.</span> <span class="nav-text">jquery 动画如何使用？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？"><span class="nav-number">7.</span> <span class="nav-text">如何设置和获取表单用户输入或者选择的内容？如何设置和获取元素属性？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#extend-的作用和用法"><span class="nav-number">8.</span> <span class="nav-text">$.extend 的作用和用法?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-的链式调用是什么？"><span class="nav-number">9.</span> <span class="nav-text">jQuery 的链式调用是什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-中-data-函数的作用"><span class="nav-number">10.</span> <span class="nav-text">jQuery 中 data 函数的作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写出以下功能对应的-jQuery-方法："><span class="nav-number">11.</span> <span class="nav-text">写出以下功能对应的 jQuery 方法：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用jQuery实现以下操作"><span class="nav-number">12.</span> <span class="nav-text">用jQuery实现以下操作</span></a></li></ol></div>
             
 
           </div>
