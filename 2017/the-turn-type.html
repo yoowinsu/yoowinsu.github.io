@@ -1132,10 +1132,11 @@ function render() {
     })
 
 /*sidebar-ol-list-title*/
-    var textList = document.querySelectorAll('.post-toc ol a .nav-text')
+    var textList = document.querySelectorAll('.post-toc a span.nav-text')
 
     for (var i = 0; i < textList.length; i++) {
-      textList[i].setAttribute('title',textList[i].innerText)
+      textList[i].setAttribute('title', textList[i].innerText)
+      console.log(textList[i].innerText)
     }
   </script>
 </body>
