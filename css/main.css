@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #577038;
+  background: #4fff21;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2787,7 +2787,7 @@ a:hover {
   color: #666;
 }
 .site-state-item {
-  border-left: 1px solid #555;
+  border-left: 1px solid #999;
 }
 .site-state-item-count {
   font-size: 16px;
@@ -2795,6 +2795,12 @@ a:hover {
 .back-to-top,
 .sidebar-toggle {
   background: #555;
+}
+.back-to-top {
+  width: 24px;
+}
+#scrollpercent {
+  display: none;
 }
 .post {
   box-shadow: 0 0 3px #bbb;
@@ -2994,7 +3000,8 @@ a[href="https://i.loli.net/2017/08/11/598d9ba29231a.jpg"]:before {
   display: inline-block;
   float: right;
   margin: 10px;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
 }
 @media (max-width: 768px) {
   #photo #posts .fancybox img,
