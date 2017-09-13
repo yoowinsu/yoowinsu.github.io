@@ -92,7 +92,7 @@
 <meta property="og:description" content="概念基础类一个div，宽度是100px，此时设置padding是20px，添加一个什么css属性可以让div的实际宽度仍然保持在100px，而不是140px？1selector&amp;#123;box-sizing: border-box;&amp;#125;">
 <meta property="og:image" content="https://i.loli.net/2017/08/25/599fc5a094cc9.jpg">
 <meta property="og:image" content="https://i.loli.net/2017/09/05/59ae1e0d21c00.gif">
-<meta property="og:updated_time" content="2017-09-13T07:10:46.582Z">
+<meta property="og:updated_time" content="2017-09-13T07:17:39.567Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试题总结之CSS篇">
 <meta name="twitter:description" content="概念基础类一个div，宽度是100px，此时设置padding是20px，添加一个什么css属性可以让div的实际宽度仍然保持在100px，而不是140px？1selector&amp;#123;box-sizing: border-box;&amp;#125;">
@@ -403,7 +403,7 @@
 <p>Reset 相对「暴力」，不管你有没有用，统统重置成一样的效果，且影响的范围很大，讲求跨浏览器的一致性。</p>
 <h2 id="单行文本溢出加-…如何实现"><a href="#单行文本溢出加-…如何实现" class="headerlink" title="单行文本溢出加 …如何实现?"></a>单行文本溢出加 …如何实现?</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">E</span>&#123;</div><div class="line">  <span class="attribute">overflow</span>: hidden;  <span class="comment">/*超出隐藏*/</span></div><div class="line">  <span class="attribute">white-space</span>: nowrap;  <span class="comment">/*不换行*/</span></div><div class="line">  <span class="attribute">text-overflow</span>: ellipsis;  <span class="comment">/*用“...”表示超出的文本*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="什么是-CSS-继承-哪些属性能继承，哪些不能？"><a href="#什么是-CSS-继承-哪些属性能继承，哪些不能？" class="headerlink" title="什么是 CSS 继承? 哪些属性能继承，哪些不能？"></a>什么是 CSS 继承? 哪些属性能继承，哪些不能？</h2><p>CSS继承就是子标签继承了上级标签的CSS样式的属性。</p>
-<p>可继承的属性：font-size，font-style，font-family，font-weight，text-align，text-indent，color，visibility；<br>不可继承的属性：border，padding，margin， width， height， display， background，overflow </p>
+<p>可继承的属性：font-size，font-style，font-family，font-weight，text-align，text-indent，color，visibility，opacity；<br>不可继承的属性：border，padding，margin， width， height， display， background，overflow </p>
 <h2 id="px-em-rem-有什么区别"><a href="#px-em-rem-有什么区别" class="headerlink" title="px, em, rem 有什么区别"></a>px, em, rem 有什么区别</h2><p>px是像素，是固定单位<br>em是相对于直接父元素单位的大小，em就是倍数，是相对单位<br>rem是相对于根元素的大小，rem也是倍数，是相对单位</p>
 <h2 id="CSS样式的优先级怎么计算？"><a href="#CSS样式的优先级怎么计算？" class="headerlink" title="CSS样式的优先级怎么计算？"></a>CSS样式的优先级怎么计算？</h2><p>!important &gt; 内联样式 &gt; id &gt; class &gt; 标签</p>
 <h2 id="解释下面代码的作用-为什么要加引号-字体里-5b8b-4f53代表什么"><a href="#解释下面代码的作用-为什么要加引号-字体里-5b8b-4f53代表什么" class="headerlink" title="解释下面代码的作用?为什么要加引号? 字体里\5b8b\4f53代表什么?"></a>解释下面代码的作用?为什么要加引号? 字体里\5b8b\4f53代表什么?</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span>&#123;</div><div class="line">  <span class="attribute">font</span>: <span class="number">12px</span>/<span class="number">1.5</span> tahoma,arial,<span class="string">'Hiragino Sans GB'</span>,<span class="string">'\5b8b\4f53'</span>,sans-serif;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -1165,11 +1165,17 @@ function render() {
     window.addEventListener('scroll', function () {
       if (window.pageYOffset > 120) {
         backTop.style.display = 'block'
-        console.log('120')
       } else if (window.pageYOffset <= 120 && topScrolled) {
         backTop.style.display = 'none'
       }
     })
+
+/*sidebar-ol-list-title*/
+    var textList = document.querySelectorAll('.post-toc ol a .nav-text')
+
+    for (var i = 0; i < textList.length; i++) {
+      textList[i].setAttribute('title',textList[i].innerText)
+    }
   </script>
 </body>
 </html>

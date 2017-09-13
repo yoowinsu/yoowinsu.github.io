@@ -1907,11 +1907,17 @@ function render() {
     window.addEventListener('scroll', function () {
       if (window.pageYOffset > 120) {
         backTop.style.display = 'block'
-        console.log('120')
       } else if (window.pageYOffset <= 120 && topScrolled) {
         backTop.style.display = 'none'
       }
     })
+
+/*sidebar-ol-list-title*/
+    var textList = document.querySelectorAll('.post-toc ol a .nav-text')
+
+    for (var i = 0; i < textList.length; i++) {
+      textList[i].setAttribute('title',textList[i].innerText)
+    }
   </script>
 </body>
 </html>
