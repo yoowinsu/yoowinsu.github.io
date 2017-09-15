@@ -4,6 +4,68 @@
 
     
   <url>
+    <loc>https://yoowin.me/2017/center-methods.html</loc>
+    <lastmod>2017-09-15T02:53:01.497Z</lastmod>
+    <data>
+        <display>
+        <title>垂直居中的几种方法</title>
+        <pubTime>2017-04-02T14:29:49.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>居中</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="https://yoowin.me/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yoowin.me/2017/fe-base.html</loc>
+    <lastmod>2017-09-15T02:52:51.659Z</lastmod>
+    <data>
+        <display>
+        <title>前端入门基础</title>
+        <pubTime>2017-07-01T10:10:16.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="https://yoowin.me/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yoowin.me/2017/seven-suggestions.html</loc>
+    <lastmod>2017-09-15T02:52:25.905Z</lastmod>
+    <data>
+        <display>
+        <title>七个对我最重要的职业建议（转载）</title>
+        <pubTime>2017-06-03T11:14:46.000Z</pubTime>
+        
+        <tag>职业建议</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="https://yoowin.me/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://yoowin.me/2017/audition-html.html</loc>
     <lastmod>2017-09-13T23:32:33.647Z</lastmod>
     <data>
@@ -242,26 +304,6 @@
            
              
               <breadCrumb title="JavaScript" url="https://yoowin.me/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yoowin.me/2017/fe-base.html</loc>
-    <lastmod>2017-09-07T11:31:56.831Z</lastmod>
-    <data>
-        <display>
-        <title>前端入门基础</title>
-        <pubTime>2017-07-01T10:10:16.000Z</pubTime>
-        
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="web" url="https://yoowin.me/categories/web/"/>
           
         </display>
     </data>
@@ -670,28 +712,6 @@
 
     
   <url>
-    <loc>https://yoowin.me/2017/center-methods.html</loc>
-    <lastmod>2017-08-27T10:13:39.760Z</lastmod>
-    <data>
-        <display>
-        <title>垂直居中的几种方法</title>
-        <pubTime>2017-04-02T14:29:49.000Z</pubTime>
-        
-        <tag>CSS</tag>
-         
-        <tag>居中</tag>
-         
-         
-           
-             
-              <breadCrumb title="CSS" url="https://yoowin.me/categories/CSS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://yoowin.me/2017/detects-data-types.html</loc>
     <lastmod>2017-08-27T10:12:54.336Z</lastmod>
     <data>
@@ -733,26 +753,6 @@
            
              
               <breadCrumb title="JavaScript" url="https://yoowin.me/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yoowin.me/2017/seven-suggestions.html</loc>
-    <lastmod>2017-08-27T10:11:20.516Z</lastmod>
-    <data>
-        <display>
-        <title>七个对我最重要的职业建议（转载）</title>
-        <pubTime>2017-06-03T11:14:46.000Z</pubTime>
-        
-        <tag>职业建议</tag>
-         
-         
-           
-             
-              <breadCrumb title="web" url="https://yoowin.me/categories/web/"/>
           
         </display>
     </data>
