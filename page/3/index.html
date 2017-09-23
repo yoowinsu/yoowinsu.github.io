@@ -834,8 +834,7 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/08/25/599fcff4dc717.jpg" alt=""></p>
-<h1 id="深拷贝和浅拷贝"><a href="#深拷贝和浅拷贝" class="headerlink" title="深拷贝和浅拷贝"></a>深拷贝和浅拷贝</h1><p>在JavaScript中，对于object等引用类型值，当从一个变量向另一个变量复制引用类型值时，这个值的副本其实是一个指针，两个变量指向同一个堆对象，改变其中一个变量，另一个也会受到影响。 </p>
+          <h1 id="深拷贝和浅拷贝"><a href="#深拷贝和浅拷贝" class="headerlink" title="深拷贝和浅拷贝"></a>深拷贝和浅拷贝</h1><p>在JavaScript中，对于object等引用类型值，当从一个变量向另一个变量复制引用类型值时，这个值的副本其实是一个指针，两个变量指向同一个堆对象，改变其中一个变量，另一个也会受到影响。 </p>
 <p>很多情况下，我们都需要给变量赋值，但希望和原来变量不再共存一个地址。所以就要实现深拷贝。</p>
           <!--noindex-->
           <div class="post-button text-center">
@@ -985,8 +984,7 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/08/25/599fb50a19b28.jpg" alt=""></p>
-<h1 id="运算符、运算符优先级"><a href="#运算符、运算符优先级" class="headerlink" title="运算符、运算符优先级"></a>运算符、运算符优先级</h1><h2 id="以下代码的输出结果是-为什么"><a href="#以下代码的输出结果是-为什么" class="headerlink" title="以下代码的输出结果是?为什么?"></a>以下代码的输出结果是?为什么?</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="number">1</span>+<span class="number">1</span>);    </div><div class="line"><span class="comment">//2 数值相加</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"2"</span>+<span class="string">"4"</span>);  </div><div class="line"><span class="comment">//24 字符串拼接</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(<span class="number">2</span>+<span class="string">"4"</span>);</div><div class="line"><span class="comment">//24 数字和字符串相加等同于字符串相加</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(+<span class="string">"4"</span>);</div><div class="line"><span class="comment">//4 一元运算符转换为数值类型</span></div></pre></td></tr></table></figure>
+          <h1 id="运算符、运算符优先级"><a href="#运算符、运算符优先级" class="headerlink" title="运算符、运算符优先级"></a>运算符、运算符优先级</h1><h2 id="以下代码的输出结果是-为什么"><a href="#以下代码的输出结果是-为什么" class="headerlink" title="以下代码的输出结果是?为什么?"></a>以下代码的输出结果是?为什么?</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="number">1</span>+<span class="number">1</span>);    </div><div class="line"><span class="comment">//2 数值相加</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"2"</span>+<span class="string">"4"</span>);  </div><div class="line"><span class="comment">//24 字符串拼接</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(<span class="number">2</span>+<span class="string">"4"</span>);</div><div class="line"><span class="comment">//24 数字和字符串相加等同于字符串相加</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(+<span class="string">"4"</span>);</div><div class="line"><span class="comment">//4 一元运算符转换为数值类型</span></div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/javascript-knowledge-and-audition.html#more" rel="contents">
@@ -1135,8 +1133,7 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/08/25/599fb62346da1.jpg" alt=""></p>
-<h1 id="写一个函数trim-str-，去除字符串两边的空白字符"><a href="#写一个函数trim-str-，去除字符串两边的空白字符" class="headerlink" title="写一个函数trim(str)，去除字符串两边的空白字符"></a>写一个函数trim(str)，去除字符串两边的空白字符</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">trim</span>(<span class="params">str</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> str=str.replace(<span class="regexp">/^\s+|\s+$/g</span>,<span class="string">''</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+          <h1 id="写一个函数trim-str-，去除字符串两边的空白字符"><a href="#写一个函数trim-str-，去除字符串两边的空白字符" class="headerlink" title="写一个函数trim(str)，去除字符串两边的空白字符"></a>写一个函数trim(str)，去除字符串两边的空白字符</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">trim</span>(<span class="params">str</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> str=str.replace(<span class="regexp">/^\s+|\s+$/g</span>,<span class="string">''</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/regexp-knowledge.html#more" rel="contents">

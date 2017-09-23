@@ -1278,8 +1278,7 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/08/25/599fd0940fbb5.jpg" alt=""></p>
-<h2 id="数组排序问题"><a href="#数组排序问题" class="headerlink" title="数组排序问题"></a>数组排序问题</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">0</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">8</span>,<span class="number">-2</span>].sort();  <span class="comment">//[[-2, 0, 1, 10, 11, 8]</span></div></pre></td></tr></table></figure>
+          <h2 id="数组排序问题"><a href="#数组排序问题" class="headerlink" title="数组排序问题"></a>数组排序问题</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">0</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">8</span>,<span class="number">-2</span>].sort();  <span class="comment">//[[-2, 0, 1, 10, 11, 8]</span></div></pre></td></tr></table></figure>
 <p><code>sort()</code>默认情况下会按照Unicode码点排序，而不是数值顺序排序，所以正确的解决方案为：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">0</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">8</span>,<span class="number">-2</span>].sort(<span class="function">(<span class="params">a,b</span>)=&gt;</span>a-b);  <span class="comment">//[[-2, 0, 1, 8, 10, 11]</span></div></pre></td></tr></table></figure></p>
           <!--noindex-->
           <div class="post-button text-center">
@@ -1579,8 +1578,8 @@
 
       
         
-          <p><img src="https://i.loli.net/2017/08/25/599fc371ecff5.jpg" alt=""></p>
-<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>强制类型转换在流程判断和部分代码不规范的相等运算符中应用比较多，至于为什么说代码不规范，我们后面会说到。<br>强制类型转换会让一些JavaScript初学者摸不着头脑，但是掌握其中的转换规则之后，就能轻松应对了。</p>
+          <h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>强制类型转换在流程判断和部分代码不规范的相等运算符中应用比较多，至于为什么说代码不规范，我们后面会说到。<br>强制类型转换会让一些JavaScript初学者摸不着头脑，但是掌握其中的转换规则之后，就能轻松应对了。</p>
+<h4 id="流程判断"><a href="#流程判断" class="headerlink" title="流程判断"></a>流程判断</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(<span class="string">''</span>)&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'true'</span>)  </div><div class="line">&#125;</div><div class="line"><span class="comment">//undefined</span></div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/the-turn-type.html#more" rel="contents">
