@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yoowin.me/2017/npm-registry.html</loc>
+    
+    <lastmod>2017-09-25T03:10:31.839Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yoowin.me/about/index.html</loc>
     
     <lastmod>2017-09-23T09:59:44.962Z</lastmod>
@@ -152,13 +159,6 @@
     <loc>https://yoowin.me/2017/jquery-width-and-height.html</loc>
     
     <lastmod>2017-09-12T07:57:06.862Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yoowin.me/2017/npm-registry.html</loc>
-    
-    <lastmod>2017-09-10T16:52:08.196Z</lastmod>
     
   </url>
   

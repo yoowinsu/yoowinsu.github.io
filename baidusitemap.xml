@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>https://yoowin.me/2017/npm-registry.html</loc>
+    <lastmod>2017-09-25T03:10:31.839Z</lastmod>
+    <data>
+        <display>
+        <title>切换NPM镜像源</title>
+        <pubTime>2017-09-07T11:04:55.000Z</pubTime>
+        
+        <tag>npm镜像</tag>
+         
+        <tag>npm</tag>
+         
+         
+           
+             
+              <breadCrumb title="Node.js" url="https://yoowin.me/categories/Node-js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>https://yoowin.me/2016/markdown-knowledge.html</loc>
@@ -412,28 +434,6 @@
            
              
               <breadCrumb title="JavaScript" url="https://yoowin.me/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yoowin.me/2017/npm-registry.html</loc>
-    <lastmod>2017-09-10T16:52:08.196Z</lastmod>
-    <data>
-        <display>
-        <title>切换NPM镜像源</title>
-        <pubTime>2017-09-07T11:04:55.000Z</pubTime>
-        
-        <tag>npm镜像</tag>
-         
-        <tag>npm</tag>
-         
-         
-           
-             
-              <breadCrumb title="Node.js" url="https://yoowin.me/categories/Node-js/"/>
           
         </display>
     </data>
