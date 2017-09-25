@@ -1075,8 +1075,11 @@ function render() {
         sidebar.classList.remove('to-right')
         sidebar.classList.remove('site-nav-on')
         sidebar.classList.add('to-left')
-        inner.classList.remove('open')
+        
         sidebar.style.animation = 'to-left .5s'
+        setTimeout(function(){
+          inner.classList.remove('open')
+        },300)
       }
     })
     sidebar.addEventListener('click',function(e){
@@ -1088,8 +1091,11 @@ function render() {
         sidebar.style.display = 'block'
         sidebar.classList.remove('to-left')
         sidebar.classList.add('to-right')
-        inner.classList.add('open')
-        sidebar.style.animation = 'to-right .4s'
+        
+        sidebar.style.animation = 'to-right .5s'
+        setTimeout(function(){
+          inner.classList.add('open')
+        },300)
       },100)
     })
 
