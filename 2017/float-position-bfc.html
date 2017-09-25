@@ -1097,14 +1097,17 @@ function render() {
   <script>
     var body = document.querySelector('body')
     var sidebar = document.querySelector('.site-nav')
+    var inner = document.querySelector('.header-inner')
     var button = document.querySelector('.site-nav-toggle>button')
 
     body.addEventListener('click',function(e){
       // e.preventDefault()
       if(sidebar.classList.contains('to-right')){
-        sidebar.style.display = 'block'
+        // sidebar.style.display = 'none'
         sidebar.classList.remove('to-right')
+        sidebar.classList.remove('site-nav-on')
         sidebar.classList.add('to-left')
+        inner.classList.remove('open')
         sidebar.style.animation = 'to-left .5s'
       }
     })
@@ -1117,6 +1120,7 @@ function render() {
         sidebar.style.display = 'block'
         sidebar.classList.remove('to-left')
         sidebar.classList.add('to-right')
+        inner.classList.add('open')
         sidebar.style.animation = 'to-right .4s'
       },100)
     })
