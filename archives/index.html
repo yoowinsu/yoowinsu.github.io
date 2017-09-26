@@ -170,7 +170,7 @@
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description"></h1>
+        <h1 class="site-subtitle" itemprop="description">Keep learning & keepcoding</h1>
       
   </div>
 
@@ -186,6 +186,11 @@
 <nav class="site-nav">
   
 
+  <div class="web-nav-header">
+    <img class="nav-logo" src="https://i.loli.net/2017/08/04/59843075070e6.jpg" alt="yoowinsu">
+    <h3 class="nav-title">YOOWIN</h3>
+  </div>
+  
   
     <ul id="menu" class="menu">
       
@@ -2171,11 +2176,8 @@ function render() {
         sidebar.classList.remove('to-right')
         sidebar.classList.remove('site-nav-on')
         sidebar.classList.add('to-left')
-        
+        inner.classList.remove('open')
         sidebar.style.animation = 'to-left .5s'
-        setTimeout(function(){
-          inner.classList.remove('open')
-        },300)
       }
     })
     sidebar.addEventListener('click',function(e){
@@ -2187,11 +2189,8 @@ function render() {
         sidebar.style.display = 'block'
         sidebar.classList.remove('to-left')
         sidebar.classList.add('to-right')
-        
+        inner.classList.add('open')
         sidebar.style.animation = 'to-right .5s'
-        setTimeout(function(){
-          inner.classList.add('open')
-        },300)
       },100)
     })
 
