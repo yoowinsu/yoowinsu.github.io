@@ -67,7 +67,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="CSS,选择器," />
+  <meta name="keywords" content="选择器,CSS," />
 
 
 
@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="CSS选择器是学习CSS以及Web编程的基础。 整理出常用的CSS选择器，供自己和大家一起学习。">
-<meta name="keywords" content="CSS,选择器">
+<meta name="description" content="CSS选择器是学习CSS以及Web编程的基础。但是总有不少人会对一些选择器的概念似懂非懂，用的不熟。 好消息是这篇文章整理了你可能会用到的几乎所有CSS选择器。 废话不多说，直接上干货。">
+<meta name="keywords" content="选择器,CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS选择器汇总">
 <meta property="og:url" content="https://yoowin.me/2017/css-selectors.html">
 <meta property="og:site_name" content="YOOWIN">
-<meta property="og:description" content="CSS选择器是学习CSS以及Web编程的基础。 整理出常用的CSS选择器，供自己和大家一起学习。">
+<meta property="og:description" content="CSS选择器是学习CSS以及Web编程的基础。但是总有不少人会对一些选择器的概念似懂非懂，用的不熟。 好消息是这篇文章整理了你可能会用到的几乎所有CSS选择器。 废话不多说，直接上干货。">
 <meta property="og:image" content="https://i.loli.net/2017/08/25/599fb357df8b1.png">
-<meta property="og:updated_time" content="2017-09-27T12:33:05.881Z">
+<meta property="og:updated_time" content="2017-09-28T15:08:14.852Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS选择器汇总">
-<meta name="twitter:description" content="CSS选择器是学习CSS以及Web编程的基础。 整理出常用的CSS选择器，供自己和大家一起学习。">
+<meta name="twitter:description" content="CSS选择器是学习CSS以及Web编程的基础。但是总有不少人会对一些选择器的概念似懂非懂，用的不熟。 好消息是这篇文章整理了你可能会用到的几乎所有CSS选择器。 废话不多说，直接上干货。">
 <meta name="twitter:image" content="https://i.loli.net/2017/08/25/599fb357df8b1.png">
 
 
@@ -385,8 +385,9 @@
 
       
         <script src="\assets\js\APlayer.min.js"> </script><p><img src="https://i.loli.net/2017/08/25/599fb357df8b1.png" alt=""></p>
-<p>CSS选择器是学习CSS以及Web编程的基础。</p>
-<p>整理出常用的CSS选择器，供自己和大家一起学习。</p>
+<p>CSS选择器是学习CSS以及Web编程的基础。但是总有不少人会对一些选择器的概念似懂非懂，用的不熟。</p>
+<p>好消息是这篇文章整理了你可能会用到的几乎所有CSS选择器。</p>
+<p>废话不多说，直接上干货。</p>
 <a id="more"></a>
 <h2 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">* <span class="comment">/*通用选择器，匹配页面所有元素*/</span></div><div class="line"><span class="selector-id">#id</span> <span class="comment">/*ID选择器，匹配id是'id'的元素*/</span></div><div class="line"><span class="selector-class">.class</span> <span class="comment">/*class（类）选择器，匹配所有类名中包含'class'的元素*/</span></div><div class="line"><span class="selector-tag">E</span>  <span class="comment">/*标签（类型）选择器，匹配给定元素名的元素*/</span></div></pre></td></tr></table></figure>
 <h2 id="组合选择器"><a href="#组合选择器" class="headerlink" title="组合选择器"></a>组合选择器</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">E</span>,<span class="selector-tag">F</span>   <span class="comment">/* 多元素选择器，用,(半角)分隔，同时匹配元素E和元素F*/</span></div><div class="line"><span class="selector-tag">E</span> <span class="selector-tag">F</span>    <span class="comment">/*后代选择器，用空格分隔，匹配E元素所有的后代（不只是子元素、子元素向下递归）元素F*/</span></div><div class="line"><span class="selector-tag">E</span>&gt;<span class="selector-tag">F</span>    <span class="comment">/*子元素选择器，用&gt;分隔，匹配E元素的所有直接子元素*/</span></div><div class="line"><span class="selector-tag">E</span>+<span class="selector-tag">F</span>    <span class="comment">/*紧邻兄弟选择器，匹配E元素之后的相邻的一个兄弟元素F（只匹配一个）*/</span></div><div class="line"><span class="selector-tag">E</span>~<span class="selector-tag">F</span>    <span class="comment">/*一般兄弟选择器，匹配E元素之后的所有兄弟元素F（无论直接相邻与否）*/</span></div><div class="line"><span class="selector-class">.class1</span><span class="selector-class">.class2</span>    <span class="comment">/*匹配类名既包括'class1'又包括'class2'的元素*/</span></div></pre></td></tr></table></figure>
@@ -441,9 +442,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
-          
             <a href="/tags/选择器/" rel="tag"><i class="fa fa-tag"></i> 选择器</a>
+          
+            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
           
         </div>
       
