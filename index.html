@@ -1744,9 +1744,11 @@
 
       
         
-          <h2 id="实现下面函数"><a href="#实现下面函数" class="headerlink" title="实现下面函数"></a>实现下面函数</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">double([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>])  <span class="comment">//[1, 1, 2, 2, 3, 3, 4, 4, 5, 5]</span></div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">double</span>(<span class="params">arr</span>)</span>&#123;</div><div class="line">  <span class="keyword">for</span>(i=arr.length<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)&#123;</div><div class="line">    arr.splice(i,<span class="number">0</span>,arr[i])</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> arr</div><div class="line">&#125;</div><div class="line">double([<span class="number">9</span>,<span class="number">6</span>,<span class="number">3</span>,<span class="number">88</span>,<span class="number">777</span>]) <span class="comment">//[9, 9, 6, 6, 3, 3, 88, 88, 777, 777]</span></div></pre></td></tr></table></figure>
-<h2 id="let、var、const的区别"><a href="#let、var、const的区别" class="headerlink" title="let、var、const的区别"></a>let、var、const的区别</h2><p><a href="https://yoowin.me/2017/let-const-var.html">博客–let、var、const的区别</a><br>
+          <h1 id="概念基础类"><a href="#概念基础类" class="headerlink" title="概念基础类"></a>概念基础类</h1><h2 id="AJAX中get和post的区别"><a href="#AJAX中get和post的区别" class="headerlink" title="AJAX中get和post的区别"></a>AJAX中get和post的区别</h2><ul>
+<li>语义上的区别<br>get是获取资源，post是处理资源<br>get和post最初被设计的初衷也是如此</li>
+<li>现象上的区别<br>get是通过URL请求，post是通过header请求<br>HTTP协议对GET和POST都没有对长度的限制，而对于URL长度上的限制是浏览器跟服务器造成的</li>
+</ul>
+<h2 id="let、var、const的区别"><a href="#let、var、const的区别" class="headerlink" title="let、var、const的区别"></a>let、var、const的区别</h2><p><a href="https://yoowin.me/2017/let-const-var.html">博客–let、var、const的区别</a></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/audition-js.html#more" rel="contents">
@@ -1790,7 +1792,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1835,7 +1837,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-count">30</span>
                 <span class="site-state-item-name">所有博客</span>
               </a>
             </div>
@@ -1857,7 +1859,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">40</span>
+                <span class="site-state-item-count">39</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
