@@ -2449,69 +2449,16 @@ function render() {
       console.log(textList[i].innerText)
     }
 
-    
+
+    var fancyImg = document.querySelector('.fancybox-image')
+    var fancyOverlay = document.querySelector('.fancybox-overlay')
+    var fancyWrap = document.querySelector('.fancybox-wrap')
+
+    fancyImg.addEventListener('click',function(){
+      fancyOverlay.style.display = 'none'
+      fancyWrap.classList.remove('fancybox-opened')
+
+    })
   </script>
-<!-- <script type="text/javascript" defer>
-  setTimeout(function(){
-    var timeElement = document.querySelectorAll('.gitment-comment-header>span')
-    for (var i = 0; i < timeElement.length; i++) {
-        var  gitmentTime = Date.parse(timeElement[i].title)
-        var  year = new Date(gitmentTime).getFullYear()
-        var  month = new Date(gitmentTime).getMonth()
-        var  day = new Date(gitmentTime).getDate()
-        var  hour = new Date(gitmentTime).getHours()
-        var  min = new Date(gitmentTime).getMinutes()
-        var  gmt = new Date(gitmentTime).getTimezoneOffset()
-
-        timeElement[i].setAttribute('title',(function(){
-          console.log(timeElement[i])
-          console.log(hour,day,min)
-          if(hour>=12){
-            if(min<10){
-              return year+'年'+(month+1)+'月'+day+'日 '+'GMT+'+(-gmt/60)+' 下午'+(hour-12)+':0'+min
-            }else{
-              return year+'年'+(month+1)+'月'+day+'日 '+'GMT+'+(-gmt/60)+' 下午'+(hour-12)+':'+min
-            }
-          }else{
-            if(min<10){
-              return year+'年'+(month+1)+'月'+day+'日 '+'GMT+'+(-gmt/60)+' 上午'+(hour-12)+':0'+min
-            }else{
-              return year+'年'+(month+1)+'月'+day+'日 '+'GMT+'+(-gmt/60)+' 上午'+(hour-12)+':'+min
-            }
-          }
-        })())
-
-        timeElement[i].innerText = (function(){
-          if((new Date()-gitmentTime)/1000<60){
-            if(parseInt((new Date()-gitmentTime)/1000)<10){
-              return 'just now'
-            }else{
-              return parseInt((new Date()-gitmentTime)/1000)+' seconds ago'
-            }
-          }else if(((new Date()-gitmentTime)/1000/60)<60){
-            if(parseInt((new Date()-gitmentTime)/1000/60) == 1){
-              return 'a minute ago'
-            }else{
-              return parseInt((new Date()-gitmentTime)/1000/60)+' minutes ago'
-            }
-          }else if(((new Date()-gitmentTime)/1000/60/60)<12){
-            if(parseInt((new Date()-gitmentTime)/1000/60/12) == 1){
-              return 'an hour ago'
-            }else{
-              return parseInt((new Date()-gitmentTime)/1000/60/60)+' hours ago'
-            }
-          }else if(((new Date()-gitmentTime)/1000/60/60/12)<30){
-            if(parseInt((new Date()-gitmentTime)/1000/60/12) == 1){
-              return 'a day ago'
-            }else{
-              return parseInt((new Date()-gitmentTime)/1000/60/60/12)+' days ago'
-            }
-          }else{
-            return year+'年'+(month+1)+'月'+day+'日'
-          }
-        })()
-    }
-  },200)   
-</script> -->
 </body>
 </html>
