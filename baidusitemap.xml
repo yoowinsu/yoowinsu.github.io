@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://yoowin.me/2017/audition-web.html</loc>
+    <lastmod>2017-10-25T07:59:15.764Z</lastmod>
+    <data>
+        <display>
+        <title>面试题总结之综合篇</title>
+        <pubTime>2017-07-14T11:24:05.000Z</pubTime>
+        
+        <tag>面试</tag>
+         
+        <tag>web</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="https://yoowin.me/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://yoowin.me/2017/audition-js.html</loc>
     <lastmod>2017-10-17T11:18:00.505Z</lastmod>
     <data>
@@ -41,28 +63,6 @@
            
              
               <breadCrumb title="CSS" url="https://yoowin.me/categories/CSS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yoowin.me/2017/audition-web.html</loc>
-    <lastmod>2017-10-14T00:52:52.173Z</lastmod>
-    <data>
-        <display>
-        <title>面试题总结之综合篇</title>
-        <pubTime>2017-07-14T11:24:05.000Z</pubTime>
-        
-        <tag>面试</tag>
-         
-        <tag>web</tag>
-         
-         
-           
-             
-              <breadCrumb title="web" url="https://yoowin.me/categories/web/"/>
           
         </display>
     </data>
