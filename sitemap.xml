@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yoowin.me/2017/js-bug.html</loc>
+    
+    <lastmod>2017-11-20T19:16:00.230Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yoowin.me/tags/index.html</loc>
     
     <lastmod>2017-11-04T17:57:06.065Z</lastmod>
@@ -117,13 +124,6 @@
     <loc>https://yoowin.me/2017/the-turn-type.html</loc>
     
     <lastmod>2017-09-23T06:20:12.484Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yoowin.me/2017/js-bug.html</loc>
-    
-    <lastmod>2017-09-23T06:19:18.670Z</lastmod>
     
   </url>
   

@@ -3,6 +3,26 @@
 
 
     
+  <url>
+    <loc>https://yoowin.me/2017/js-bug.html</loc>
+    <lastmod>2017-11-20T19:16:00.230Z</lastmod>
+    <data>
+        <display>
+        <title>总结JavaScript踩过的坑</title>
+        <pubTime>2017-07-13T15:16:10.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://yoowin.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
     
   <url>
@@ -79,9 +99,9 @@
         <title>面试题总结之HTML篇</title>
         <pubTime>2017-06-14T11:23:33.000Z</pubTime>
         
-        <tag>HTML</tag>
-         
         <tag>面试</tag>
+         
+        <tag>HTML</tag>
          
          
            
@@ -303,26 +323,6 @@
         <tag>JavaScript</tag>
          
         <tag>数据类型</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="https://yoowin.me/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yoowin.me/2017/js-bug.html</loc>
-    <lastmod>2017-09-23T06:19:18.670Z</lastmod>
-    <data>
-        <display>
-        <title>总结JavaScript踩过的坑</title>
-        <pubTime>2017-07-13T15:16:10.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
          
          
            
